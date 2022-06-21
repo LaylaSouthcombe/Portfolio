@@ -5,6 +5,7 @@ import { NavBar } from './layout'
 import memoji from './images/Memoji.png'
 
 import './App.css';
+import './pages/About/style.css'
 
 function App() {
   return (
@@ -31,13 +32,6 @@ function App() {
             <li></li>
             <li></li>
           </ul>
-          <div className="squares">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
         </div>
           <About id="about"/>
           <Skills id="skills"/>

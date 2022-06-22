@@ -1,0 +1,94 @@
+#contact {
+    height: 45vh;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.contactTitle > h2 {
+    margin-bottom: 55px;
+}
+
+.contactTitle {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contactLine1 {
+    background-color: #FF0A78;
+    opacity: 0.5;
+    display: inline-block;
+    width: 22vw;
+    height: 3px;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.contactLine2 {
+    background-color: #FF0A78;
+    opacity: 0.5;
+    display: inline-block;
+    width: 22vw;
+    height: 3px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+.contactForm {
+    display: grid;
+    grid-template-areas:
+      'fullName fullName'
+      'email phone'
+      'message message'
+      'send send';
+    gap: 20px;
+    width: 53vw;
+    margin: 0 auto;
+}
+.formItem1 { grid-area: fullName; }
+.formItem2 { grid-area: email; }
+.formItem3 { grid-area: phone; }
+.formItem4 { grid-area: message; }
+.formItem5 { grid-area: send; }
+
+.formItem1,
+.formItem2,
+.formItem3,
+.formItem4 {
+    background-color: #041129;
+    border: 3px solid #0AC3FF;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 15px;
+    width: 100%;
+    color: #D9F6FF;
+}
+.formItem1,
+.formItem2,
+.formItem3 {
+    height: 70px;
+    font-size: 40px;
+}
+
+.formItem4 {
+    font-size: 30px;
+}
+
+::placeholder{
+    color:#FF0A78;
+    opacity: 0.5;
+}
+
+.sendEmail {
+    width: 130px;
+    height: 55px;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #FF0A78;
+    background-color: #041129;
+    border: 3px solid #FF0A78;
+    text-align: center;
+}

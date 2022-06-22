@@ -25,12 +25,6 @@
     z-index: -1;
 }
 
-/* .projectInfo {
-    background-color: rgb(118, 156, 190);
-} */
-/* .projectInfo.left > .projectImg {
-    background-color: #3b6977;
-} */
 .projectInfo.right {
     margin-left: auto;
 }

@@ -2,15 +2,16 @@
     height: 50vh;
     font-size: 32px;
     font-weight: bold;
+    margin-top: 150px;
 }
 
 .skillsTitle > h2 {
-    margin-bottom: 25px;
+    margin-bottom: 60px;
 }
 
 .skillsTitle {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
 }
 

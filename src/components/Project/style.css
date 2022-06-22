@@ -1,0 +1,86 @@
+.projectDiv {
+    width: 70vw;
+    /* background-color: rgb(118, 156, 190); */
+    display: flex;
+    position: relative;
+    height: 310px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+.projectImg {
+    width: 560px;
+    height: 310px;
+    background-color: #D9F6FF;
+    position: absolute;
+    z-index: -1;
+}
+
+/* .projectInfo {
+    background-color: rgb(118, 156, 190);
+} */
+/* .projectInfo.left > .projectImg {
+    background-color: #3b6977;
+} */
+.projectInfo.right {
+    margin-left: auto;
+}
+
+.projectImg.left {
+    right: 0;
+}
+.projectInfo.left > .projectTech {
+    justify-content: left !important;
+}
+
+.appType {
+    font-size: 24px;
+    color: #D9F6FF;
+    font-weight: normal;
+}
+
+.projectName {
+    font-size: 32px;
+    color: #FF0A78;
+}
+
+.projectSummary {
+    width: 600px;
+    height: 120px;
+    background-color: #005592;
+    font-size: 26px;
+    color: #D9F6FF;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.projectSummary > p{
+    color: #D9F6FF;
+}
+
+.projectTech {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+.projectTech > li {
+    padding: 10px;
+    color: #D9F6FF;
+}
+
+.linkIcon {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 5px;
+}

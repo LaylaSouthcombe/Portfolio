@@ -6,6 +6,7 @@ import memoji from './images/Memoji.png'
 
 import './App.css';
 import './pages/About/style.css'
+import './pages/Skills/style.css'
 
 function App() {
   return (

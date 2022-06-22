@@ -12,12 +12,12 @@ const About = () => {
             </div> 
             <div className="aboutInfo">
                 <div className="aboutTitle">
-                <h2><span className="number">01.</span>About</h2><div className="line"></div>
+                <h2><span className="number">01.</span>About</h2><div className="aboutLine"></div>
                 </div>
-                <p>After graduating from the University of Bath with a Pharmacology Masters Degree in 2018, I worked in the medical publishing/communications industry.</p>
-                <p>It was in this industry that I witnessed the impact technology could have on vital industries such as healthcare, which resulted in my interest in technology and coding flourishing.</p>
-                <p>I started my journey with futureproof after teaching myself to code in my spare time and realising my curious and problem-solving nature was a perfect fit with coding.</p>
-                <p>During my time in the futureproof full-stack bootcamp I have learnt not only a plethora of technologies and languages, but also the skills needed to succeed in a tech environment.</p>
+                <p>After graduating from the University of Bath with a <span className="bold">Pharmacology Masters Degree</span> in 2018, I worked in the medical publishing/communications industry.</p>
+                <p>It was in this industry that I <span className="bold">witnessed the impact of technology on vital industries</span> such as healthcare, which resulted in my interest in technology and coding flourishing.</p>
+                <p>I started my journey with <span className="bold">futureproof</span> after teaching myself to code in my spare time and realising my <span className="bold">curious</span> and <span className="bold">problem-solving</span> nature was a perfect fit with coding.</p>
+                <p>During my time in the futureproof full-stack bootcamp I have learnt not only a plethora of <span className="bold">technologies</span> and <span className="bold">languages</span>, but also the <span className="bold">skills</span> needed to <span className="bold">succeed in a tech environment.</span></p>
             </div> 
        </div>   
     )

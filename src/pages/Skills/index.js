@@ -10,14 +10,22 @@ const Skills = () => {
                 <div className="skillsLine2"></div>
             </div> 
             <div className="skillsIcons">
-                <div class="item1">item1</div>
-                <div class="item2">item2</div>
-                <div class="item3">item3</div>  
-                <div class="item4">item4</div>
-                <div class="item5">item5</div>
-                <div class="item6">item6</div>
-                <div class="item7">item7</div>
-                <div class="item8">item8</div>
+                <div class="item1 item"><div className="icon">item1</div>
+                <div className="bottomBorder"></div></div>
+                <div class="item2 item"><div className="icon">item2</div>
+                <div className="bottomBorder"></div></div>
+                <div class="item3 item"><div className="icon">item3</div>
+                <div className="bottomBorder"></div></div>  
+                <div class="item4 item"><div className="icon">item4</div>
+                <div className="bottomBorder"></div></div>
+                <div class="item5 item"><div className="icon">item5</div>
+                <div className="bottomBorder"></div></div>
+                <div class="item6 item"><div className="icon">item6</div>
+                <div className="bottomBorder"></div></div>
+                <div class="item7 item"><div className="icon">item7</div>
+                <div className="bottomBorder"></div></div>
+                <div class="item8 item"><div className="icon">item8</div>
+                <div className="bottomBorder"></div></div>
             </div>
        </div>   
     )

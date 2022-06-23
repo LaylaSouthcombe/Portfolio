@@ -9,9 +9,7 @@ const Project = ({position, content}) => {
     projectImgClassName += position
     return (
         <div className="projectDiv">
-            <div className={projectImgClassName}>
-                <img src={content.img} alt="" />
-            </div>
+            
             
             <div className={projectInfoClassName}>
                 <h4 className="appType">{content.appType}</h4>
@@ -30,6 +28,9 @@ const Project = ({position, content}) => {
                     <a href=""><img src={GitHub} alt="" className="linkIcon"/></a>
                     <a href=""><img src={Hyperlink} alt="" className="linkIcon"/></a>
                 </div>
+            </div>
+            <div className={projectImgClassName}>
+                <img src={content.img} alt="" />
             </div>
         </div>
     )

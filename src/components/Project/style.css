@@ -1,14 +1,16 @@
-/* .projectDiv {
-    width: 70vw;
-    background-color: rgb(118, 156, 190);
+ .projectDiv {
+    width: 70%;
+    /* background-color: rgb(118, 156, 190); */
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    height: 310px;
+    /* height: 310px; */
     align-items: center;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 30px;
 }
+
 
 .left {
     text-align: left;
@@ -17,48 +19,45 @@
     text-align: right;
 }
 
-.projectImg {
-    width: 560px;
-    height: 310px;
-    background-color: #D9F6FF;
-    position: absolute;
-    z-index: -1;
-}
-
-.projectInfo.right {
-    margin-left: auto;
-}
-
-.projectImg.left {
-    right: 0;
-}
-.projectInfo.left > .projectTech {
-    justify-content: left !important;
-}
-
 .appType {
     font-size: 24px;
     color: #D9F6FF;
     font-weight: normal;
+    margin-bottom: 5px;
 }
 
 .projectName {
     font-size: 32px;
     color: #FF0A78;
+    margin-bottom: 5px;
 }
 
 .projectSummary {
-    width: 600px;
-    height: 120px;
+    /* width: 600px; */
+    /* height: 120px; */
     background-color: #005592;
     font-size: 26px;
-    color: #D9F6FF;
+    /* color: #D9F6FF; */
     padding: 15px;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.projectImg {
+    width: 100%;
+    /* height: 310px; */
+    background-color: #D9F6FF;
+    /* position: absolute; */
+    z-index: -1;
+}
+.projectImg > img{
+    width: 100%;
+    height: 180px;
+    /* background-color: #D9F6FF; */
+    /* position: absolute; */
+    z-index: -1;
 }
 
-.projectSummary > p{
+.projectSummary > p {
     color: #D9F6FF;
 }
 
@@ -77,4 +76,63 @@
     height: 40px;
     margin-left: 10px;
     margin-right: 5px;
+    margin-bottom: 10px;
+}
+.projectInfo.left > .projectTech {
+    justify-content: left !important;
+}
+
+/*
+@media (min-width: 1024px) {
+
+done
+.projectImg {
+    width: 560px;
+    height: 310px;
+    background-color: #D9F6FF;
+    position: absolute;
+    z-index: -1;
+}
+
+.projectInfo.right {
+    margin-left: auto;
+}
+
+.projectImg.left {
+    right: 0;
+}
+
+
+done
+.appType {
+    font-size: 24px;
+    color: #D9F6FF;
+    font-weight: normal;
+}
+done
+.projectName {
+    font-size: 32px;
+    color: #FF0A78;
+}
+done
+.projectSummary {
+    width: 600px;
+    height: 120px;
+    background-color: #005592;
+    font-size: 26px;
+    color: #D9F6FF;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+done
+.linkIcon {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
 } */

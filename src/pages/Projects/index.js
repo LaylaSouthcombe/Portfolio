@@ -8,7 +8,7 @@ const Projects = () => {
         { appType: "Project 3", projectName: "Project name", summary: "Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary", technologies: ["HTML", "CSS"], github: "", deploy: "", img: ""},
     ])
     return(
-        <div className="sectionDiv wrapper" id="projects">
+        <div className="sectionDiv" id="projects">
             <div className="projectsTitle">
                 <h2><span className="number">03.</span>Projects I've Built</h2>
                 <div className="projectsLine"></div>

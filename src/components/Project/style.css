@@ -1,6 +1,6 @@
-.projectDiv {
+/* .projectDiv {
     width: 70vw;
-    /* background-color: rgb(118, 156, 190); */
+    background-color: rgb(118, 156, 190);
     display: flex;
     position: relative;
     height: 310px;
@@ -18,7 +18,7 @@
 }
 
 .projectImg {
-    /* width: 560px; */
+    width: 560px;
     height: 310px;
     background-color: #D9F6FF;
     position: absolute;
@@ -37,21 +37,21 @@
 }
 
 .appType {
-    /* font-size: 24px; */
+    font-size: 24px;
     color: #D9F6FF;
     font-weight: normal;
 }
 
 .projectName {
-    /* font-size: 32px; */
+    font-size: 32px;
     color: #FF0A78;
 }
 
 .projectSummary {
-    /* width: 600px; */
+    width: 600px;
     height: 120px;
     background-color: #005592;
-    /* font-size: 26px; */
+    font-size: 26px;
     color: #D9F6FF;
     padding: 15px;
     display: flex;
@@ -77,4 +77,4 @@
     height: 40px;
     margin-left: 10px;
     margin-right: 5px;
-}
+} */

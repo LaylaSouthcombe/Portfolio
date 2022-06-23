@@ -166,11 +166,13 @@ h1 {
   /* margin-right: 15vw; */
   /* margin-top: 5vh; */
   object-fit: fill;
+  text-align: center;
 }
 
 #memoji {
   /* max-width: 40vh; */
-  width: 100%;
+  margin-top: 20px;
+  width: 80%;
 }
 
 .circles {

@@ -1,4 +1,4 @@
-#projects{
+/* #projects{
     margin-top: 500px;
 }
 
@@ -17,9 +17,9 @@
     background-color: #FF0A78;
     opacity: 0.5;
     display: inline-block;
-    /* width: 42vw; */
+    width: 42vw;
     height: 3px;
-    /* margin-top: 30px; */
-    /* margin-left: 25px; */
-    /* margin-right: 15px; */
-}
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 15px;
+} */

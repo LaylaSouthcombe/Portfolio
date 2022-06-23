@@ -9,7 +9,7 @@
     /* margin-left: 195px; */
     /* border: 10px solid #FF0A78; */
     /* height: 400px; */
-    position: relative;
+    /* position: relative; */
     margin-left: 80px;
     margin-top: 20px;
     z-index: -1;
@@ -46,7 +46,7 @@
     flex-grow: 1;
     height: 3px;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 10px;
     z-index: -1;
 }
 
@@ -59,4 +59,24 @@
 
 .bold {
     color: #0A99FF;
+}
+
+@media (min-width: 768px) {
+    #about  {
+        font-size: 1.25em;
+    }
+    .aboutTitle > h2 {
+        margin-left: 60px;
+    }
+    .aboutText > p {
+        margin-bottom: 30px;
+        margin-left: 60px;
+    }
+
+    .aboutImgDiv {
+        margin-left: 25%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 70%;
+    }
 }

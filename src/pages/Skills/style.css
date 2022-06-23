@@ -15,6 +15,7 @@
     justify-content: center;
     margin: 0 auto;
     text-align: center;
+    width: 90%;
 }
 
 .skillsLine1 {
@@ -25,7 +26,7 @@
     height: 3px;
     margin-top: 30px;
     margin-left: 30px;
-    margin-right: 25px;
+    margin-right: 10px;
     z-index: -1;
 }
 
@@ -37,7 +38,7 @@
     height: 3px;
     margin-top: 30px;
     margin-right: 30px;
-    margin-left: 25px;
+    margin-left: 10px;
     z-index: -1;
 }
 
@@ -49,6 +50,10 @@
 .item6 { grid-area: item6; }
 .item7 { grid-area: item7; }
 .item8 { grid-area: item8; }
+.item9 { grid-area: item9; }
+.item10 { grid-area: item10; }
+.item11 { grid-area: item11; }
+.item12 { grid-area: item12; }
 
 .skillsIcons {
   display: grid;
@@ -56,7 +61,9 @@
     'item1 item2' 
     'item3 item4'
     'item5 item6'
-    'item7 item8';
+    'item7 item8'
+    'item9 item10'
+    'item11 item12';
   gap: 35px 25px;
   padding: 10px;
   width: 70%;
@@ -67,27 +74,79 @@
 }
 
 .skillsIcons > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  font-size: 10px;
+    /* background-color: #D9F6FF; */
+    background-color: #014372;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: rgba(36, 87, 199, 0.5) 0px 5px 15px;
 }
 
 .item {
-    width: 145px;
-    height: 135px;
+    width: 100%;
+    /* height: 135px; */
+    /* padding-top: 90%; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
     /* margin-top: 10px; */
-    z-index: -1;
+    z-index: -1;  
+    
+}
+
+.icon {
+    width: 90%;
+    padding: 5px;
 }
 
 .bottomBorder {
-    background-color: purple;
-    width: 145px;
-    height: 10px;
+    /* background-color: rgb(89, 127, 167); */
+    width: 100%;
+    height: 1em;
     position: absolute;
     bottom: -10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.bb1 {
+    background-color: #E44D26;
+}
+.bb2 {
+    background-color: #1572B6;
+}
+.bb3 {
+    background-color: #F7DF1E;
+}
+.bb4 {
+    background-color: #00D8FF;
+}
+.bb5 {
+    background-color: #3676AA;
+}
+.bb6 {
+    background-color: #73CE4C;
+}
+.bb7 {
+    background-color: #99424F;
+}
+.bb8 {
+    background-color: #2497ED;
+}
+.bb9 {
+    background-color: rgb(70, 70, 70);
+}
+.bb10 {
+    background-color: #6762A6;
+}
+.bb11 {
+    background-color: #83CD29;
+}
+.bb12 {
+    background-color: #417BA2;
+}
+
+
+
+@media (min-width: 768px) {
+
 }

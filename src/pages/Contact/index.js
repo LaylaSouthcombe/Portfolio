@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
     return(
-       <div className="sectionDiv" id="contact">
-            <div className="contactTitle">
+       <div className="sectionDiv wrapper" id="contact">
+            <div className="contactTitle wrapper">
                 <div className="contactLine1"></div>
                 <h2><span className="number">04.</span>Get In Touch</h2>
                 <div className="contactLine2"></div>

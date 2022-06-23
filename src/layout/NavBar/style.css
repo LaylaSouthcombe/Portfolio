@@ -1,0 +1,88 @@
+/* .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+  .navBar li {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #041129;
+  }
+  .sidenav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .sideModal {
+    position: absolute;
+    height: 90vh;
+    background-color: #081e48;
+    width: 70%;
+    z-index: 2;
+  }
+
+  .sideNavBar {
+      padding-top: 15vh;
+  }
+  .sideNavBar > li {
+      list-style-type: none;
+      padding: 25px;
+      padding-left: 20%;
+      font-size: 1.5em;
+  }
+
+  .navIcon {
+      z-index: 3;
+      margin: 25px;
+      padding: 10px 15px;
+  }
+
+  .navIcon > i {
+    font-size: 50px;
+    /* padding: 25px; */
+    color: #FF0A78;
+}
+
+.navIconBorder{
+    border: 3px solid #0AC3FF;
+}
+
+#sideBarResume {
+    color: #FF0A78;
+    background-color: #081e48;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 28px;
+    border: 3px solid #FF0A78;
+}

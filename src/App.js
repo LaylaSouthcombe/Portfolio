@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { About, Contact, Projects, Skills } from './pages'
 import { NavBar } from './layout'
@@ -10,17 +10,17 @@ import './pages/Skills/style.css'
 import './pages/Projects/style.css'
 import './pages/Contact/style.css'
 import './components/Project/style.css'
+import './layout/NavBar/style.css'
 
 function App() {
+  const [bodyBlur, setBodyBlur] = useState("none")
   return (
-    <div className="App">
-      <header>
-        <img id="logo" width="160px" height="160px"></img>
-        <NavBar />
-        <button id="resume">RESUME</button>
+    <div className="App" >
+      <header >
+        <NavBar setBodyBlur={setBodyBlur}/>
       </header>
-      <div className="main">
-        <div className="intro">
+      <div className="main" style={{filter: bodyBlur}}>
+        <div className="intro wrapper">
           <div className="introText">
             <h2>Hi there, I'm</h2>
             <h1>Layla Southcombe</h1>
@@ -29,13 +29,13 @@ function App() {
           <div className="memoji">
             <img id="memoji" src={memoji} alt="Layla Southcombe Memoji" />
           </div>
-          <ul class='circles'>
+          {/* <ul class='circles'>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
-          </ul>
+          </ul> */}
         </div>
           <About id="about"/>
           <Skills id="skills"/>

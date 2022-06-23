@@ -35,3 +35,8 @@
     /* margin-right: 15px; */
 } 
 
+@media (min-width: 768px) {
+    .projectsTitle > h2 {
+        margin-left: 60px;
+    }
+}

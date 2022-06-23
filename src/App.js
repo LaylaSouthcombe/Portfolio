@@ -14,10 +14,11 @@ import './layout/NavBar/style.css'
 
 function App() {
   const [bodyBlur, setBodyBlur] = useState("none")
+  const [zIndex, setzIndex] = useState("0")
   return (
     <div className="App" >
       <header >
-        <NavBar setBodyBlur={setBodyBlur}/>
+        <NavBar setBodyBlur={setBodyBlur} setzIndex={setzIndex}/>
       </header>
       <div className="sideLine"></div>
       <div className="main" style={{filter: bodyBlur}}>
@@ -41,7 +42,7 @@ function App() {
         <About id="about"/>
         <Skills id="skills"/>
         <Projects id="projects"/>
-        <Contact id="contact"/>
+        <Contact id="contact" zIndex={zIndex}/>
         <div className="bottomLogoDiv">
           <img className="bottomLogo" width="120px" height="120px" ></img>
         </div>

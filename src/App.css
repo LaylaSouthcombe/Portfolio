@@ -64,6 +64,7 @@ header {
 	display: flex;
 	justify-content: right;
   font-size: 20px;
+  z-index: 1;
 }
 
 .navBar {

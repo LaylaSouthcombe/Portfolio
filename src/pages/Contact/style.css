@@ -56,7 +56,7 @@
       'send';
     gap: 20px;
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto;   
 }
 .formItem1,
 .formItem2,
@@ -69,14 +69,13 @@
     padding-left: 15px;
     width: 100%;
     color: #D9F6FF;
-    z-index: -1;
+    z-index: 0; 
 }
 .formItem1,
 .formItem2,
 .formItem3 {
     height: 45px;
     font-size: 20px;
-    
 }
 
 .formItem4 {
@@ -86,7 +85,6 @@
 ::placeholder{
     color:#FF0A78;
     opacity: 0.5;
-    
 }
 .sendEmail {
     width: 50%;
@@ -98,6 +96,14 @@
     background-color: #041129;
     border: 3px solid #FF0A78;
     text-align: center;
+}
+@media (min-width: 768px) {
+    .contactLine1 {
+        margin-left: 60px;
+    }
+    .contactLine2 {
+        margin-right: 80px;
+    }
 }
 /* 
 done

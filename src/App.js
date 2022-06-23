@@ -19,6 +19,7 @@ function App() {
       <header >
         <NavBar setBodyBlur={setBodyBlur}/>
       </header>
+      <div className="sideLine"></div>
       <div className="main" style={{filter: bodyBlur}}>
         <div className="intro wrapper">
           <div className="introText">
@@ -37,10 +38,14 @@ function App() {
             <li></li>
           </ul> */}
         </div>
-          <About id="about"/>
-          <Skills id="skills"/>
-          <Projects id="projects"/>
-          <Contact id="contact"/>
+        <About id="about"/>
+        <Skills id="skills"/>
+        <Projects id="projects"/>
+        <Contact id="contact"/>
+        <div className="bottomLogoDiv">
+          <img className="bottomLogo" width="120px" height="120px" ></img>
+        </div>
+        <div className="bottomLine"></div>
       </div>
     </div>
   );

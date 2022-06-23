@@ -9,6 +9,7 @@
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 30px;
+    z-index: -1;
 }
 
 

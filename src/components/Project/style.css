@@ -122,6 +122,7 @@
     width: 55%;
     margin-left: auto;
     height: 150px;
+    padding-top: 30px;
 }
 
 .projectInfo.left > .projectSummary{

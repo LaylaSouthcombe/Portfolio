@@ -39,7 +39,7 @@ header {
 
 .sideModal {
     position: absolute;
-    height: 75vh;
+    height: 100vh;
     background-color: #081e48;
     width: 70%;
     z-index: 9998;
@@ -52,8 +52,9 @@ header {
 .sideNavBar > li {
     list-style-type: none;
     padding: 25px;
+    padding-top: 25%;
     padding-left: 20%;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 .navIcon {
@@ -91,7 +92,11 @@ header {
     }
     .sideModal {
         width: 60%;
-      }
+    }
+    .sideNavBar > li {
+        padding-top: 15%;
+        font-size: 1.75em;
+    }
 }
 @media (min-width: 1024px) {
     .sidenav {
@@ -103,7 +108,6 @@ header {
     }
     .topnav{
         display: flex;
-        /* background-color: #333; */
         width: 100%;
     }
     .navBar {
@@ -116,6 +120,7 @@ header {
         font-size: 1.15em;
         list-style-type: none;
     }
+
     #topNavResume {
         color: #FF0A78;
         background-color: #081e48;
@@ -124,10 +129,12 @@ header {
         font-size: 0.9em;
         border: 3px solid #FF0A78;
     }
+
     #topNavResumeLi{
        margin-top: 45px; 
        margin-right: 25px; 
     }
+    
     #logo {
         margin-left: 35px;
         margin-top: 35px;

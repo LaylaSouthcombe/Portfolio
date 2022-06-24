@@ -10,7 +10,7 @@ const Projects = () => {
     return(
         <div className="sectionDiv" id="projects">
             <div className="projectsTitle">
-                <h2><span className="number">03.</span>Projects I've Built</h2>
+                <h2><span className="number">03.</span> Projects I've Built</h2>
                 <div className="lineType1 line"></div>
             </div> 
             <Project position="right" content={projects[0]}/> 

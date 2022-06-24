@@ -1,5 +1,5 @@
 #contact {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -77,6 +77,24 @@
     border: 3px solid #FF0A78;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    .contactForm {
+        width: 65%;
+    }
+    
+    .formItem1,
+    .formItem2,
+    .formItem3 {
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .formItem4 {
+        font-size: 22px;
+    }
+}
+
 
 @media (min-width: 1024px) {
     .contactTitle > h2 {

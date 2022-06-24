@@ -27,6 +27,7 @@ body {
   background-color: #FF0A78;
   opacity: 0.5;
   height: 3px;
+  visibility: hidden;
 }
 
 .lineType1 {
@@ -67,7 +68,8 @@ body {
 
 .bottomLine {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  visibility: visible;
 }
 
 .bottomLogoDiv{
@@ -88,11 +90,13 @@ body {
 
 .introText > h2 {
   color: #0A99FF;
-  font-size: 36px;
+  font-size: 28px;
+  width: 90%;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
+  width: 90%;
 }
 
 .memoji {
@@ -104,7 +108,30 @@ h1 {
   margin-top: 20px;
   width: 80%;
 }
+.bottomLinksDiv {
+  width: 45%;
+  margin: 0 auto;
+}
+.bottomLinks {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 15px;
+  justify-content: center;
+}
 
+.bottomLinks > li{
+  width: 60px;
+}
+
+.bottomLinkImg {
+  width: 100%;
+  padding: 5px;
+}
+
+#mailIcon {
+  width: 90%;
+  margin-top: 2.5px;
+}
 .circles {
 	position: absolute;
 	bottom: 0;
@@ -276,6 +303,14 @@ h1 {
 	}
 }
 
+
+
+@media (min-width: 500px){
+  .line{
+    visibility: visible;
+  }
+}
+
 @media (min-width: 768px) {
   .intro {
     margin-top: 50px;
@@ -289,6 +324,8 @@ h1 {
   .memoji {
     grid-column: col-start 7/ span 6;
     grid-row: 1;
+    margin-right: 3vw;
+    margin-top: 20vh;
   }
 
   .introText {
@@ -301,11 +338,6 @@ h1 {
   
   h1 {
     font-size: 56px;
-  }
-
-  .memoji {
-    margin-right: 3vw;
-    margin-top: 13vh;
   }
   
   #memoji {
@@ -326,6 +358,14 @@ h1 {
     margin-top: 30px;
     max-width: 100px;
     max-height: 100px;
+  }
+
+  .bottomLinks > li{
+    width: 100px;
+    margin-left: 20px;
+  }
+  .bottomLinksDiv {
+    width: 45%;
   }
 }
 
@@ -349,6 +389,7 @@ h1 {
   
   .memoji {
     margin-right: 5vw;
+    margin-top: 16vh;
   }
 
   .aboutText {

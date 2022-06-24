@@ -23,21 +23,9 @@ body{
   grid-column: col-start / span 12;
 }
 
-.bottomLogoDiv{
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.bottomLine {
-    background-color: #FF0A78;
-    height: 3px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .sideLine {
   background-color: #FF0A78;
+  opacity: 0.5;
   width: 3px;
   position: fixed;
   right: 15px;
@@ -46,53 +34,26 @@ body{
   z-index: -1;
 }
 
+.bottomLogoDiv{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bottomLine {
+    background-color: #FF0A78;
+    opacity: 0.5;
+    height: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .number {
   color: #FF0A78;
 }
 
 /* header section */
-#logo {
-  margin-right: auto;
-  margin-left: 3px;
-  margin-top: 3px;
-  /* margin-bottom: 2.5vh; */
-  max-width: 60px;
-  max-height: 60px;
-}
 
-header {
-	display: flex;
-	justify-content: right;
-  font-size: 20px;
-  z-index: 1;
-}
-
-.navBar {
-  /* display: flex; */
-  list-style-type: none;
-}
-
-.navBar > li {
-  padding: 1.5vw;
-  margin-top: 5vh;
-}
-
-.active {
-  font-weight: bold;
-}
-
-#resume {
-  /* font-size: 32px; */
-  height: 5vh;
-  /* width: 12vw; */
-  color: #FF0A78;
-  background-color: #041129;
-  outline: none;
-  border: 3px solid #FF0A78;
-  /* margin-top: 5vh; */
-  /* margin-left: 20px; */
-  /* margin-right: 40px; */
-}
 
 /* general div */
 

@@ -28,10 +28,10 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
             <div className="topnav">
                 <img id="logo" width="160px" height="160px" ></img>
                 <ul className="navBar" id="myLinks" >
-                    <li><Link activeClass="active" smooth spy to="about"><span className="number">01.</span> About</Link></li>
-                    <li><Link activeClass="active" smooth spy to="skills"><span className="number">02.</span> Skills</Link></li>
-                    <li><Link activeClass="active" smooth spy to="projects"><span className="number">03.</span> Projects</Link></li>
-                    <li><Link activeClass="active" smooth spy to="contact"><span className="number">04.</span> Contact Me</Link></li>
+                    <li><Link activeClass="active" smooth spy to="about" offset={-180}><span className="number">01.</span> About</Link></li>
+                    <li><Link activeClass="active" smooth spy to="skills" offset={-180}><span className="number">02.</span> Skills</Link></li>
+                    <li><Link activeClass="active" smooth spy to="projects" offset={-180}><span className="number">03.</span> Projects</Link></li>
+                    <li><Link activeClass="active" smooth spy to="contact" offset={-180}><span className="number">04.</span> Contact Me</Link></li>
                     <li id="topNavResumeLi"><button id="topNavResume">RESUME</button></li>
                 </ul> 
             </div>

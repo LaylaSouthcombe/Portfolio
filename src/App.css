@@ -41,28 +41,18 @@ body{
 }
 
 .bottomLine {
-    background-color: #FF0A78;
-    opacity: 0.5;
-    height: 3px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  background-color: #FF0A78;
+  opacity: 0.5;
+  height: 3px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .number {
   color: #FF0A78;
 }
 
-/* header section */
 
-
-/* general div */
-
-/* .sectionDiv  {
-	display: flex;
-	height: 50vh;
-	font-size: 32px;
-	font-weight: bold;
-} */
 
 /* welcome section */
 
@@ -75,7 +65,6 @@ body{
 }
 
 .introText {
-  /* width: 580px; */
   margin-left: 12vw;
   margin-top: 25vh;
 }
@@ -347,19 +336,26 @@ h1 {
 
 
 @media (min-width: 1024px) {
-  /* .side {
-    grid-column: col-start / span 3;
-    grid-row: 3;
+  .intro {
+    margin-bottom: 100px;
   }
-  .ad {
-    grid-column: col-start / span 3;
-    grid-row: 4;
+  
+  .introText {
+    margin-left: 10vw;
+    margin-top: 25vh;
   }
-  .content, .main-footer {
-    grid-column: col-start 4 / span 9;
+  
+  .introText > h2 {
+    font-size: 36px;
   }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  } */
+  
+  h1 {
+    font-size: 64px;
+  }
+  
+  
+  .memoji {
+    margin-right: 5vw;
+  }
+
 }

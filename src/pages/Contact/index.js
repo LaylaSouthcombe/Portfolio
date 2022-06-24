@@ -4,9 +4,9 @@ const Contact = ({zIndex}) => {
     return (
        <div className="sectionDiv" id="contact">
             <div className="contactTitle">
-                <div className="contactLine1"></div>
+                <div className="lineType2 line"></div>
                 <h2><span className="number">04.</span>Get In Touch</h2>
-                <div className="contactLine2"></div>
+                <div className="lineType3 line"></div>
             </div> 
             <form action="mailto:laylasouthcombe789@outlook.com" method="post" enctype="text/plain" className="contactForm">
                 <input type="text" name="fullName" id="fullName" placeholder="Full name" className="formItem1" style={{zIndex: zIndex}}/>

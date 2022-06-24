@@ -19,9 +19,9 @@ const Skills = () => {
     return(
        <div className="sectionDiv" id="skills">
             <div className="skillsTitle">
-                <div className="skillsLine1"></div>
+                <div className="lineType2 line"></div>
                 <h2><span className="number">02.</span>Technologies <br/><span className="lineSplit">I Work With</span></h2>
-                <div className="skillsLine2"></div>
+                <div className="lineType3 line"></div>
             </div> 
             <div className="skillsIcons">
                 <div class="item1 item"><img className="icon" src={htmlIcon} alt="" />

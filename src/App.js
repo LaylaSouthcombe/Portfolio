@@ -46,7 +46,7 @@ function App() {
         <div className="bottomLogoDiv">
           <img className="bottomLogo" width="120px" height="120px" ></img>
         </div>
-        <div className="bottomLine"></div>
+        <div className="bottomLine line"></div>
       </div>
     </div>
   );

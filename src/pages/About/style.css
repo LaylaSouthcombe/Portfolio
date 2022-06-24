@@ -1,20 +1,13 @@
-
 #about  {
 	font-size: 1.5em;
 	font-weight: bold;
     margin-top: 10vh;
 }
 
-
 .aboutImgDiv {
-    /* margin-left: 195px; */
-    /* border: 10px solid #FF0A78; */
-    /* height: 400px; */
-    /* position: relative; */
     margin-left: 80px;
     margin-top: 20px;
     z-index: -1;
-    /* width: 400px; */
 }
 
 .aboutImg {
@@ -38,21 +31,7 @@
     display: flex;
 }
 
-
-.aboutLine {
-    background-color: #FF0A78;
-    opacity: 0.5;
-    /* display: inline-block; */
-    /* width: auto; */
-    flex-grow: 1;
-    height: 3px;
-    margin-top: 25px;
-    margin-left: 10px;
-    z-index: -1;
-}
-
 .aboutText > p {
-    /* font-size: 26px; */
     color: #D9F6FF;
     margin-bottom: 20px;
     margin-left: 30px;
@@ -63,12 +42,14 @@
 }
 
 @media (min-width: 768px) {
-    #about  {
+    /* #about  {
         font-size: 1.25em;
-    }
+    } */
+
     .aboutTitle > h2 {
         margin-left: 60px;
     }
+
     .aboutText > p {
         margin-bottom: 30px;
         margin-left: 60px;
@@ -81,20 +62,24 @@
         width: 70%;
     }
 }
+
 @media (min-width: 1024px) {
     .aboutTitle {
-        font-size: 1.35em;
+        font-size: 1.125em;
         margin-bottom: 35px;
     }
+
     .aboutTitle > h2 {
         margin-left: 80px;
     }
+
     .aboutText {
         width: 110%;
     }
+
     .aboutImgDiv {
      width: 80%;
      margin-left: 90px;   
      margin-top: 40px;   
     }
-  }
+}

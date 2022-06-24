@@ -10,7 +10,7 @@ const About = () => {
             <div className="aboutInfo wrapper">
                 <div className="aboutTitle">
                     <h2><span className="number">01.</span> About</h2>
-                    <div className="aboutLine"></div>
+                    <div className="lineType1 line"></div>
                 </div>
                 <div className="aboutText">
                     <p>After graduating from the University of Bath with a <span className="bold">Pharmacology Masters Degree</span> in 2018, I worked in the medical publishing/communications industry.</p>

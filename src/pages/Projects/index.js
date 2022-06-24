@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="sectionDiv" id="projects">
             <div className="projectsTitle">
                 <h2><span className="number">03.</span>Projects I've Built</h2>
-                <div className="projectsLine"></div>
+                <div className="lineType1 line"></div>
             </div> 
             <Project position="right" content={projects[0]}/> 
             <Project position="left" content={projects[1]}/> 

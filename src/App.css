@@ -127,10 +127,16 @@ h1 {
   width: 100%;
   padding: 5px;
 }
-
+#gitHubIcon{
+  width: 67px;
+}
 #mailIcon {
   width: 90%;
-  margin-top: 2.5px;
+  margin-top: 5px;
+}
+
+#linkedInIcon{
+  padding-top: 3px;
 }
 .circles {
 	position: absolute;
@@ -364,6 +370,10 @@ h1 {
     width: 100px;
     margin-left: 20px;
   }
+  #gitHubIcon{
+    width: 110px;
+    margin-left: 20px;
+  }
   .bottomLinksDiv {
     width: 45%;
   }
@@ -372,6 +382,8 @@ h1 {
 @media (min-width: 1024px) {
   .intro {
     margin-bottom: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   
   .introText {
@@ -405,5 +417,16 @@ h1 {
   .intro {
     margin-top: 100px;
     margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introText {
+    margin-left: 200px;
+    margin-top: 230px;
+  }
+  .sectionDiv {
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }

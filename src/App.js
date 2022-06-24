@@ -52,9 +52,9 @@ function App() {
         <div className="bottomLine line"></div>
         <div className="bottomLinksDiv">
           <ul className="bottomLinks">
-            <li><a href="https://github.com/LaylaSouthcombe" target="_blank"><img src={gitHubIcon} alt="GitHub Icon" className="bottomLinkImg"/></a></li>
+            <li id="gitHubIcon"><a href="https://github.com/LaylaSouthcombe" target="_blank"><img src={gitHubIcon} alt="GitHub Icon" className="bottomLinkImg"/></a></li>
             <li><a href="mailto:laylasouthcombe789@outlook.com"><img src={mailIcon} alt="email Icon" className="bottomLinkImg" id="mailIcon"/></a></li>
-            <li><a href="https://www.linkedin.com/in/layla-southcombe-811a77102" target="_blank"><img src={linkedInIcon} alt="LinkedIn Icon" className="bottomLinkImg"/></a></li>
+            <li id="linkedInIcon"><a href="https://www.linkedin.com/in/layla-southcombe-811a77102" target="_blank"><img src={linkedInIcon} alt="LinkedIn Icon" className="bottomLinkImg"/></a></li>
           </ul>
         </div>
       </div>

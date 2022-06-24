@@ -84,3 +84,12 @@
      margin-top: 40px;   
     }
 }
+@media (min-width: 1200px) {
+    .aboutText > p {
+        font-size: 1.25em;
+    }
+    .aboutImgDiv { 
+        margin-top: 100px;   
+    }
+
+}

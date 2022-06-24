@@ -80,6 +80,7 @@ header {
     padding: 15px 20px;
     font-size: 28px;
     border: 3px solid #FF0A78;
+    text-decoration: none;
 }
 
   
@@ -123,11 +124,12 @@ header {
 
     #topNavResume {
         color: #FF0A78;
-        background-color: #081e48;
+        background-color: #041129;
         outline: none;
         padding: 10px 20px;
         font-size: 0.9em;
         border: 3px solid #FF0A78;
+        text-decoration: none;
     }
 
     #topNavResumeLi{

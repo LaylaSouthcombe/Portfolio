@@ -40,3 +40,12 @@
         margin-left: 60px;
     }
 }
+@media (min-width: 1024px) {
+    .projectsTitle {
+        font-size: 1.125em;
+        margin-bottom: 35px;
+    }
+    .projectsTitle > h2 {
+        margin-left: 80px;
+    }
+}

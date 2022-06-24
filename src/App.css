@@ -359,3 +359,13 @@ h1 {
   }
 
 }
+@media (min-width: 1024px) {
+  .aboutText {
+      grid-column: col-start 6 / span 6;
+      grid-row: 2;
+  }
+  .aboutImgDiv {
+    grid-column: col-start / span 6;
+    grid-row: 2;
+  }
+}

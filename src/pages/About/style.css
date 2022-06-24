@@ -82,11 +82,9 @@
     }
 }
 @media (min-width: 1024px) {
-    #about {
-        /* font-size: 1.5em; */
-    }
     .aboutTitle {
         font-size: 1.35em;
+        margin-bottom: 35px;
     }
     .aboutTitle > h2 {
         margin-left: 80px;

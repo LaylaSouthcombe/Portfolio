@@ -154,5 +154,18 @@
           'item4 item5 item6'
           'item7 item8 item9'
           'item10 item11 item12';
-      }
+    }
+}
+@media (min-width: 1024px) {
+    .skillsTitle {
+        font-size: 1.125em;
+        margin-bottom: 35px;
+        padding-right: 25px;
+    }
+    .skillsIcons {
+        grid-template-areas:
+          'item1 item2 item3 item4' 
+          'item5 item6 item7 item8'
+          'item9 item10 item11 item12';
+    }
 }

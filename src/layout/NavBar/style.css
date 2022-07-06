@@ -89,13 +89,13 @@ header {
     }
     .sideModal {
         width: 60%;
+        height: 60vh;
     }
     .sideNavBar > li {
-        padding-top: 10%;
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
     .sideNavBar {
-        padding-top: 15vh;
+        padding-top: 5vh;
     }
 }
 @media (min-width: 1024px) {

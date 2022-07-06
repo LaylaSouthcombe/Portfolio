@@ -89,7 +89,7 @@ header {
     }
     .sideModal {
         width: 60%;
-        height: 60vh;
+        height: 100vh;
     }
     .sideNavBar > li {
         font-size: 1.5em;

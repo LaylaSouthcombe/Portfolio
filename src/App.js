@@ -18,73 +18,73 @@ import './layout/NavBar/style.css'
 function App() {
   const [bodyBlur, setBodyBlur] = useState("none")
   const [zIndex, setzIndex] = useState("0")
-  const [square1TopPosition, setSquare1TopPosition] = useState(0)
-  const [square1LeftPosition, setSquare1LeftPosition] = useState(0)
-  const [square2TopPosition, setSquare2TopPosition] = useState(0)
-  const [square2LeftPosition, setSquare2LeftPosition] = useState(0)
-  const [square3TopPosition, setSquare3TopPosition] = useState(0)
-  const [square3LeftPosition, setSquare3LeftPosition] = useState(0)
-  const [square4TopPosition, setSquare4TopPosition] = useState(0)
-  const [square4LeftPosition, setSquare4LeftPosition] = useState(0)
-  const [mouseSquaresVisibility, setMouseSquaresVisibility] = useState("hidden")
-  const [windowDimenion, detectHW] = useState({
-    winWidth: window.innerWidth,
-    winHeight: window.innerHeight,
-  })
+  // const [square1TopPosition, setSquare1TopPosition] = useState(0)
+  // const [square1LeftPosition, setSquare1LeftPosition] = useState(0)
+  // const [square2TopPosition, setSquare2TopPosition] = useState(0)
+  // const [square2LeftPosition, setSquare2LeftPosition] = useState(0)
+  // const [square3TopPosition, setSquare3TopPosition] = useState(0)
+  // const [square3LeftPosition, setSquare3LeftPosition] = useState(0)
+  // const [square4TopPosition, setSquare4TopPosition] = useState(0)
+  // const [square4LeftPosition, setSquare4LeftPosition] = useState(0)
+  // const [mouseSquaresVisibility, setMouseSquaresVisibility] = useState("hidden")
+  // const [windowDimenion, detectHW] = useState({
+  //   winWidth: window.innerWidth,
+  //   winHeight: window.innerHeight,
+  // })
 
-  const detectSize = () => {
-    detectHW({
-      winWidth: window.innerWidth,
-      winHeight: window.innerHeight,
-    })
-  }
+  // const detectSize = () => {
+  //   detectHW({
+  //     winWidth: window.innerWidth,
+  //     winHeight: window.innerHeight,
+  //   })
+  // }
 
-  useEffect(() => {
-    window.addEventListener('resize', detectSize)
-    // console.log(windowDimenion. winWidth)
-    return () => {
-      window.removeEventListener('resize', detectSize)
-    }
-  }, [windowDimenion])
-  const changeLogoSquarePositions = (e) => {
-        let targetX = e.screenX
-        let targetY = e.screenY
-        let newX = targetX
-          let newY =targetY
-        if(windowDimenion. winWidth >= 320 && windowDimenion. winWidth < 767){
-          newX = targetX + 75
-          newY = targetY +125
-        }
-        if(windowDimenion. winWidth >= 768 && windowDimenion. winWidth < 1024){
-          newX = targetX -85
-          newY =targetY -260
-        }
-        if(windowDimenion. winWidth >= 1024){
-          newX = targetX + 100
-          newY =targetY
-        }
-        if(windowDimenion. winWidth >= 1440){
-          newX = targetX + 150
-          newY =targetY +15
-        }
+  // useEffect(() => {
+  //   window.addEventListener('resize', detectSize)
+  //   console.log(windowDimenion. winWidth)
+  //   return () => {
+  //     window.removeEventListener('resize', detectSize)
+  //   }
+  // }, [windowDimenion])
+  // const changeLogoSquarePositions = (e) => {
+  //       let targetX = e.screenX
+  //       let targetY = e.screenY
+  //       let newX = targetX
+  //         let newY =targetY
+  //       if(windowDimenion. winWidth >= 320 && windowDimenion. winWidth < 767){
+  //         newX = targetX + 75
+  //         newY = targetY +325
+  //       }
+  //       if(windowDimenion. winWidth >= 768 && windowDimenion. winWidth < 1024){
+  //         newX = targetX + 15
+  //         newY =targetY -260
+  //       }
+  //       if(windowDimenion. winWidth >= 1024){
+  //         newX = targetX + 100
+  //         newY =targetY
+  //       }
+  //       if(windowDimenion. winWidth >= 1440){
+  //         newX = targetX + 150
+  //         newY =targetY +15
+  //       }
 
         // let newX = targetX -185
         // let newY =targetY -360
-        setTimeout(() => setSquare1TopPosition(newY), 50)
-        setTimeout(() => setSquare1LeftPosition(newX), 50)
-        setTimeout(() => setSquare2TopPosition(newY - 3), 100)
-        setTimeout(() => setSquare2LeftPosition(newX - 3), 100)
-        setTimeout(() => setSquare3TopPosition(newY - 6), 150)
-        setTimeout(() => setSquare3LeftPosition(newX - 6), 150)
-        setTimeout(() => setSquare4TopPosition(newY - 9), 200)
-        setTimeout(() => setSquare4LeftPosition(newX - 9), 200)
-    }  
-    const hideMouseSquares = () => {
-      setMouseSquaresVisibility("hidden")
-    }
-    const showMouseSquares = () => {
-      setMouseSquaresVisibility("visible")
-    }
+    //     setTimeout(() => setSquare1TopPosition(newY), 50)
+    //     setTimeout(() => setSquare1LeftPosition(newX), 50)
+    //     setTimeout(() => setSquare2TopPosition(newY - 3), 100)
+    //     setTimeout(() => setSquare2LeftPosition(newX - 3), 100)
+    //     setTimeout(() => setSquare3TopPosition(newY - 6), 150)
+    //     setTimeout(() => setSquare3LeftPosition(newX - 6), 150)
+    //     setTimeout(() => setSquare4TopPosition(newY - 9), 200)
+    //     setTimeout(() => setSquare4LeftPosition(newX - 9), 200)
+    // }  
+    // const hideMouseSquares = () => {
+    //   setMouseSquaresVisibility("hidden")
+    // }
+    // const showMouseSquares = () => {
+    //   setMouseSquaresVisibility("visible")
+    // }
     
   return (
     <div className="App" >
@@ -94,14 +94,17 @@ function App() {
       <div className="sideLine"></div>
       <div className="main" style={{filter: bodyBlur}}>
         <div className="intro wrapper" 
-        onMouseEnter={showMouseSquares} 
-        onMouseMove={changeLogoSquarePositions} 
-        onMouseLeave={hideMouseSquares}
+        //The code below is for a feature that is 4 pink squares that follow the cursor in the introwrapper section
+        //Unfortunately due to the viewport futureproof uses to attach our portfolios to our profile on the cohorts page, the squares cqnnot match to where the cursor is
+
+        // onMouseEnter={showMouseSquares} 
+        // onMouseMove={changeLogoSquarePositions} 
+        // onMouseLeave={hideMouseSquares}
         >
-            <div className="mouseSquare1" style={{top: square1TopPosition + "px", left: square1LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>    
+            {/* <div className="mouseSquare1" style={{top: square1TopPosition + "px", left: square1LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>    
             <div className="mouseSquare2" style={{top: square2TopPosition + "px", left: square2LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>    
             <div className="mouseSquare3" style={{top: square3TopPosition + "px", left: square3LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>
-            <div className="mouseSquare4" style={{top: square4TopPosition + "px", left: square4LeftPosition + "px", visibility: mouseSquaresVisibility}}></div> 
+            <div className="mouseSquare4" style={{top: square4TopPosition + "px", left: square4LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>  */}
           <div className="introText">
             <h2>Hi there, I'm</h2>
             <h1>Layla Southcombe</h1>

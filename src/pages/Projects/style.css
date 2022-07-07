@@ -16,7 +16,8 @@
 
 @media (min-width: 768px) {
     .projectsTitle > h2 {
-        margin-left: 60px;
+        /* margin-left: 60px; */
+        margin-left: 80px;
     }
 }
 

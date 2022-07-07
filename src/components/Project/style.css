@@ -108,17 +108,19 @@
     }
     
     .projectName {
-        font-size: 30px;
+        font-size: 36px;
     }
     
     .projectSummary {
         font-size: 24px;
     }
     .projectTech {
-        width: 70%;
+        /* width: 70%; */
+        width: 90%;
     }
     .projectTech > li {
-        font-size: 12px;
+        /* font-size: 12px; */
+        font-size: 16px;
     }
     
     .linkIcon {

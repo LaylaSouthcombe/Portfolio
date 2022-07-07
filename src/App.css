@@ -396,12 +396,12 @@ h1 {
   .memoji {
     grid-column: col-start 7/ span 6;
     grid-row: 1;
-    margin-right: 3vw;
+    margin-right: 3.5vw;
     margin-top: 20vh;
   }
 
   .introText {
-    margin-left: 60px;
+    margin-left: 80px;
   }
 
   .introText > h2 {

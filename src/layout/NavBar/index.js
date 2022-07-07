@@ -20,13 +20,20 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
             // setBodyBlur("blur(5px)")
             setzIndex("-1")
         }
-      }
+    }
     
     return(
 
         <>
             <div className="topnav">
-                <img id="logo" width="160px" height="160px" ></img>
+                {/* <div className="logo" onMouseMove={changeLogoSquarePositions}> */}
+                <div className="logo">
+                    <div className="square1"></div>    
+                    <div className="square2"></div>    
+                    <div className="square3"></div>    
+                    <p className="logoText">LS</p> 
+                </div>
+                {/* <img id="logo" width="160px" height="160px"></img> */}
                 <ul className="navBar" id="myLinks" >
                     <li><Link activeClass="active" smooth spy to="about" offset={-180}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-180}><span className="number">02.</span> Skills</Link></li>
@@ -36,7 +43,16 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
                 </ul> 
             </div>
             <div className="sidenav">
-                <img id="logo" width="160px" height="160px" ></img>
+                {/* <img id="logo" width="160px" height="160px" ></img> */}
+                <div className="logo">
+                    <div className="square1">
+                    </div>    
+                    <div className="square2">
+                    </div>    
+                    <div className="square3">
+                    </div>    
+                    <p className="logoText">LS</p> 
+                </div>
                 <a href="javascript:void(0);" className={iconClassName} onClick={myFunction}>
                     <i className={iconImg}></i>
                 </a>

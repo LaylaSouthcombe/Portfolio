@@ -17,12 +17,45 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
+  position: relative;
 }
 
 .wrapper > * {
   grid-column: col-start / span 12;
 }
 
+.mouseSquare1{
+  border: 3px solid #FF0A78;
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  top: 10vh;
+  /* transition: 0.04s linear; */
+}
+.mouseSquare2{
+  border: 3px solid #FF0A78;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  opacity: 0.75;
+  /* transition: 0.06s linear; */
+}
+.mouseSquare3{
+  border: 3px solid #FF0A78;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  opacity: 0.5;
+  /* transition: 0.08s linear; */
+}
+.mouseSquare4{
+  border: 3px solid #FF0A78;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  opacity: 0.25;
+  /* transition: 0.1s linear; */
+}
 .line {
   background-color: #FF0A78;
   opacity: 0.5;
@@ -72,17 +105,10 @@ body {
   visibility: visible;
 }
 
-.bottomLogoDiv{
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .number {
   color: #FF0A78;
 }
 
-/*Intro section*/
 .introText {
   margin-left: 12vw;
   margin-top: 25vh;
@@ -108,9 +134,50 @@ h1 {
   margin-top: 20px;
   width: 80%;
 }
+
+.bottomLogo {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.bottomSquare1{
+  border: 3px solid #FF0A78;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottomSquare2{
+  border: 3px solid #FF0A78;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.bottomSquare3{
+  border: 3px solid #FF0A78;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.bottomLogoText{
+  font-size: 48px;
+  text-align: center;
+  line-height: 110px;
+  margin-left: 20px;
+}
+
+
+
 .bottomLinksDiv {
   width: 45%;
   margin: 0 auto;
+  padding-left: 15px;
 }
 .bottomLinks {
   display: flex;
@@ -119,25 +186,24 @@ h1 {
   justify-content: center;
 }
 
-.bottomLinks > li{
-  width: 60px;
-}
-
 .bottomLinkImg {
-  width: 100%;
+  width: 80%;
   padding: 5px;
 }
+
 #gitHubIcon{
   width: 67px;
 }
+
 #mailIcon {
-  width: 90%;
+  width: 80%;
   margin-top: 5px;
 }
 
 #linkedInIcon{
   padding-top: 3px;
 }
+
 .circles {
 	position: absolute;
 	bottom: 0;
@@ -359,23 +425,27 @@ h1 {
     margin-bottom: 45px;
   }
 
-  #logo {
-    margin-left: 30px;
-    margin-top: 30px;
-    max-width: 100px;
-    max-height: 100px;
-  }
-
   .bottomLinks > li{
     width: 100px;
     margin-left: 20px;
   }
   #gitHubIcon{
-    width: 110px;
+    width: 90px;
     margin-left: 20px;
   }
   .bottomLinksDiv {
     width: 45%;
+    padding-left: 0px;
+  }
+  #mailIcon {
+    width: 65px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  
+  #linkedInIcon{
+    width: 85px;
+    padding-top: 3px;
   }
 }
 

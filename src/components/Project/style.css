@@ -9,7 +9,7 @@
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 30px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 
@@ -38,14 +38,16 @@
 
 .projectImg {
     width: 100%;
-    background-color: #D9F6FF;
+    /* background-color: #9fd7e9; */
     z-index: -1;
+    /* height: 180px; */
+    margin-top: 10px;
 }
 
 .projectImg > img{
     width: 100%;
-    height: 180px;
-    z-index: -1;
+    height: 100%;
+    z-index: -5;
 }
 
 .projectSummary > p {
@@ -56,25 +58,49 @@
     display: flex;
     justify-content: right;
     list-style-type: none;
-    font-size: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
 }
 
 .projectTech > li {
     padding: 10px;
     color: #D9F6FF;
+    font-size: 12px;
 }
 
 .linkIcon {
     height: 40px;
-    margin-left: 10px;
     margin-right: 5px;
-    margin-bottom: 10px;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.techLinkText{
+    font-size: 10px;
 }
 
 .projectInfo.left > .projectTech {
-    justify-content: left !important;
+    justify-content: flex-start !important;
+    margin-right: auto;
+    margin-left: 0;
 }
-
+.projectInfo.left > .links {
+    justify-content: flex-start !important;
+}
+/* .projectLink{
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+} */
+/* .techLinkText{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} */
 
 @media (min-width: 768px) {
     .appType {
@@ -89,7 +115,18 @@
         font-size: 24px;
     }
     .projectTech {
-        font-size: 20px;
+        width: 70%;
+    }
+    .projectTech > li {
+        font-size: 12px;
+    }
+    
+    .linkIcon {
+        height: 40px;
+        margin-right: 5px;
+    }    
+    .techLinkText{
+        font-size: 18px;
     }
 }
 
@@ -103,10 +140,11 @@
     margin-bottom: 95px;
 }
 .projectImg {
-    width: 65%;
-    height: 310px;
-    background-color: #4a5659;
+    width: 55%;
+    /* height: 310px; */
+    /* background-color: #4a5659; */
     position: absolute;
+    top: 0;
 }
 
 .projectInfo.right {
@@ -122,18 +160,21 @@
     width: 55%;
     margin-left: auto;
     height: 150px;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .projectInfo.left > .projectSummary{
     margin-right: auto;
     margin-left: 0;
 }
-
+/* .links{
+    margin-top: 20px;
+} */
 .linkIcon {
     height: 50px;
 }
 .projectTech {
     font-size: 0.75em;
+    width: 55%;
 }
 } 

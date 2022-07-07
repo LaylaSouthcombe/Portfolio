@@ -13,12 +13,42 @@ header {
     font-weight: bold;
 }
 
-#logo {
+.logo {
     margin-right: auto;
     margin-left: 25px;
     margin-top: 25px;
-    max-width: 80px;
-    max-height: 80px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.square1{
+    border: 3px solid #FF0A78;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.square2{
+    border: 3px solid #FF0A78;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.square3{
+    border: 3px solid #FF0A78;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.logoText{
+    font-size: 38px;
+    text-align: center;
+    line-height: 100px;
 }
 
 .topnav{
@@ -141,5 +171,25 @@ header {
         margin-top: 35px;
         max-width: 120px;
         max-height: 120px;
+    }
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    .square1{
+        width: 100px;
+        height: 100px;
+    }
+    .square2{
+        width: 90px;
+        height: 90px;
+    }
+    .square3{
+        width: 80px;
+        height: 80px;
+    }
+    .logoText{
+        font-size: 48px;
+        line-height: 110px;
     }
 }

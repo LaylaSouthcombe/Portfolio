@@ -25,13 +25,20 @@ const Project = ({position, content}) => {
                 }
                 </ul>
                 <div className="links">
-                    <a href=""><img src={GitHub} alt="" className="linkIcon"/></a>
-                    <a href=""><img src={Hyperlink} alt="" className="linkIcon"/></a>
+                    {
+                    content.github.map( (link, i) => (
+                        <>
+                            <p className="linkFor techLinkText">{link.linkFor}:</p><a href={link.link} target="_blank" key={i}><img src={GitHub} alt="GitHub Link" className="linkIcon"/></a>                        
+                        </>
+                    ))
+                    }
+                        <span className="deployment techLinkText">App:</span>
+                        <a href={content.deploy} target="_blank"><img src={Hyperlink} alt="" className="linkIcon"/></a>
                 </div>
             </div>
-            <div className={projectImgClassName}>
-                <img src={content.img} alt="" />
-            </div>
+                <div className={projectImgClassName}>
+                    <img src={content.img} alt="" />
+                </div>
         </div>
     )
 }

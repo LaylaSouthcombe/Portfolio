@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { About, Contact, Projects, Skills } from './pages'
 import { NavBar } from './layout'
@@ -27,12 +27,45 @@ function App() {
   const [square4TopPosition, setSquare4TopPosition] = useState(0)
   const [square4LeftPosition, setSquare4LeftPosition] = useState(0)
   const [mouseSquaresVisibility, setMouseSquaresVisibility] = useState("hidden")
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  })
 
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    })
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', detectSize)
+    // console.log(windowDimenion. winWidth)
+    return () => {
+      window.removeEventListener('resize', detectSize)
+    }
+  }, [windowDimenion])
   const changeLogoSquarePositions = (e) => {
         let targetX = e.screenX
         let targetY = e.screenY
-        let newX = targetX -185
-        let newY =targetY -350
+        let newX = targetX
+          let newY =targetY
+        if(windowDimenion. winWidth >= 320 && windowDimenion. winWidth < 767){
+          newX = targetX
+          newY = targetY
+        }
+        if(windowDimenion. winWidth >= 768 && windowDimenion. winWidth < 1024){
+          newX = targetX -185
+          newY =targetY -360
+        }
+        if(windowDimenion. winWidth >= 1024){
+          newX = targetX
+          newY =targetY
+        }
+
+        // let newX = targetX -185
+        // let newY =targetY -360
         setTimeout(() => setSquare1TopPosition(newY), 50)
         setTimeout(() => setSquare1LeftPosition(newX), 50)
         setTimeout(() => setSquare2TopPosition(newY - 3), 100)
@@ -48,6 +81,7 @@ function App() {
     const showMouseSquares = () => {
       setMouseSquaresVisibility("visible")
     }
+    
   return (
     <div className="App" >
       <header >

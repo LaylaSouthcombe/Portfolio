@@ -31,8 +31,8 @@ function App() {
   const changeLogoSquarePositions = (e) => {
         let targetX = e.screenX
         let targetY = e.screenY
-        let newX = targetX -175
-        let newY =targetY -300
+        let newX = targetX -195
+        let newY =targetY -330
         setTimeout(() => setSquare1TopPosition(newY), 50)
         setTimeout(() => setSquare1LeftPosition(newX), 50)
         setTimeout(() => setSquare2TopPosition(newY - 3), 100)

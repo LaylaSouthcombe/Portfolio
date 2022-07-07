@@ -52,16 +52,20 @@ function App() {
         let newX = targetX
           let newY =targetY
         if(windowDimenion. winWidth >= 320 && windowDimenion. winWidth < 767){
-          newX = targetX
-          newY = targetY
+          newX = targetX + 75
+          newY = targetY +125
         }
         if(windowDimenion. winWidth >= 768 && windowDimenion. winWidth < 1024){
-          newX = targetX -185
-          newY =targetY -360
+          newX = targetX -85
+          newY =targetY -260
         }
         if(windowDimenion. winWidth >= 1024){
-          newX = targetX
+          newX = targetX + 100
           newY =targetY
+        }
+        if(windowDimenion. winWidth >= 1440){
+          newX = targetX + 150
+          newY =targetY +15
         }
 
         // let newX = targetX -185

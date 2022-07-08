@@ -55,7 +55,7 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
                 </button>
             </div>
             <div className="sideModal" style={{display: display}}>
-                <ul className="sideNavBar" >
+                <ul className="sideNavBar">
                     <li><Link activeClass="active" smooth spy to="about" offset={-200}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-230}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-320}><span className="number">03.</span> Projects</Link></li>

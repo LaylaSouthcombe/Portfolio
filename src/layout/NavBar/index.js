@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from "react-scroll";
 
+import linkIcon from '../../images/icon-link.png'
+
 const NavBar = ({setBodyBlur, setzIndex}) => {
     const [display, setDisplay] = useState("none")
     const [iconImg, setIconImg] = useState("fa fa-bars")
@@ -56,6 +58,7 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
             </div>
             <div className="sideModal" style={{display: display}}>
                 <ul className="sideNavBar">
+                    <li className="linkLi">Full site<a href="https://laylasouthcombe.netlify.app/" target="_blank" rel="noreferrer"><img src={linkIcon} alt="Open full portfolio link icon"/></a></li>
                     <li><Link activeClass="active" smooth spy to="about" offset={-200}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-230}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-320}><span className="number">03.</span> Projects</Link></li>

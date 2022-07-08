@@ -90,6 +90,14 @@ header {
     z-index: 9999;
     margin: 25px;
     padding: 10px 15px;
+    background-color: #081e48;
+    border: none;
+    outline: none;
+}
+
+.navIconBorder{
+    border: 3px solid #0AC3FF;
+    background-color: #041129;
 }
 
 .navIcon > i {
@@ -98,9 +106,7 @@ header {
     color: #FF0A78;
 }
 
-.navIconBorder{
-    border: 3px solid #0AC3FF;
-}
+
 
 #sideBarResume {
     color: #FF0A78;

@@ -8,9 +8,7 @@ const Project = ({position, content}) => {
     let projectImgClassName = "projectImg "
     projectImgClassName += position
     return (
-        <div className="projectDiv">
-            
-            
+        <div className="projectDiv" key={content.id}>
             <div className={projectInfoClassName}>
                 <h4 className="appType">{content.appType}</h4>
                 <h3 className="projectName">{content.projectName}</h3>
@@ -27,13 +25,14 @@ const Project = ({position, content}) => {
                 <div className="links">
                     {
                     content.github.map( (link, i) => (
-                        <>
-                            <p className="linkFor techLinkText">{link.linkFor}:</p><a href={link.link} target="_blank" key={i}><img src={GitHub} alt="GitHub Link" className="linkIcon"/></a>                        
-                        </>
+                        <div className="projectLinks" key={i}>
+                            <p className="linkFor techLinkText">{link.linkFor}:</p>
+                            <a href={link.link} target="_blank" rel="noreferrer" key={i}><img src={GitHub} alt="GitHub Link" className="linkIcon"/></a>                        
+                        </div>
                     ))
                     }
                         <span className="deployment techLinkText">App:</span>
-                        <a href={content.deploy} target="_blank"><img src={Hyperlink} alt="" className="linkIcon"/></a>
+                        <a href={content.deploy} target="_blank" rel="noreferrer"><img src={Hyperlink} alt="" className="linkIcon"/></a>
                 </div>
             </div>
                 <div className={projectImgClassName}>

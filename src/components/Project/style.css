@@ -54,6 +54,12 @@
     color: #D9F6FF;
 }
 
+.projectLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
 .projectTech {
     display: flex;
     justify-content: right;
@@ -72,6 +78,7 @@
 .linkIcon {
     height: 40px;
     margin-right: 5px;
+    margin-left: 5px;
 }
 .links {
     display: flex;

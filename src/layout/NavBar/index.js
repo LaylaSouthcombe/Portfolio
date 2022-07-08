@@ -6,44 +6,41 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
     const [iconImg, setIconImg] = useState("fa fa-bars")
     const [iconClassName, setIconClassName] = useState("navIcon navIconBorder")
 
-    const myFunction = () => {
+    const openSideNav = (e) => {
+        e.preventDefault()
         if (display === "block") {
             setDisplay("none");
             setIconImg("fa fa-bars")
             setIconClassName("navIcon navIconBorder")
-            // setBodyBlur("none")
+            setBodyBlur("none")
             setzIndex("0")
         } else {
             setDisplay("block");
             setIconImg("fa-solid fa-xmark")
             setIconClassName("navIcon")
-            // setBodyBlur("blur(5px)")
+            setBodyBlur("blur(5px)")
             setzIndex("-1")
         }
     }
     
-    return(
-
+    return (
         <>
             <div className="topnav">
-                {/* <div className="logo" onMouseMove={changeLogoSquarePositions}> */}
                 <div className="logo">
                     <div className="square1"></div>    
                     <div className="square2"></div>    
                     <div className="square3"></div>    
                     <p className="logoText">LS</p> 
                 </div>
-                {/* <img id="logo" width="160px" height="160px"></img> */}
                 <ul className="navBar" id="myLinks" >
                     <li><Link activeClass="active" smooth spy to="about" offset={-180}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-180}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-180}><span className="number">03.</span> Projects</Link></li>
                     <li><Link activeClass="active" smooth spy to="contact" offset={-180}><span className="number">04.</span> Contact Me</Link></li>
-                    <li id="topNavResumeLi"><a href="https://docdro.id/9LPsMmD" target="_blank" id="topNavResume">RESUME</a></li>
+                    <li id="topNavResumeLi"><a href="https://docdro.id/9LPsMmD" target="_blank" rel="noreferrer" id="topNavResume">RESUME</a></li>
                 </ul> 
             </div>
             <div className="sidenav">
-                {/* <img id="logo" width="160px" height="160px" ></img> */}
                 <div className="logo">
                     <div className="square1">
                     </div>    
@@ -53,18 +50,17 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
                     </div>    
                     <p className="logoText">LS</p> 
                 </div>
-                <a href="javascript:void(0);" className={iconClassName} onClick={myFunction}>
+                <button className={iconClassName} onClick={openSideNav}>
                     <i className={iconImg}></i>
-                </a>
+                </button>
             </div>
             <div className="sideModal" style={{display: display}}>
                 <ul className="sideNavBar" >
-                    {/* <li></li> */}
                     <li><Link activeClass="active" smooth spy to="about" offset={-200}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-230}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-320}><span className="number">03.</span> Projects</Link></li>
                     <li><Link activeClass="active" smooth spy to="contact" offset={-420}><span className="number">04.</span> Contact Me</Link></li>
-                    <li><a href="https://docdro.id/9LPsMmD" target="_blank" id="sideBarResume">RESUME</a></li>
+                    <li><a href="https://docdro.id/9LPsMmD" target="_blank" rel="noreferrer" id="sideBarResume">RESUME</a></li>
                 </ul> 
             </div>
             </>

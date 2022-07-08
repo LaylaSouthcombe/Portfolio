@@ -70,7 +70,7 @@
 }
 
 .projectTech > li {
-    padding: 10px;
+    padding: 10px 0px 10px 20px;
     color: #D9F6FF;
     font-size: 12px;
 }
@@ -94,6 +94,9 @@
     justify-content: flex-start !important;
     margin-right: auto;
     margin-left: 0;
+}
+.projectInfo.left > .projectTech > li {
+    padding: 10px 20px 10px 0px !important;
 }
 .projectInfo.left > .links {
     justify-content: flex-start !important;

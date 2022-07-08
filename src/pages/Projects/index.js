@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Project } from '../../components'
 
-import OpenUpImage from '../../images/openup.png'
+import OpenUpImage from '../../images/openUp.png'
 import dumbfounded from '../../images/dumbfounded.png'
 import atomicaddicts from '../../images/atomicaddicts.png'
 

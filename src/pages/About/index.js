@@ -7,11 +7,11 @@ import './style.css';
 const About = () => {
     return(
        <div className="sectionDiv" id="about">
+            <div className="aboutTitle">
+                <h2><span className="number">01.</span> About Me</h2>
+                <div className="lineType1 line"></div>
+            </div>
             <div className="aboutInfo wrapper">
-                <div className="aboutTitle">
-                    <h2><span className="number">01.</span> About Me</h2>
-                    <div className="lineType1 line"></div>
-                </div>
                 <div className="aboutText">
                     <p>After graduating from the University of Bath with a <span className="bold">Pharmacology Masters Degree</span> in 2018, I worked in the medical publishing and communications industry.</p>
                     <p>It was in this industry that I <span className="bold">witnessed the impact of technology on vital industries</span> such as healthcare, which resulted in my interest in technology and coding flourishing.</p>

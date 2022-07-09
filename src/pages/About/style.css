@@ -50,8 +50,11 @@
         max-width: 80%;
         margin-left: 20px;
     }
+    .aboutTitle {
+        width: 90%;
+    }
     .aboutTitle > h2 {
-        margin-left: 60px;
+        margin-left: 80px;
     }
 
     .aboutText > p {

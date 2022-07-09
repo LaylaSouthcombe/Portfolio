@@ -59,13 +59,17 @@ header {
     padding: 1.5vw;
     margin-top: 5vh;
 }
-
+.navBar > li > a{
+    cursor: pointer
+}
 .sidenav {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-
+.sideNavBar > li > a{
+    cursor: pointer
+}
 .sideModal {
     position: absolute;
     height: 100vh;

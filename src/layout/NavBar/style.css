@@ -4,57 +4,53 @@ header {
     width: 100%;
     display: flex;
     background-color: #041129;
-    font-size: 20px;
+    font-size: 16px;
     z-index: 1;
     justify-content: right;
 }
-
 .active {
     font-weight: bold;
 }
-
 .logo {
     margin-right: auto;
-    margin-left: 25px;
+    margin-left: 15px;
     margin-top: 25px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: relative;
 }
 .square1{
     border: 3px solid #FF0A78;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     top: 0;
     left: 0;
 }
 .square2{
     border: 3px solid #FF0A78;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 .square3{
     border: 3px solid #FF0A78;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 20px;
     left: 20px;
 }
 .logoText{
-    font-size: 38px;
+    font-size: 24px;
     text-align: center;
-    line-height: 100px;
+    line-height: 80px;
 }
-
 .topnav{
     display: none;
 }
-
 .navBar > li {
     padding: 1.5vw;
     margin-top: 5vh;
@@ -77,19 +73,19 @@ header {
     width: 70%;
     z-index: 9998;
 }
-
 .sideNavBar {
     padding-top: 20vh;
 }
-
 .sideNavBar > li {
     list-style-type: none;
-    padding: 25px;
+    padding: 5px;
     padding-top: 5%;
-    padding-left: 20%;
-    font-size: 1.75em;
+    padding-left: 10%;
+    font-size: 1.5em;
 }
-
+.me {
+    margin-left: 50px;
+}
 .navIcon {
     z-index: 9999;
     margin: 25px;
@@ -98,31 +94,99 @@ header {
     border: none;
     outline: none;
 }
-
 .navIconBorder{
     border: 3px solid #0AC3FF;
     background-color: #041129;
 }
-
 .navIcon > i {
-    font-size: 50px;
-    /* padding: 25px; */
+    font-size: 30px;
     color: #FF0A78;
 }
-
-
-
 #sideBarResume {
     color: #FF0A78;
     background-color: #081e48;
     outline: none;
-    padding: 15px 20px;
-    font-size: 28px;
+    padding: 7.5px 10px;
+    font-size: 18px;
     border: 3px solid #FF0A78;
     text-decoration: none;
 }
+@media (min-width: 320px){
+    header {
+        font-size: 20px;
+    }
+    .logo {
+        margin-left: 25px;
+        margin-top: 25px;
+        width: 100px;
+        height: 100px;
+    }
+    .square1{
+        width: 80px;
+        height: 80px;
+    }
+    .square2{
+        width: 70px;
+        height: 70px;
+    }
+    .square3{
+        width: 60px;
+        height: 60px;
+    }
+    .logoText{
+        font-size: 38px;
+        line-height: 100px;
+    }
+    .sideNavBar {
+        padding-top: 22vh;
+    }
+    .sideNavBar > li {
+        padding: 15px;
+        padding-left: 15%;
+    }
+    .navIcon > i {
+        font-size: 50px;
+    }
+    #sideBarResume {
+        padding: 12.5px 15px;
+        font-size: 24px;
+    }
+    .sideNavBar > li:last-child {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 360px){
+    header {
+        font-size: 20px;
+    }
 
-  
+    .sideNavBar {
+        padding-top: 20vh;
+    }
+
+    .sideNavBar > li {
+        padding: 25px;
+        padding-top: 5%;
+        padding-left: 20%;
+        font-size: 1.5em;
+    }
+
+    #sideBarResume {
+        padding: 15px 20px;
+        font-size: 28px;
+    }
+    .sideNavBar {
+        padding-top: 22vh;
+    }
+    .sideNavBar > li:last-child {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 411px){
+    .me {
+        margin-left: 0px;
+    }
+}
 @media (min-width: 768px) {
     .navIcon {
         margin: 30px;
@@ -132,10 +196,18 @@ header {
         height: 100vh;
     }
     .sideNavBar > li {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
     .sideNavBar {
-        padding-top: 5vh;
+        padding-top: 20vh;
+    }
+    .sideNavBar > li:last-child {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 960px) {
+    .sideNavBar {
+        padding-top: 10vh;
     }
 }
 @media (min-width: 1024px) {

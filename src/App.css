@@ -13,7 +13,6 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */background-color: #041129;
 }
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
@@ -25,10 +24,8 @@ body {
 }
 .mouseSquares{
   position: absolute;
-  /* background-color: #0AC3FF; */
   width: 100%;
-  height: 100vh;
-  /* margin-left: auto; */
+  height: 160vh;
 }
 .mouseSquare1{
   border: 3px solid #FF0A78;
@@ -36,7 +33,6 @@ body {
   height: 15px;
   position: fixed;
   top: 10vh;
-  /* transition: 0.04s linear; */
 }
 .mouseSquare2{
   border: 3px solid #FF0A78;
@@ -44,7 +40,6 @@ body {
   height: 20px;
   position: fixed;
   opacity: 0.75;
-  /* transition: 0.06s linear; */
 }
 .mouseSquare3{
   border: 3px solid #FF0A78;
@@ -52,7 +47,6 @@ body {
   height: 25px;
   position: fixed;
   opacity: 0.5;
-  /* transition: 0.08s linear; */
 }
 .mouseSquare4{
   border: 3px solid #FF0A78;
@@ -60,7 +54,6 @@ body {
   height: 30px;
   position: fixed;
   opacity: 0.25;
-  /* transition: 0.1s linear; */
 }
 .line {
   background-color: #FF0A78;
@@ -117,17 +110,17 @@ body {
 
 .introText {
   margin-left: 12vw;
-  margin-top: 25vh;
+  margin-top: 40vh;
 }
 
 .introText > h2 {
   color: #0A99FF;
-  font-size: 28px;
+  font-size: 24px;
   width: 90%;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   width: 90%;
 }
 
@@ -143,45 +136,42 @@ h1 {
 
 .bottomLogo {
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: relative;
 }
 .bottomSquare1{
   border: 3px solid #FF0A78;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: 0;
   left: 0;
 }
 .bottomSquare2{
   border: 3px solid #FF0A78;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   position: absolute;
   top: 10px;
   left: 10px;
 }
 .bottomSquare3{
   border: 3px solid #FF0A78;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: 20px;
   left: 20px;
 }
 .bottomLogoText{
-  font-size: 48px;
+  font-size: 36px;
   text-align: center;
-  line-height: 110px;
+  line-height: 100px;
   margin-left: 20px;
 }
-
-
-
 .bottomLinksDiv {
-  width: 45%;
+  width: 75%;
   margin: 0 auto;
   padding-left: 15px;
 }
@@ -191,7 +181,6 @@ h1 {
   margin-bottom: 15px;
   justify-content: center;
 }
-
 .bottomLinkImg {
   width: 80%;
   padding: 5px;
@@ -203,189 +192,73 @@ h1 {
 
 #mailIcon {
   width: 80%;
-  margin-top: 5px;
+  margin-top: 2.5px;
 }
 
 #linkedInIcon{
   padding-top: 3px;
 }
-
-.circles {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+@media (min-width: 320px){
+  .mouseSquares{
+    height: 120vh;
+  }
+  .introText {
+    margin-top: 25vh;
+  }
+  h1 {
+    font-size: 36px;
+  }  
+  .bottomLogo {
+    width: 100px;
+    height: 100px;
+  }
+  .bottomSquare1{
+    width: 100px;
+    height: 100px;
+  }
+  .bottomSquare2{
+    width: 90px;
+    height: 90px;
+  }
+  .bottomSquare3{
+    width: 80px;
+    height: 80px;
+  }
+  .bottomLogoText{
+    font-size: 48px;
+    line-height: 110px;
+  }
+  .bottomLinksDiv {
+    width: 65%;
+  } 
+}
+@media (min-width: 360px){
+.mouseSquares{
+  height: 110vh;
+}
+.introText {
+  margin-top: 25vh;
 }
 
-.circles li {
-	position: absolute;
-	display: block;
-	list-style: none;
-	width: 30px;
-	height: 30px;
-	border: 3px solid #FF0A78;
-	/* animation: animateUp 25s linear infinite; */
-	bottom: calc(300px - 1vh);
+.introText > h2 {
+  font-size: 28px;
 }
 
-.circles li:nth-child(1) {
-	left: 5%;
-	width: 80px;
-	height: 80px;
-	animation-duration: 20s;
-  animation: animateOne 25s linear infinite alternate;
-	border: 3px solid #FF0A78;
+h1 {
+  font-size: 40px;
 }
 
-.circles li:nth-child(2) {
-	left: 90%;
-	width: 40px;
-	height: 40px;
-	animation-duration: 30s;
-  animation: animateTwo 25s linear infinite;
-	border: 3px solid #FF0A78;
+.bottomLinksDiv {
+  width: 50%;
 }
-
-.circles li:nth-child(3) {
-	left: 70%;
-  top: -5%;
-	width: 30px;
-	height: 30px;
-	animation-duration: 20s;
-  animation: animateThree 25s linear infinite;
-	border: 3px solid #FF0A78;
 }
-
-.circles li:nth-child(4) {
-	left: 40%;
-	width: 60px;
-	height: 60px;
-	animation-duration: 20s;
-  animation: animateFour 25s linear 10s infinite normal;
-	border: 3px solid #FF0A78;
-}
-
-.circles li:nth-child(5) {
-	left: 0%;
-  top: 25%;
-	width: 40px;
-	height: 40px;
-	animation-duration: 20s;
-  animation: animateFive 25s linear 0s infinite normal;
-	border: 3px solid #FF0A78;
-}
-
-
-@keyframes animateOne {
-	0% {
-		transform: translate(0, -10vh) rotate(0deg);
-
-	}
-  50% {
-		transform: translate(11vw, -75vh) rotate(240deg);
-
-	}
-	75% {
-		transform: translate(40vw, -40vh) rotate(480deg);
-
-	}
-	100% {
-		transform: translate(0vw, -10vh) rotate(720deg);
-
-	}
-}
-@keyframes animateTwo {
-	0% {
-		transform: translate(0, -10vh) rotate(0deg);
-
-	}
-  40% {
-		transform: translate(-80vw, -15vh) rotate(240deg);
-
-	}
-	75% {
-		transform: translate(-40vw, -40vh) rotate(480deg);
-
-	}
-	100% {
-		transform: translate(0vw, -10vh) rotate(720deg);
-
-	}
-}
-
-@keyframes animateThree {
-	0% {
-		transform: translate(0, -10vh) rotate(0deg);
-
-	}
-  40% {
-		transform: translate(-20vw, 40vh) rotate(180deg);
-
-	}
-	50% {
-		transform: translate(-15vw, 50vh) rotate(360deg);
-
-	}
-  60% {
-		transform: translate(-10vw, 40vh) rotate(540deg);
-
-	}
-	100% {
-		transform: translate(-40vw, -10vh) rotate(720deg);
-
-	}
-}
-@keyframes animateFour {
-	0% {
-		transform: translate(0, -10vh) rotate(0deg);
-	}
-  25% {
-		transform: translate(-20vw, -30vh) rotate(180deg);
-	}
-	50% {
-		transform: translate(0vw, -60vh) rotate(360deg);
-
-	}
-  75% {
-		transform: translate(20vw, -30vh) rotate(540deg);
-
-	}
-	100% {
-		transform: translate(0, -10vh) rotate(720deg);
-
-	}
-}
-@keyframes animateFive {
-	0% {
-		transform: translate(-5vw, -10vh) rotate(0deg);
-
-	}
-  30% {
-		transform: translate(80vw, 0vh) rotate(180deg);
-
-	}
-	40% {
-		transform: translate(90vw, 10vh) rotate(360deg);
-
-	}
-  60% {
-		transform: translate(75vw, 30vh) rotate(360deg);
-
-	}
-
-	100% {
-		transform: translate(-5vw, 25vh) rotate(720deg);
-
-	}
-}
-
-
 
 @media (min-width: 500px){
   .line{
     visibility: visible;
+  }
+  .mouseSquares{
+    height: 100vh;
   }
 }
 

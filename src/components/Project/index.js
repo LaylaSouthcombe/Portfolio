@@ -31,8 +31,10 @@ const Project = ({position, content}) => {
                         </div>
                     ))
                     }
+                    <div className="projectLinks">
                         <span className="deployment techLinkText">App:</span>
                         <a href={content.deploy} target="_blank" rel="noreferrer"><img src={Hyperlink} alt="" className="linkIcon"/></a>
+                    </div>
                 </div>
             </div>
                 <div className={projectImgClassName}>

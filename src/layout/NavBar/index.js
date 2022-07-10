@@ -59,7 +59,7 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
                     <li><Link activeClass="active" smooth spy to="about" offset={-200}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-230}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-320}><span className="number">03.</span> Projects</Link></li>
-                    <li><Link activeClass="active" smooth spy to="contact" offset={-420}><span className="number">04.</span> Contact Me</Link></li>
+                    <li><Link activeClass="active" smooth spy to="contact" offset={-420}><span className="number">04.</span> Contact <span className="me">Me</span></Link></li>
                     <li><a href="https://docdro.id/9LPsMmD" target="_blank" rel="noreferrer" id="sideBarResume">RESUME</a></li>
                 </ul> 
             </div>

@@ -1,30 +1,31 @@
 #about  {
-	font-size: 1.25em;
-	font-weight: bold;
-    	margin-top: 10vh;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 10vh;
 }
 
 .aboutImgDiv {
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: 20px;
     z-index: -1;
 }
 
 .aboutImg {
-    border-top: 10px solid #FF0A78;
-    border-left: 10px solid #FF0A78;
+    border-top: 8px solid #FF0A78;
+    border-left: 8px solid #FF0A78;
     padding-left: 20px;
     padding-top: 20px;
     width: 80%;
 }
 
 .aboutInfo {
-    max-width: 90%;
+    max-width: 85%;
 }
 
 .aboutTitle > h2 {
     margin-bottom: 30px;
     margin-left: 30px;
+    font-size: 26px;
 }
 
 .aboutTitle {
@@ -41,11 +42,30 @@
 .bold {
     color: #0A99FF;
 }
-
+@media (min-width: 320px){
+    .aboutImgDiv {
+        margin-left: 70px;
+    }
+    .aboutImg {
+        border-top: 10px solid #FF0A78;
+        border-left: 10px solid #FF0A78;
+    }
+    .aboutInfo {
+        max-width: 90%;
+    }
+    .aboutTitle > h2 {
+        font-size: 28px;
+    }
+}
+@media (min-width: 360px){
+    .aboutImgDiv {
+        margin-left: 80px;
+    }
+    .aboutTitle > h2 {
+        font-size: 30px;
+    }
+}
 @media (min-width: 768px) {
-    /* #about  {
-        font-size: 1.25em;
-    } */
     .aboutInfo {
         max-width: 80%;
         margin-left: 20px;
@@ -56,36 +76,25 @@
     .aboutTitle > h2 {
         margin-left: 80px;
     }
-
     .aboutText > p {
         margin-bottom: 30px;
         margin-left: 60px;
     }
-
     .aboutImgDiv {
         margin-left: 30%;
-        /* margin-left: 25%; */
         margin-top: 20px;
         margin-bottom: 20px;
         width: 60%;
-        /* width: 70%; */
     }
 }
-
 @media (min-width: 1024px) {
     .aboutTitle {
         font-size: 1.125em;
         margin-bottom: 35px;
     }
-
-    .aboutTitle > h2 {
-        margin-left: 80px;
-    }
-
     .aboutText {
         width: 110%;
     }
-
     .aboutImgDiv {
      width: 80%;
      margin-left: 90px;   
@@ -99,5 +108,4 @@
     .aboutImgDiv { 
         margin-top: 100px;   
     }
-
 }

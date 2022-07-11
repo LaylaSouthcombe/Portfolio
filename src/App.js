@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { About, Contact, Projects, Skills } from './pages'
 import { NavBar } from './layout'
 import memoji from './images/Memoji.png'

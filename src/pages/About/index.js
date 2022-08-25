@@ -15,7 +15,7 @@ const About = () => {
                 <div className="aboutText">
                     <p>After graduating from the University of Bath with a <span className="bold">Pharmacology Masters Degree</span> in 2018, I worked in the medical publishing and communications industry.</p>
                     <p>It was here that I <span className="bold">witnessed the impact of technology on vital industries</span> such as healthcare, which resulted in my interest in technology and coding flourishing.</p>
-                    <p>I recently completed a 13-week coding bootcamp with <span className="bold">futureproof</span> after teaching myself to code in my spare time and realising my <span className="bold">curious</span> and <span className="bold">problem-solving</span> nature was a perfect fit with coding.</p>
+                    <p>I recently completed a <span className="bold">13-week coding bootcamp with futureproof</span> after teaching myself to code in my spare time and realising my <span className="bold">curious</span> and <span className="bold">problem-solving</span> nature was a perfect fit with coding.</p>
                     <p>During my time in the futureproof full-stack bootcamp I have learnt not only a plethora of <span className="bold">technologies</span> and <span className="bold">languages</span>, but also the <span className="bold">skills</span> needed to <span className="bold">succeed in a tech environment.</span></p>
                 </div>
                 <div className="aboutImgDiv">

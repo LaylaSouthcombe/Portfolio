@@ -57,21 +57,16 @@ function App() {
       </header>
       <div className="sideLine"></div>
       <div className="main" style={{filter: bodyBlur}}>
-        <div className="intro wrapper" 
-        //The code below is for a feature that is 4 pink squares that follow the cursor in the introwrapper section
-        //Unfortunately due to the viewport futureproof uses to attach our portfolios to our profile on the cohorts page, the squares cqnnot match to where the cursor is
-
-        >
+        <div className="intro wrapper">
           <div className="mouseSquares"
-          
           onMouseEnter={showMouseSquares} 
           onMouseMove={changeLogoSquarePositions} 
           onMouseLeave={hideMouseSquares}
           >
-            <div className="mouseSquare1" style={{top: square1TopPosition + "px", left: square1LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>    
-            <div className="mouseSquare2" style={{top: square2TopPosition + "px", left: square2LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>    
+            <div className="mouseSquare1" style={{top: square1TopPosition + "px", left: square1LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>
+            <div className="mouseSquare2" style={{top: square2TopPosition + "px", left: square2LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>
             <div className="mouseSquare3" style={{top: square3TopPosition + "px", left: square3LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>
-            <div className="mouseSquare4" style={{top: square4TopPosition + "px", left: square4LeftPosition + "px", visibility: mouseSquaresVisibility}}></div> 
+            <div className="mouseSquare4" style={{top: square4TopPosition + "px", left: square4LeftPosition + "px", visibility: mouseSquaresVisibility}}></div>
           </div>
           <div className="introText">
             <h2>Hi there, I'm</h2>
@@ -81,13 +76,6 @@ function App() {
           <div className="memoji">
             <img id="memoji" src={memoji} alt="Layla Southcombe Memoji" />
           </div>
-          {/* <ul class='circles'>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul> */}
         </div>
         <About id="about"/>
         <Skills id="skills"/>

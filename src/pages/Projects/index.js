@@ -3,12 +3,12 @@ import { Project } from '../../components'
 
 import sooki from '../../images/sooki.png'
 import dumbfounded from '../../images/dumbfounded.png'
-import atomicaddicts from '../../images/atomicaddicts.png'
+import indee from '../../images/indee.png'
 
 const Projects = () => {
     const projects = [
         { id: 1, appType: "Trivia Game", projectName: "Dumbfounded", summary: "Test your knowledge with this fun trivia game! Play multiplayer either locally or online, or single player to try get a  highscore", technologies: ["HTML", "CSS",  "React", "Redux", "axios", "JavaScript", "Jest", "Socket.io", "PostgreSQL"], github: [{ linkFor: "Backend", link: "https://github.com/Gioele-M/lap3_quiz_project_server"}, { linkFor: "Frontend", link: "https://github.com/Gioele-M/lap3_quiz_project_client"}], deploy: "https://dumbfounded.netlify.app/", img: dumbfounded},
-        { id: 2, appType: "Habit Tracker", projectName: "Atomic Addicts", summary: "This app is for tracking and managing habits, with five key habits to choose from: sleeping, exercise, water intake, smoking, and savings", technologies: ["HTML", "CSS", "JavaScript", "Jest", "Node.js", "Express", "PostgreSQL", "Bcrypt", "JSON Web Token", "Docker"], github: [{ linkFor: "Backend + Frontend", link: "https://github.com/LaylaSouthcombe/lap2project"}], deploy: "https://atomic-addicts.netlify.app/", img: atomicaddicts},
+        { id: 2, appType: "Habit Tracker", projectName: "Indee", summary: "This app aims to help people live more independently through tracking habits which can be viewed by a carer/guardian also", technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "PostgreSQL", "Heroku", "Bcrypt", "Chart.js", "Docker"], github: [{ linkFor: "Backend", link: "https://github.com/LaylaSouthcombe/Indee_backend"}, { linkFor: "Frontend", link: "https://github.com/LaylaSouthcombe/Indee_frontend"}], deploy: "https://indee.netlify.app/", img: indee},
         { id: 3, appType: "Meal Planner Site", projectName: "Sooki", summary: "A site to generate a random meal plan that takes in your dietary requirements and budget, and can generate a shopping list for you (mobile first)", technologies: ["HTML", "CSS",  "React", "Redux", "axios", "JavaScript", "Jest", "Python", "PyMongo", "Django", "pytest", "PostgreSQL", "Bcrypt"], github: [{ linkFor: "Backend", link: "https://github.com/LaylaSouthcombe/meal_planner_backend"}, { linkFor: "Frontend", link: "https://github.com/LaylaSouthcombe/meal_planner_frontend"}], deploy: "https://digerati-meal-planner.netlify.app/", img: sooki}
     ]
     return(

@@ -15,7 +15,7 @@ import './components/Project/style.css'
 import './layout/NavBar/style.css'
 
 function App() {
-  const [bodyBlur, setBodyBlur] = useState("none")
+  const [bodyClass, setBodyClass] = useState("")
   const [zIndex, setzIndex] = useState("0")
   const [square1TopPosition, setSquare1TopPosition] = useState(0)
   const [square1LeftPosition, setSquare1LeftPosition] = useState(0)
@@ -53,10 +53,10 @@ function App() {
   return (
     <div className="App" >
       <header >
-        <NavBar setBodyBlur={setBodyBlur} setzIndex={setzIndex}/>
+        <NavBar setBodyClass={setBodyClass} setzIndex={setzIndex}/>
       </header>
       <div className="sideLine"></div>
-      <div className="main" style={{filter: bodyBlur}}>
+      <div className={`main ${bodyClass}`}>
         <div className="intro wrapper">
           <div className="mouseSquares"
           onMouseEnter={showMouseSquares} 

@@ -66,6 +66,21 @@ header {
 .sideNavBar > li > a{
     cursor: pointer
 }
+.visibleBody {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 100vh;
+    overflow: auto;
+}
+.visibleBody::-webkit-scrollbar{
+    display: none;
+}
+.blurredBody {
+    filter: blur(5px);
+    overflow: hidden;
+    /* touch-action: none; */
+    height: 100vh;
+}
 .sideModal {
     position: absolute;
     height: 100vh;

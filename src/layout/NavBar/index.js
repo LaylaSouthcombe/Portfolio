@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-scroll";
 
-const NavBar = ({setBodyBlur, setzIndex}) => {
+const NavBar = ({setBodyClass, setzIndex}) => {
     const [display, setDisplay] = useState("none")
     const [iconImg, setIconImg] = useState("fa fa-bars")
     const [iconClassName, setIconClassName] = useState("navIcon navIconBorder")
@@ -12,13 +12,13 @@ const NavBar = ({setBodyBlur, setzIndex}) => {
             setDisplay("none");
             setIconImg("fa fa-bars")
             setIconClassName("navIcon navIconBorder")
-            setBodyBlur("none")
+            setBodyClass("visibleBody")
             setzIndex("0")
         } else {
             setDisplay("block");
             setIconImg("fa-solid fa-xmark")
             setIconClassName("navIcon")
-            setBodyBlur("blur(5px)")
+            setBodyClass("blurredBody")
             setzIndex("-1")
         }
     }

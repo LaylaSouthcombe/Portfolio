@@ -214,6 +214,9 @@ h1 {
   .mouseSquares{
     height: 100vh;
   }
+  #memoji {
+    max-width: 400px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -288,7 +291,11 @@ h1 {
     max-width: 1400px;
     margin: 0 auto;
   }
-  
+  #memoji {
+    width: 60%;
+    margin-top: 45px;
+    margin-right: 55px;
+  }
   .introText {
     margin-left: 10vw;
     margin-top: 25vh;

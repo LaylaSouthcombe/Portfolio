@@ -47,7 +47,7 @@ const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, s
                     <li><Link activeClass="active" smooth spy to="skills" offset={-180}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-180}><span className="number">03.</span> Projects</Link></li>
                     <li><Link activeClass="active" smooth spy to="contact" offset={-200}><span className="number">04.</span> Contact Me</Link></li>
-                    <li id="topNavResumeLi"><a href="https://docdro.id/9LPsMmD" target="_blank" rel="noreferrer" id="topNavResume">RESUME</a></li>
+                    <li id="topNavResumeLi"><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="topNavResume">RESUME</a></li>
                 </ul>
             </div>
             <div className="sidenav">
@@ -69,7 +69,7 @@ const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, s
                     <li onClick={() => scrollEffect(skillsOnClickRef)}><span className="number">02.</span>Skills</li>
                     <li onClick={() => scrollEffect(projectsOnClickRef)}><span className="number">03.</span>Projects</li>
                     <li onClick={() => scrollEffect(contactOnClickRef)}><span className="number">04.</span>Contact</li>
-                    <li><a href="https://docdro.id/9LPsMmD" target="_blank" rel="noreferrer" id="sideBarResume">RESUME</a></li>
+                    <li><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="sideBarResume">RESUME</a></li>
                 </ul>
             </div>
         </>

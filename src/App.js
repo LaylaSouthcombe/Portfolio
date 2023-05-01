@@ -4,6 +4,7 @@ import { NavBar } from './layout'
 import gitHubIcon from './images/icon-github.png'
 import linkedInIcon from './images/icon-linkedin.png'
 import mailIcon from './images/icon-mail.png'
+import logo from './images/logo.png'
 
 import './App.css';
 import './pages/About/style.css'
@@ -35,14 +36,8 @@ function App() {
         <Projects innerRef={projectsOnClickRef}/>
         <Contact innerRef={contactOnClickRef}zIndex={zIndex}/>
         <div className="bottomLogo">
-                    <div className="bottomSquare1">
-                    </div>    
-                    <div className="bottomSquare2">
-                    </div>    
-                    <div className="bottomSquare3">
-                    </div>    
-                    <p className="bottomLogoText">LS</p> 
-                </div>
+          <img src={logo} alt="" />
+        </div>
         <div className="bottomLine line"></div>
         <div className="bottomLinksDiv">
           <ul className="bottomLinks">

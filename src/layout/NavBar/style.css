@@ -8,45 +8,16 @@ header {
     z-index: 1;
     justify-content: right;
 }
+.navLogo {
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.navLogo > img, .topNavLogo > img {
+    height: 100%;
+}
 .active {
     font-weight: bold;
-}
-.logo {
-    margin-right: auto;
-    margin-left: 15px;
-    margin-top: 25px;
-    width: 80px;
-    height: 80px;
-    position: relative;
-}
-.square1{
-    border: 3px solid #FF0A78;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.square2{
-    border: 3px solid #FF0A78;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.square3{
-    border: 3px solid #FF0A78;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-.logoText{
-    font-size: 24px;
-    text-align: center;
-    line-height: 80px;
 }
 .topnav{
     display: none;
@@ -55,7 +26,7 @@ header {
     padding: 1.5vw;
     margin-top: 5vh;
 }
-.navBar > li > a{
+.navBar > li > a {
     cursor: pointer
 }
 .sidenav {
@@ -63,7 +34,7 @@ header {
     justify-content: space-between;
     width: 100%;
 }
-.sideNavBar > li > a{
+.sideNavBar > li > a {
     cursor: pointer
 }
 .visibleBody {
@@ -86,7 +57,7 @@ header {
     height: 100vh;
     background-color: #081e48;
     width: 70%;
-    z-index: 9998;
+    z-index: 9999;
     display: none;
 }
 .visibleModal{
@@ -119,34 +90,40 @@ header {
 }
 
 .sideNavBar {
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 .sideNavBar > li {
     list-style-type: none;
-    padding: 5px;
-    padding-top: 5%;
-    padding-left: 10%;
+    padding: 15px;
+    padding-left: 15%;
     font-size: 1.5em;
 }
 .me {
     margin-left: 50px;
 }
 .navIcon {
-    z-index: 9999;
-    margin: 25px;
-    padding: 10px 15px;
+    margin: 15px;
+    padding: 7.5px 10px;
     background-color: #081e48;
-    border: none;
-    outline: none;
-}
-.navIconBorder{
     border: 3px solid #0AC3FF;
     background-color: #041129;
+    outline: none;
+    height: 40px;
 }
+.navIconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navIconSideModal {
+    padding: 7.5px 11px;
+}
+
 .navIcon > i {
-    font-size: 30px;
+    font-size: 20px;
     color: #FF0A78;
 }
+
 #sideBarResume {
     color: #FF0A78;
     background-color: #081e48;
@@ -159,28 +136,6 @@ header {
 @media (min-width: 320px){
     header {
         font-size: 20px;
-    }
-    .logo {
-        margin-left: 25px;
-        margin-top: 25px;
-        width: 100px;
-        height: 100px;
-    }
-    .square1{
-        width: 80px;
-        height: 80px;
-    }
-    .square2{
-        width: 70px;
-        height: 70px;
-    }
-    .square3{
-        width: 60px;
-        height: 60px;
-    }
-    .logoText{
-        font-size: 38px;
-        line-height: 100px;
     }
     .sideNavBar {
         padding-top: 22vh;
@@ -204,7 +159,17 @@ header {
     header {
         font-size: 20px;
     }
-
+    .navLogo {
+        height: 45px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .navIcon {
+        height: 45px;
+    }
+    .navIcon > i {
+        font-size: 25px;
+    }
     .sideNavBar {
         padding-top: 20vh;
     }
@@ -231,9 +196,30 @@ header {
     .me {
         margin-left: 0px;
     }
+    .navLogo {
+        margin: 20px;
+        height: 47.5px;
+    }
+    .navIcon {
+        margin: 20px;
+        height: 50px;
+    }
+    .sideModal > .navIcon {
+        margin-right: 0;
+        margin-left: 70%;
+    }
+    .navIcon > i {
+        font-size: 30px;
+    }
 }
 @media (min-width: 768px) {
     .navIcon {
+        margin: 30px;
+        height: 60px;
+        padding: 12.5px 17.5px;
+    }
+    .navLogo {
+        height: 55px;
         margin: 30px;
     }
     .sideModal {
@@ -267,6 +253,10 @@ header {
         display: flex;
         width: 100%;
     }
+    .topNavLogo {
+        height: 60px;
+        margin: 40px auto 30px 40px
+    }
     .navBar {
         display: flex;
     }
@@ -291,32 +281,5 @@ header {
     #topNavResumeLi{
        margin-top: 45px; 
        margin-right: 25px; 
-    }
-    
-    #logo {
-        margin-left: 35px;
-        margin-top: 35px;
-        max-width: 120px;
-        max-height: 120px;
-    }
-    .logo {
-        width: 120px;
-        height: 120px;
-    }
-    .square1{
-        width: 100px;
-        height: 100px;
-    }
-    .square2{
-        width: 90px;
-        height: 90px;
-    }
-    .square3{
-        width: 80px;
-        height: 80px;
-    }
-    .logoText{
-        font-size: 48px;
-        line-height: 110px;
     }
 }

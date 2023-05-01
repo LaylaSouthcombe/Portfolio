@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-scroll";
+import logo from '../../images/logo.png'
 
 const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef, contactOnClickRef}) => {
     const [sideModalClassName, setSideModalClassName] = useState("sideModal")
@@ -38,11 +39,8 @@ const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, s
     return (
         <>
             <div className="topnav">
-                <div className="logo">
-                    <div className="square1"></div>    
-                    <div className="square2"></div>    
-                    <div className="square3"></div>    
-                    <p className="logoText">LS</p> 
+                <div className="topNavLogo">
+                    <img src={logo} alt="" />
                 </div>
                 <ul className="navBar" id="myLinks">
                     <li><Link activeClass="active" smooth spy to="about" offset={-180}><span className="number">01.</span> About</Link></li>
@@ -53,20 +51,19 @@ const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, s
                 </ul>
             </div>
             <div className="sidenav">
-                <div className="logo">
-                    <div className="square1">
-                    </div>    
-                    <div className="square2">
-                    </div>    
-                    <div className="square3">
-                    </div>    
-                    <p className="logoText">LS</p> 
+                <div className="navLogo">
+                    <img src={logo} alt="" />
                 </div>
-                <button className={iconClassName} onClick={openCloseSideNav}>
-                    <i className={iconImg}></i>
+                <button className={"navIcon"} onClick={openCloseSideNav}>
+                    <i className={"fa fa-bars"}></i>
                 </button>
             </div>
             <div className={sideModalClassName}>
+                <div className="navIconContainer">
+                <button className={"navIcon navIconSideModal"} onClick={openCloseSideNav}>
+                        <i className={"fa-solid fa-xmark"}></i>
+                    </button>
+                </div>
                 <ul className="sideNavBar">
                     <li onClick={() => scrollEffect(aboutOnClickRef)}><span className="number">01.</span>About</li>
                     <li onClick={() => scrollEffect(skillsOnClickRef)}><span className="number">02.</span>Skills</li>
@@ -75,7 +72,7 @@ const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, s
                     <li><a href="https://docdro.id/9LPsMmD" target="_blank" rel="noreferrer" id="sideBarResume">RESUME</a></li>
                 </ul>
             </div>
-            </>
+        </>
     )
 }
 

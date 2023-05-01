@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Contact = ({zIndex}) => {
+const Contact = ({zIndex, innerRef}) => {
     return (
-       <div className="sectionDiv" id="contact">
+       <div className="sectionDiv" id="contact" ref={innerRef}>
             <div className="contactTitle">
                 <div className="lineType2 line"></div>
                 <h2><span className="number">04.</span> Get In Touch</h2>

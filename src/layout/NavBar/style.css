@@ -87,14 +87,17 @@ header {
     background-color: #081e48;
     width: 70%;
     z-index: 9998;
+    display: none;
 }
 .visibleModal{
-    animation: modalAppear 300ms ease-in-out forwards;
+    animation: modalAppear 400ms ease-in-out forwards;
     transform-origin: top center;
+    display: block;
 }
 .hiddenModal {
-    animation: modalDisappear 300ms ease-in-out forwards;
+    animation: modalDisappear 400ms ease-in-out forwards;
     transform-origin: top center;
+    display: block;
 }
 @keyframes modalAppear {
     0% {

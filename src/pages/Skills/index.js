@@ -15,9 +15,9 @@ import postgresIcon from '../../images/postgresql.png'
 
 
 
-const Skills = () => {
+const Skills = ({innerRef}) => {
     return(
-       <div className="sectionDiv" id="skills">
+       <div className="sectionDiv" id="skills" ref={innerRef}>
             <div className="skillsTitle">
                 <div className="lineType2 line"></div>
                 <h2><span className="number">02.</span> Technologies <br/><span className="lineSplit">I Work With</span></h2>

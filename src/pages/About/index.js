@@ -2,11 +2,9 @@ import React from 'react'
 import headshot from '../../images/headshot.png'
 import './style.css';
 
-
-
-const About = () => {
+const About = ({innerRef}) => {
     return(
-       <div className="sectionDiv" id="about">
+       <div className="sectionDiv" id="about" ref={innerRef}>
             <div className="aboutTitle">
                 <h2><span className="number">01.</span> About Me</h2>
                 <div className="lineType1 line"></div>

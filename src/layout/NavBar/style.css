@@ -88,6 +88,33 @@ header {
     width: 70%;
     z-index: 9998;
 }
+.visibleModal{
+    animation: modalAppear 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+.hiddenModal {
+    animation: modalDisappear 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+@keyframes modalAppear {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes modalDisappear {
+    0% {
+        transform: translate(0px, 0px);
+        
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 .sideNavBar {
     padding-top: 20vh;
 }

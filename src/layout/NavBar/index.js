@@ -2,20 +2,23 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 
 const NavBar = ({setBodyClass, setzIndex}) => {
-    const [display, setDisplay] = useState("none")
+    // const [display, setDisplay] = useState("none")
+    const [sideModalClassName, setSideModalClassName] = useState("sideModal hiddenModal")
     const [iconImg, setIconImg] = useState("fa fa-bars")
     const [iconClassName, setIconClassName] = useState("navIcon navIconBorder")
 
     const openSideNav = (e) => {
         e.preventDefault()
-        if (display === "block") {
-            setDisplay("none");
+        if (sideModalClassName === "sideModal visibleModal") {
+            // setDisplay("none");
+            setSideModalClassName("sideModal hiddenModal")
             setIconImg("fa fa-bars")
             setIconClassName("navIcon navIconBorder")
             setBodyClass("visibleBody")
             setzIndex("0")
         } else {
-            setDisplay("block");
+            // setDisplay("block");
+            setSideModalClassName("sideModal visibleModal")
             setIconImg("fa-solid fa-xmark")
             setIconClassName("navIcon")
             setBodyClass("blurredBody")
@@ -54,7 +57,7 @@ const NavBar = ({setBodyClass, setzIndex}) => {
                     <i className={iconImg}></i>
                 </button>
             </div>
-            <div className="sideModal" style={{display: display}}>
+            <div className={sideModalClassName}>
                 <ul className="sideNavBar" >
                     <li><Link activeClass="active" smooth spy to="about" offset={-200}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-230}><span className="number">02.</span> Skills</Link></li>

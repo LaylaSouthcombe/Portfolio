@@ -11,10 +11,9 @@ const About = ({innerRef}) => {
             </div>
             <div className="aboutInfo wrapper">
                 <div className="aboutText">
-                    <p>After graduating from the University of Bath with a <span className="bold">Pharmacology Masters Degree</span> in 2018, I worked in the medical publishing and communications industry.</p>
-                    <p>It was here that I <span className="bold">witnessed the impact of technology on vital industries</span> such as healthcare, which resulted in my interest in technology and coding flourishing.</p>
-                    <p>I recently completed a <span className="bold">13-week coding bootcamp with futureproof</span> after teaching myself to code in my spare time and realising my <span className="bold">curious</span> and <span className="bold">problem-solving</span> nature was a perfect fit with coding.</p>
-                    <p>During my time in the futureproof full-stack bootcamp I have learnt not only a plethora of <span className="bold">technologies</span> and <span className="bold">languages</span>, but also the <span className="bold">skills</span> needed to <span className="bold">succeed in a tech environment.</span></p>
+                    <p>After witnessing the impact of technology on vital industries such as healthcare during my time as a Medical Editor, I decided to take the leap to pursue a career in software engineering.</p>
+                    <p>I enrolled in a full-stack bootcamp with La Fosse Academy and put my problem-solving skills to work. Having graduated from this rigorous programme, I can say that applying to a coding bootcamp has been the best decision I have made. I love to learn new technologies and try them out on my own projects.</p>
+                    <p>Besides my passion for coding, I love to travel to new countries and explore the culture, hike in the mountains, and play flag American football.</p>
                 </div>
                 <div className="aboutImgDiv">
                     <img src={headshot} className="aboutImg" alt="" />

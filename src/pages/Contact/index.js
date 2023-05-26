@@ -1,6 +1,23 @@
 import React from 'react'
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 const Contact = ({zIndex, innerRef}) => {
+    
+    const handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...this.state })
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+  
+        e.preventDefault();
+      };
     return (
        <div className="sectionDiv" id="contact" ref={innerRef}>
             <div className="contactTitle">
@@ -9,7 +26,7 @@ const Contact = ({zIndex, innerRef}) => {
                 <div className="lineType3 line"></div>
             </div> 
             {/* <form action="mailto:laylasouthcombe789@outlook.com" method="post" encType="text/plain" className="contactForm" autoComplete="off"> */}
-            <form method="POST" encType="text/plain" className="contactForm" autoComplete="off" name="contactForm" data-netlify="true" netlify>
+            <form method="POST" encType="text/plain" className="contactForm" autoComplete="off" name="contactForm">
                 <input type="hidden" name="form-name" value="contactForm" />
                 <input type="text" name="fullName" id="fullName" placeholder="Full name" className="formItem1" style={{zIndex: zIndex}} required/>
                 <input type="email" name="email" id="email" placeholder="Email address" className="formItem2" style={{zIndex: zIndex}} required/>

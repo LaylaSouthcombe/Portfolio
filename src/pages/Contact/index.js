@@ -9,7 +9,8 @@ const Contact = ({zIndex, innerRef}) => {
                 <div className="lineType3 line"></div>
             </div> 
             {/* <form action="mailto:laylasouthcombe789@outlook.com" method="post" encType="text/plain" className="contactForm" autoComplete="off"> */}
-            <form method="POST" encType="text/plain" className="contactForm" autoComplete="off" name="contactForm" data-netlify="true" netlify>
+            <form method="POST" encType="text/plain" className="contactForm" autoComplete="off" name="contact" data-netlify="true" netlify>
+                <input type="hidden" name="form-name" value="contact" />
                 <input type="text" name="fullName" id="fullName" placeholder="Full name" className="formItem1" style={{zIndex: zIndex}} required/>
                 <input type="email" name="email" id="email" placeholder="Email address" className="formItem2" style={{zIndex: zIndex}} required/>
                 <input type="number" name="phoneNum" id="phoneNum" placeholder="Phone number" className="formItem3" style={{zIndex: zIndex}}/>

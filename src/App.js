@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { About, Contact, IntroWrapper, Projects, Skills } from './pages'
+import { About, IntroWrapper, Projects, Skills } from './pages'
 import { NavBar } from './layout'
 import gitHubIcon from './images/icon-github.png'
 import linkedInIcon from './images/icon-linkedin.png'
@@ -10,7 +10,6 @@ import './App.css';
 import './pages/About/style.css'
 import './pages/Skills/style.css'
 import './pages/Projects/style.css'
-import './pages/Contact/style.css'
 import './components/Project/style.css'
 import './layout/NavBar/style.css'
 
@@ -21,12 +20,11 @@ function App() {
   const introOnClickRef = useRef(null)
   const skillsOnClickRef = useRef(null)
   const projectsOnClickRef = useRef(null)
-  const contactOnClickRef = useRef(null)
   
   return (
     <div className="App" >
       <header id="header">
-        <NavBar setBodyClass={setBodyClass} setzIndex={setzIndex} aboutOnClickRef={aboutOnClickRef} introOnClickRef={introOnClickRef} skillsOnClickRef={skillsOnClickRef} projectsOnClickRef={projectsOnClickRef} contactOnClickRef={contactOnClickRef}/>
+        <NavBar setBodyClass={setBodyClass} setzIndex={setzIndex} aboutOnClickRef={aboutOnClickRef} introOnClickRef={introOnClickRef} skillsOnClickRef={skillsOnClickRef} projectsOnClickRef={projectsOnClickRef}/>
       </header>
       <div className="sideLine"></div>
       <div className={`${bodyClass}`}>
@@ -34,7 +32,6 @@ function App() {
         <About innerRef={aboutOnClickRef} id="about"/>
         <Skills innerRef={skillsOnClickRef}/>
         <Projects innerRef={projectsOnClickRef}/>
-        <Contact innerRef={contactOnClickRef}zIndex={zIndex}/>
         <div className="bottomLogo">
           <img src={logo} alt="" />
         </div>

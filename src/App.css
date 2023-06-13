@@ -22,39 +22,7 @@ body {
 .wrapper > * {
   grid-column: col-start / span 12;
 }
-.mouseSquares{
-  position: absolute;
-  width: 100%;
-  height: 160vh;
-}
-.mouseSquare1{
-  border: 3px solid #FF0A78;
-  width: 15px;
-  height: 15px;
-  position: fixed;
-  top: 10vh;
-}
-.mouseSquare2{
-  border: 3px solid #FF0A78;
-  width: 20px;
-  height: 20px;
-  position: fixed;
-  opacity: 0.75;
-}
-.mouseSquare3{
-  border: 3px solid #FF0A78;
-  width: 25px;
-  height: 25px;
-  position: fixed;
-  opacity: 0.5;
-}
-.mouseSquare4{
-  border: 3px solid #FF0A78;
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  opacity: 0.25;
-}
+
 .line {
   background-color: #FF0A78;
   opacity: 0.5;
@@ -62,11 +30,17 @@ body {
   visibility: hidden;
 }
 
+@keyframes line {
+  0% {flex-grow: 0}
+  100% {flex-grow: 1}
+}
+
 .lineType1 {
   flex-grow: 1;
   margin-top: 25px;
   margin-left: 10px;
   z-index: -1;
+  animation: line 2s;
 }
 
 .lineType2 {
@@ -76,6 +50,7 @@ body {
   margin-left: 30px;
   margin-right: 10px;
   z-index: -1;
+  animation: line 2s;
 }
 
 .lineType3 {
@@ -85,6 +60,7 @@ body {
   margin-right: 30px;
   margin-left: 10px;
   z-index: -1;
+  animation: line 2s;
 }
 
 .sideLine {
@@ -173,9 +149,6 @@ h1 {
   padding-top: 3px;
 }
 @media (min-width: 320px){
-  .mouseSquares{
-    height: 120vh;
-  }
   .introText {
     margin-top: 25vh;
   }
@@ -187,9 +160,6 @@ h1 {
   } 
 }
 @media (min-width: 360px){
-.mouseSquares{
-  height: 110vh;
-}
 .introText {
   margin-top: 25vh;
 }
@@ -210,9 +180,6 @@ h1 {
 @media (min-width: 500px){
   .line{
     visibility: visible;
-  }
-  .mouseSquares{
-    height: 100vh;
   }
   #memoji {
     max-width: 400px;
@@ -342,11 +309,6 @@ h1 {
   .sectionDiv {
     max-width: 1400px;
     margin: 0 auto;
-  }
-  .mouseSquares{
-    position: absolute;
-    width: 100%;
-    height: 700px;
   }
   .bottomLogo {
     width: 80px;

@@ -11,8 +11,8 @@
 }
 
 .aboutImg {
-    border-top: 8px solid #FF0A78;
-    border-left: 8px solid #FF0A78;
+    border-top: 8px solid var(--accent-color);
+    border-left: 8px solid var(--accent-color);
     padding-left: 20px;
     padding-top: 20px;
     width: 80%;
@@ -47,8 +47,8 @@
         margin-left: 70px;
     }
     .aboutImg {
-        border-top: 10px solid #FF0A78;
-        border-left: 10px solid #FF0A78;
+        border-top: 10px solid var(--accent-color);
+        border-left: 10px solid var(--accent-color);
     }
     .aboutInfo {
         max-width: 90%;

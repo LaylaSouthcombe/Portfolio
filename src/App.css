@@ -105,11 +105,13 @@ h1 {
 .memoji {
   object-fit: fill;
   text-align: center;
+  width: 80%;
+  margin: 2rem auto;
 }
 
 #memoji {
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 .bottomLogo {
@@ -122,11 +124,13 @@ h1 {
 .bottomLogo > img {
   width: 100%;
 }
+
 .bottomLinksDiv {
   width: 75%;
   margin: 0 auto;
   padding-left: 15px;
 }
+
 .bottomLinks {
   display: flex;
   list-style-type: none;
@@ -150,6 +154,7 @@ h1 {
 #linkedInIcon{
   padding-top: 3px;
 }
+
 @media (min-width: 320px){
   .introText {
     margin-top: 25vh;
@@ -161,6 +166,7 @@ h1 {
     width: 65%;
   } 
 }
+
 @media (min-width: 360px){
 .introText {
   margin-top: 25vh;
@@ -193,6 +199,14 @@ h1 {
     margin-top: 75px;
   }
 
+  .introText > h2 {
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+
   .introText {
     grid-column: col-start / span 6;
     grid-row: 1;
@@ -201,22 +215,11 @@ h1 {
   .memoji {
     grid-column: col-start 7/ span 6;
     grid-row: 1;
-    margin-right: 3.5vw;
-    margin-top: 20vh;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    max-width: 380px;
   }
 
-  .introText {
-    margin-left: 80px;
-  }
-
-  .introText > h2 {
-    font-size: 32px;
-  }
-  
-  h1 {
-    font-size: 56px;
-  }
-  
   #memoji {
     margin-top: 20px;
   }
@@ -257,30 +260,26 @@ h1 {
 @media (min-width: 1024px) {
   .intro {
     margin-bottom: 100px;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   #memoji {
-    width: 60%;
+    width: 90%;
     margin-top: 45px;
     margin-right: 55px;
   }
+
   .introText {
     margin-left: 10vw;
     margin-top: 25vh;
   }
   
   .introText > h2 {
-    font-size: 36px;
+    font-size: 1.75rem;
   }
   
   h1 {
-    font-size: 64px;
-  }
-  
-  .memoji {
-    margin-right: 5vw;
-    margin-top: 16vh;
+    font-size: 3.5rem;
   }
 
   .aboutText {
@@ -304,10 +303,7 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-  .introText {
-    margin-left: 200px;
-    margin-top: 230px;
-  }
+
   .sectionDiv {
     max-width: 1400px;
     margin: 0 auto;

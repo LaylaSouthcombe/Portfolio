@@ -198,7 +198,7 @@ h1 {
     grid-row: 1;
   }
 
-  .memojiSquaresArea {
+  .memoji {
     grid-column: col-start 7/ span 6;
     grid-row: 1;
     margin-right: 3.5vw;

@@ -27,7 +27,7 @@ function App() {
         <NavBar setBodyClass={setBodyClass} setzIndex={setzIndex} aboutOnClickRef={aboutOnClickRef} introOnClickRef={introOnClickRef} skillsOnClickRef={skillsOnClickRef} projectsOnClickRef={projectsOnClickRef}/>
       </header>
       <div className="sideLine"></div>
-      <div className={`${bodyClass}`}>
+      <div className={`${bodyClass} body`}>
         <IntroWrapper innerRef={introOnClickRef}/>
         <About innerRef={aboutOnClickRef} id="about"/>
         <Skills innerRef={skillsOnClickRef}/>
@@ -35,6 +35,7 @@ function App() {
         <div className="bottomLogo">
           <img src={logo} alt="" />
         </div>
+      </div>
         <div className="bottomLine line"></div>
         <div className="bottomLinksDiv">
           <ul className="bottomLinks">
@@ -43,7 +44,6 @@ function App() {
             <li id="linkedInIcon"><a href="https://www.linkedin.com/in/layla-southcombe-811a77102" target="_blank" rel="noreferrer"><img src={linkedInIcon} alt="LinkedIn Icon" className="bottomLinkImg"/></a></li>
           </ul>
         </div>
-      </div>
     </div>
   );
 }

@@ -25,6 +25,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
   position: relative;
+  width: 100%;
 }
 
 .wrapper > * {
@@ -93,19 +94,18 @@ body {
 }
 
 .introText {
-  margin-left: 12vw;
-  margin-top: 40vh;
+  width: 80%;
+  margin: 20vh auto 0 auto;
 }
 
 .introText > h2 {
   color: #0A99FF;
   font-size: 24px;
-  width: 90%;
 }
 
 h1 {
   font-size: 30px;
-  width: 90%;
+
 }
 
 .memoji {
@@ -143,6 +143,7 @@ h1 {
   margin-bottom: 15px;
   justify-content: center;
 }
+
 .bottomLinkImg {
   width: 80%;
   padding: 5px;
@@ -202,10 +203,12 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .intro {
-    margin-top: 75px;
+  .intro.wrapper {
+    padding-top: 5rem;
   }
-
+  .introText {
+    margin: 8rem auto 0 6rem;
+  }
   .introText > h2 {
     font-size: 1.5rem;
   }
@@ -222,8 +225,7 @@ h1 {
   .memoji {
     grid-column: col-start 7/ span 6;
     grid-row: 1;
-    margin-left: 1rem;
-    margin-top: 4.5rem;
+    margin: 4.5rem 2rem 4.5rem 1rem;
     max-width: 380px;
   }
 
@@ -264,12 +266,19 @@ h1 {
   }
 }
 
+@media (min-width: 900px) {
+  .introText {
+    margin: 10rem auto 0 6rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .intro {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     max-width: 1000px;
     margin: 0 auto;
   }
+
   #memoji {
     width: 90%;
     margin-top: 45px;
@@ -277,7 +286,7 @@ h1 {
   }
 
   .introText {
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
     margin-top: 25vh;
   }
   
@@ -299,10 +308,7 @@ h1 {
     grid-row: 2;
   }
   
-  .intro {
-    margin-top: 100px;
-    margin-bottom: 150px;
-  }
+  
   .bottomLogo {
     width: 65px;
     height: 65px;

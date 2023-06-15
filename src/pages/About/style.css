@@ -30,6 +30,7 @@
 
 .aboutTitle {
     display: flex;
+    width: 90%;
 }
 
 .aboutText > p {

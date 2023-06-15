@@ -21,59 +21,6 @@ body {
   margin: 0 auto;
 }
 
-.intro {
-  width: 80%;
-  margin: 22.5vh auto 2rem auto;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.introText > h2 {
-  color: #0A99FF;
-  font-size: 1.25rem;
-}
-
-.introText > h1 {
-  font-size: 2rem;
-}
-
-.introText {
-  margin-bottom: 3rem;
-  margin-left: 1.75rem;
-}
-
-.memoji {
-  
-}
-
-.memoji > img {
-  width: 100%;
-}
-
-/* .body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  position: relative;
-  width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.wrapper > * {
-  grid-column: col-start / span 12;
-}
-
-.sectionDiv {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 .line {
   background-color: var(--accent-color);
   opacity: 0.5;
@@ -134,6 +81,130 @@ body {
 .number {
   color: var(--accent-color);
 }
+
+
+
+.intro {
+  width: 80%;
+  margin: 7.5rem auto 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.introText > h2 {
+  color: #0A99FF;
+  font-size: 1.25rem;
+}
+
+.introText > h1 {
+  font-size: 1.75rem;
+}
+
+.introText {
+  margin-bottom: 3rem;
+  margin-left: 0.5rem;
+}
+
+.memoji {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.memoji > img {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .intro {
+    margin: 8rem auto 2rem auto;
+  }
+  
+  .introText > h2 {
+    font-size: 1.25rem;
+  }
+  
+  .introText > h1 {
+    font-size: 2rem;
+  }
+  
+  .introText {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 411px) {
+  .intro {
+    margin: 10rem auto 2rem auto;
+  }
+  
+  .introText {
+    margin-left: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin: 12.5rem auto 8rem auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .introText {
+    margin-top: 2rem;
+  }
+
+  .introText > h2 {
+    font-size: 1.5rem;
+  }
+  
+  .introText > h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    width: 80%;
+    margin: 15rem auto 12rem auto;
+  }
+
+  .introText {
+    margin-top: 6rem;
+  }
+
+  .introText > h2 {
+    font-size: 1.75rem;
+  }
+  
+  .introText > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* .body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+.sectionDiv {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
 
 .introText {
   width: 80%;

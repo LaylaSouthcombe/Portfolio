@@ -17,7 +17,41 @@ body {
 }
 
 .body {
-  max-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 80%;
+  margin: 22.5vh auto 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.introText > h2 {
+  color: #0A99FF;
+  font-size: 1.25rem;
+}
+
+.introText > h1 {
+  font-size: 2rem;
+}
+
+.introText {
+  margin-bottom: 3rem;
+  margin-left: 1.75rem;
+}
+
+.memoji {
+  
+}
+
+.memoji > img {
+  width: 100%;
+}
+
+/* .body {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -26,10 +60,18 @@ body {
   grid-template-columns: repeat(12, [col-start] 1fr);
   position: relative;
   width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .wrapper > * {
   grid-column: col-start / span 12;
+}
+
+.sectionDiv {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .line {
@@ -98,10 +140,6 @@ body {
   margin: 20vh auto 0 auto;
 }
 
-.introText > h2 {
-  color: #0A99FF;
-  font-size: 24px;
-}
 
 h1 {
   font-size: 30px;
@@ -176,7 +214,7 @@ h1 {
 
 @media (min-width: 360px){
 .introText {
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 
 .introText > h2 {
@@ -205,9 +243,10 @@ h1 {
 @media (min-width: 768px) {
   .intro.wrapper {
     padding-top: 5rem;
+    margin-top: 25vh;
   }
   .introText {
-    margin: 8rem auto 0 6rem;
+    margin: 20vh auto 0 6rem;
   }
   .introText > h2 {
     font-size: 1.5rem;
@@ -268,14 +307,14 @@ h1 {
 
 @media (min-width: 900px) {
   .introText {
-    margin: 10rem auto 0 6rem;
+    margin: 10vh auto 0 6rem;
   }
 }
 
 @media (min-width: 1024px) {
   .intro {
     margin-bottom: 150px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -286,7 +325,6 @@ h1 {
   }
 
   .introText {
-    /* margin-left: 10vw; */
     margin-top: 25vh;
   }
   
@@ -316,13 +354,8 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-
-  .sectionDiv {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
   .bottomLogo {
     width: 80px;
     height: 80px;
   }
-}
+} */

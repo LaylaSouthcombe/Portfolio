@@ -122,6 +122,37 @@ body {
   width: 100%;
 }
 
+
+.bottomLogo {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.bottomLogo > img {
+  width: 100%;
+}
+
+.bottomLinksDiv {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.bottomLinks {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.bottomLinkImg {
+  width: 80%;
+  padding: 5px;
+  max-width: 60px;
+}
+
 @media (min-width: 320px) {
   .intro {
     margin: 8rem auto 2rem auto;
@@ -237,47 +268,7 @@ h1 {
   width: 100%;
 }
 
-.bottomLogo {
-  margin: 0 auto;
-  width: 60px;
-  height: 60px;
-  position: relative;
-}
 
-.bottomLogo > img {
-  width: 100%;
-}
-
-.bottomLinksDiv {
-  width: 75%;
-  margin: 0 auto;
-  padding-left: 15px;
-}
-
-.bottomLinks {
-  display: flex;
-  list-style-type: none;
-  margin-bottom: 15px;
-  justify-content: center;
-}
-
-.bottomLinkImg {
-  width: 80%;
-  padding: 5px;
-}
-
-#gitHubIcon{
-  width: 67px;
-}
-
-#mailIcon {
-  width: 80%;
-  margin-top: 2.5px;
-}
-
-#linkedInIcon{
-  padding-top: 3px;
-}
 
 @media (min-width: 320px){
   .introText {

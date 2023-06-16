@@ -11,9 +11,9 @@ const About = ({innerRef}) => {
             </div>
             <div className="aboutInfo wrapper">
                 <div className="aboutText">
-                    <p>After witnessing the impact of technology on vital industries such as healthcare during my time as a Medical Editor, I decided to take the leap to pursue a career in software engineering.</p>
-                    <p>I enrolled in a full-stack bootcamp with La Fosse Academy and put my problem-solving skills to work. Having graduated from this rigorous programme, I can say that applying to a coding bootcamp has been the best decision I have made. I love to learn new technologies and try them out on my own projects.</p>
-                    <p>Besides my passion for coding, I love to travel to new countries and explore the culture, hike in the mountains, and play flag American football.</p>
+                    <p>As a full-stack developer with a background in pharmacology and medical editing, I have a unique blend of scientific expertise and technical skills. My strong foundation in problem-solving and analytical thinking aided my successful career transition to pursue my passion for coding.</p>
+                    <p>Having completed a comprehensive full-stack developer bootcamp, I am well-versed in various front- and back-end programming languages, frameworks, and technologies.</p> 
+                    <p>As I continue my journey through the tech industry, I am excited to take on roles in which I can contribute my enthusiasm, curiosity, strong work ethic, and ability to quickly adapt and learn.</p>
                 </div>
                 <div className="aboutImgDiv">
                     <img src={headshot} className="aboutImg" alt="" />

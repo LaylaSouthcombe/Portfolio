@@ -3,7 +3,7 @@ header {
     top: 0;
     width: 100%;
     display: flex;
-    background-color: #041129;
+    background-color: var(--dark-blue);
     font-size: 16px;
     z-index: 1;
     justify-content: right;
@@ -62,7 +62,7 @@ header {
 .sideModal {
     position: absolute;
     height: 100vh;
-    background-color: #081e48;
+    background-color: var(--dark-blue);
     width: 70%;
     z-index: 9999;
     display: none;
@@ -111,9 +111,8 @@ header {
 .navIcon {
     margin: 15px;
     padding: 7.5px 10px;
-    background-color: #081e48;
-    border: 3px solid #0AC3FF;
-    background-color: #041129;
+    background-color: var(--dark-blue);
+    border: none;
     outline: none;
     height: 40px;
 }
@@ -133,7 +132,7 @@ header {
 
 #sideBarResume {
     color: var(--accent-color);
-    background-color: #081e48;
+    background-color: var(--dark-blue);
     outline: none;
     padding: 7.5px 10px;
     font-size: 18px;
@@ -274,7 +273,7 @@ header {
 
     #topNavResume {
         color: var(--accent-color);
-        background-color: #041129;
+        background-color: var(--dark-blue);
         outline: none;
         padding: 10px 20px;
         font-size: 0.9em;

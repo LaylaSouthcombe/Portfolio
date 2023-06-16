@@ -11,8 +11,8 @@
 }
 
 .aboutImg {
-    border-top: 8px solid var(--accent-color);
-    border-left: 8px solid var(--accent-color);
+    border-top: 8px solid var(--light-blue);
+    border-left: 8px solid var(--light-blue);
     padding-left: 20px;
     padding-top: 20px;
     width: 80%;
@@ -34,22 +34,18 @@
 }
 
 .aboutText > p {
-    color: #D9F6FF;
     margin-bottom: 20px;
     margin-left: 30px;
     font-size: 18px;
 }
 
-.bold {
-    color: #0A99FF;
-}
 @media (min-width: 320px){
     .aboutImgDiv {
         margin-left: 70px;
     }
     .aboutImg {
-        border-top: 10px solid var(--accent-color);
-        border-left: 10px solid var(--accent-color);
+        border-top: 10px solid var(--light-blue);
+        border-left: 10px solid var(--light-blue);
     }
     .aboutInfo {
         max-width: 90%;

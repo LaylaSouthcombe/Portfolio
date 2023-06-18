@@ -1,108 +1,71 @@
-#about  {
-    font-size: 1.25em;
+ #about  {
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-top: 10vh;
-}
-
-.aboutImgDiv {
-    margin-left: 40px;
-    margin-top: 20px;
-    z-index: -1;
-}
-
-.aboutImg {
-    border-top: 8px solid var(--light-blue);
-    border-left: 8px solid var(--light-blue);
-    padding-left: 20px;
-    padding-top: 20px;
-    width: 80%;
 }
 
 .aboutInfo {
-    max-width: 85%;
-}
-
-.aboutTitle > h2 {
-    margin-bottom: 30px;
-    margin-left: 30px;
-    font-size: 26px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-areas: 
+    "textArea"
+    "imageArea";
 }
 
 .aboutTitle {
     display: flex;
-    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.aboutImgDiv {
+    margin-top: 20px;
+    z-index: -1;
+    max-width: 300px;
+    text-align: center;
+    grid-area: imageArea;
+}
+
+.aboutImg {
+    border-top: 6px solid var(--light-blue);
+    border-left: 6px solid var(--light-blue);
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 80%;
 }
 
 .aboutText > p {
     margin-bottom: 20px;
-    margin-left: 30px;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
-@media (min-width: 320px){
-    .aboutImgDiv {
-        margin-left: 70px;
-    }
-    .aboutImg {
-        border-top: 10px solid var(--light-blue);
-        border-left: 10px solid var(--light-blue);
-    }
-    .aboutInfo {
-        max-width: 90%;
-    }
-    .aboutTitle > h2 {
-        font-size: 28px;
-    }
+.aboutText {
+    grid-area: textArea;
 }
-@media (min-width: 360px){
-    .aboutImgDiv {
-        margin-left: 80px;
-    }
-    .aboutTitle > h2 {
-        font-size: 30px;
-    }
-}
+
 @media (min-width: 768px) {
     .aboutInfo {
-        max-width: 80%;
-        margin-left: 20px;
-    }
-    .aboutTitle {
-        width: 90%;
-    }
-    .aboutTitle > h2 {
-        margin-left: 80px;
-    }
-    .aboutText > p {
-        margin-bottom: 30px;
-        margin-left: 60px;
+       grid-template-columns: 0.8fr 1.2fr;
+       grid-template-areas: 
+       "imageArea textArea";
+       justify-content: flex-start;
     }
     .aboutImgDiv {
-        margin-left: 30%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 60%;
-    }
-}
-@media (min-width: 1024px) {
-    .aboutTitle {
-        font-size: 1.125em;
-        margin-bottom: 35px;
+        margin-top: 4rem;
+        text-align: left;
     }
     .aboutText {
-        width: 110%;
-    }
-    .aboutImgDiv {
-     width: 80%;
-     margin-left: 90px;   
-     margin-top: 40px;   
+        margin-top: 1rem;
     }
 }
-@media (min-width: 1200px) {
-    .aboutText > p {
-        font-size: 1.25em;
+
+@media (min-width: 900px) {
+    .aboutText > p{
+        font-size: 1.1rem;
     }
-    .aboutImgDiv { 
-        margin-top: 100px;   
+}
+
+@media (min-width: 1024px) {
+    .aboutText > p{
+        font-size: 1.2rem;
     }
 }

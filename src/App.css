@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -92,7 +92,7 @@ body {
 
 
 .intro {
-  width: 80%;
+  width: 75%;
   margin: 7.5rem auto 2rem auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -103,6 +103,20 @@ body {
   font-size: 1.25rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+@media (min-width: 320px){
+  .sectionDiv h2 {
+      font-size: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sectionDiv h2 {
+      font-size: 1.85rem;
+  }
+}
 .introText > h1 {
   font-size: 1.75rem;
   color: var(--light-blue);
@@ -110,7 +124,7 @@ body {
 
 .introText {
   margin-bottom: 3rem;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
 }
 
 .memoji {
@@ -122,6 +136,10 @@ body {
   width: 100%;
 }
 
+.sectionDiv {
+  width: 75%;
+  margin: 7.5rem auto;
+}
 
 .bottomLogo {
   margin: 0 auto;
@@ -165,19 +183,11 @@ body {
   .introText > h1 {
     font-size: 2rem;
   }
-  
-  .introText {
-    margin-left: 1.5rem;
-  }
 }
 
 @media (min-width: 411px) {
   .intro {
     margin: 10rem auto 2rem auto;
-  }
-  
-  .introText {
-    margin-left: 1.25rem;
   }
 }
 
@@ -202,7 +212,6 @@ body {
 
 @media (min-width: 1024px) {
   .intro {
-    width: 80%;
     margin: 15rem auto 12rem auto;
   }
 
@@ -218,12 +227,13 @@ body {
     font-size: 2.5rem;
   }
 }
-
-/* .body {
-  max-width: 1200px;
-  margin: 0 auto;
+@media (min-width: 500px){
+  .line{
+    visibility: visible;
+  }
 }
 
+/* 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
@@ -233,83 +243,6 @@ body {
   padding-bottom: 2rem;
 }
 
-.wrapper > * {
-  grid-column: col-start / span 12;
-}
-
-.sectionDiv {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-
-
-.introText {
-  width: 80%;
-  margin: 20vh auto 0 auto;
-}
-
-
-h1 {
-  font-size: 30px;
-
-}
-
-.memoji {
-  object-fit: fill;
-  text-align: center;
-  width: 80%;
-  margin: 2rem auto;
-}
-
-#memoji {
-  margin-top: 20px;
-  width: 100%;
-}
-
-
-
-@media (min-width: 320px){
-  .introText {
-    margin-top: 25vh;
-  }
-  h1 {
-    font-size: 36px;
-  }  
-  .bottomLinksDiv {
-    width: 65%;
-  } 
-}
-
-@media (min-width: 360px){
-.introText {
-  margin-top: 20vh;
-}
-
-.introText > h2 {
-  font-size: 28px;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-.bottomLinksDiv {
-  width: 50%;
-}
-}
-
-@media (min-width: 500px){
-  .line{
-    visibility: visible;
-  }
-
-  #memoji {
-    max-width: 400px;
-  }
-}
-
 @media (min-width: 768px) {
   .intro.wrapper {
     padding-top: 5rem;
@@ -317,9 +250,6 @@ h1 {
   }
   .introText {
     margin: 20vh auto 0 6rem;
-  }
-  .introText > h2 {
-    font-size: 1.5rem;
   }
   
   h1 {
@@ -375,53 +305,6 @@ h1 {
   }
 }
 
-@media (min-width: 900px) {
-  .introText {
-    margin: 10vh auto 0 6rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .intro {
-    margin-bottom: 150px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  #memoji {
-    width: 90%;
-    margin-top: 45px;
-    margin-right: 55px;
-  }
-
-  .introText {
-    margin-top: 25vh;
-  }
-  
-  .introText > h2 {
-    font-size: 1.75rem;
-  }
-  
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  .aboutText {
-    grid-column: col-start 6 / span 6;
-    grid-row: 2;
-  }
-
-  .aboutImgDiv {
-    grid-column: col-start / span 6;
-    grid-row: 2;
-  }
-  
-  
-  .bottomLogo {
-    width: 65px;
-    height: 65px;
-  }
-}
 
 @media (min-width: 1200px) {
   .bottomLogo {

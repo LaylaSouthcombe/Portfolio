@@ -6,7 +6,6 @@
 }
 .skillsTitle > h2 {
     margin-bottom: 30px;
-    font-size: 26px;
 }
 .skillsTitle {
     display: flex;
@@ -104,14 +103,10 @@
     background-color: #417BA2;
 }
 @media (min-width: 320px){    
-    .skillsTitle > h2 {
-        font-size: 28px;
-    }
+
 }
 @media (min-width: 360px){
-    .skillsTitle > h2 {
-        font-size: 30px;
-    }
+
 }
 @media (min-width: 768px) {
     .skillsIcons {

@@ -1,0 +1,17 @@
+.skillsCard {
+    background-color: var(--light-blue);
+    border-radius: 15px;
+    padding: 0.75rem;
+}
+
+.skillsCard > h2 {
+    color: var(--darkish-blue);
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}

@@ -8,7 +8,6 @@ import logo from './images/logo.png'
 
 import './App.css';
 import './pages/About/style.css'
-import './pages/Skills/style.css'
 import './pages/Projects/style.css'
 import './components/Project/style.css'
 import './layout/NavBar/style.css'

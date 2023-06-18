@@ -22,15 +22,15 @@
 }
 
 
-.skillsIcons {
+.skillsColumns {
     display: grid;
     grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {
-    .skillsIcons {
+    .skillsColumns {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
     }
 }
 

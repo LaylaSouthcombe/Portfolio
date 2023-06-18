@@ -6,7 +6,7 @@
 }
 
 :root {
-  --accent-color: #E91E63;
+  --pink: #E91E63;
   --dark-blue: #222931;
   --darkish-blue: #313338;
   --light-blue: #26C5C7;
@@ -29,7 +29,7 @@ body {
 }
 
 .line {
-  background-color: var(--accent-color);
+  background-color: var(--pink);
   opacity: 0.5;
   height: 3px;
   visibility: hidden;
@@ -67,7 +67,7 @@ body {
 }
 
 .sideLine {
-  background-color: var(--accent-color);
+  background-color: var(--pink);
   opacity: 0.5;
   width: 3px;
   position: fixed;
@@ -84,7 +84,7 @@ body {
 }
 
 .number {
-  color: var(--accent-color);
+  color: var(--pink);
 }
 
 

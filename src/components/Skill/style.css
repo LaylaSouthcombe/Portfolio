@@ -1,0 +1,8 @@
+.skillItem {
+    background-color: var(--darkish-blue);
+    max-width: 100%;
+}
+
+.skillItem > img {
+    width: 70%;
+}

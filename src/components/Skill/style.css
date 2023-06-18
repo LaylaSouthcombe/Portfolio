@@ -1,8 +1,14 @@
 .skillItem {
     background-color: var(--darkish-blue);
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    border-radius: 5px;
 }
 
 .skillItem > img {
     width: 70%;
+    margin-bottom: 1rem;
 }

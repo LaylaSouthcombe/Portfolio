@@ -9,12 +9,12 @@ const Skills = ({innerRef}) => {
     const backEndSkillsList = [
         {name: "JavaScript", color: "#F7DF1E", icon: javaScriptLogo},
         {name: "Jest", color: "#99424F", icon: jestLogo},
-        {name: "Express", color: "#F2DD49", icon: expressLogo},
         {name: "Apex", color: "#00A1E0", icon: apexLogo},
+        {name: "Express", color: "#F2DD49", icon: expressLogo},
         {name: "MongoDB", color: "#59AD33", icon: mongoDBLogo},
         {name: "PostgreSQL", color: "#417BA2", icon: postgreSQLLogo}
     ]
-
+    
     const frontEndSkillsList = [
         {name: "React", color: "#00D8FF", icon: reactLogo},
         {name: "Redux", color: "#764ABC", icon: reduxLogo},
@@ -41,9 +41,9 @@ const Skills = ({innerRef}) => {
                 <div className="lineType3 line"></div>
             </div> 
             <div className="skillsColumns">
-                <SkillsCard title={"Back-end"} skills={backEndSkillsList}/>
-                <SkillsCard title={"Front-end"} skills={frontEndSkillsList}/>
-                <SkillsCard title={"Tools"} skills={toolsSkillsList}/>
+                <SkillsCard title={"Back-end"} skills={backEndSkillsList} className="skillsCard1"/>
+                <SkillsCard title={"Front-end"} skills={frontEndSkillsList} className="skillsCard2"/>
+                <SkillsCard title={"Tools"} skills={toolsSkillsList} className="skillsCard3"/>
                 {/* <div className="item1 item"><img className="icon" src={htmlIcon} alt="" />
                 <div className="bottomBorder bb1"></div></div>
                 <div className="item2 item"><img className="icon" src={cssIcon} alt="" />

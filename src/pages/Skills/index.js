@@ -13,9 +13,38 @@ import herokuIcon from '../../images/heroku.png'
 import mongoIcon from '../../images/mongodb.png'
 import postgresIcon from '../../images/postgresql.png'
 
+import { SkillsCard } from '../../components'
 
 
 const Skills = ({innerRef}) => {
+
+    const backEndSkillsList = [
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""}
+    ]
+
+    const frontEndSkillsList = [
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""}
+    ]
+
+    const toolsSkillsList = [
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""},
+        {name: "", color: "", icon: ""}
+    ]
+
     return(
        <div className="sectionDiv" id="skills" ref={innerRef}>
             <div className="skillsTitle">
@@ -24,6 +53,9 @@ const Skills = ({innerRef}) => {
                 <div className="lineType3 line"></div>
             </div> 
             <div className="skillsIcons">
+                <SkillsCard title={"Back-end"} skills={backEndSkillsList}/>
+                <SkillsCard title={"Front-end"} skills={frontEndSkillsList}/>
+                <SkillsCard title={"Tools"} skills={toolsSkillsList}/>
                 {/* <div className="item1 item"><img className="icon" src={htmlIcon} alt="" />
                 <div className="bottomBorder bb1"></div></div>
                 <div className="item2 item"><img className="icon" src={cssIcon} alt="" />

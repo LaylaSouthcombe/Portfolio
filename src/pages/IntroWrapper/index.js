@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import memoji from '../../images/memojiSquares.png'
 
 const IntroWrapper = ({innerRef}) => {

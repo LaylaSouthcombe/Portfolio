@@ -52,7 +52,6 @@ body {
   display: inline-block;
   flex-grow: 1;
   margin-top: 30px;
-  margin-left: 30px;
   margin-right: 10px;
   z-index: -1;
   animation: line 2s;
@@ -62,7 +61,6 @@ body {
   display: inline-block;
   flex-grow: 1;
   margin-top: 30px;
-  margin-right: 30px;
   margin-left: 10px;
   z-index: -1;
   animation: line 2s;

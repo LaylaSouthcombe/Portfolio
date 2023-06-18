@@ -24,7 +24,7 @@ const Skills = ({innerRef}) => {
                 <div className="lineType3 line"></div>
             </div> 
             <div className="skillsIcons">
-                <div className="item1 item"><img className="icon" src={htmlIcon} alt="" />
+                {/* <div className="item1 item"><img className="icon" src={htmlIcon} alt="" />
                 <div className="bottomBorder bb1"></div></div>
                 <div className="item2 item"><img className="icon" src={cssIcon} alt="" />
                 <div className="bottomBorder bb2"></div></div>
@@ -47,7 +47,7 @@ const Skills = ({innerRef}) => {
                 <div className="item11 item"><img className="icon" src={mongoIcon} alt="" />
                 <div className="bottomBorder bb11"></div></div>
                 <div className="item12 item"><img className="icon" src={postgresIcon} alt="" />
-                <div className="bottomBorder bb12"></div></div>
+                <div className="bottomBorder bb12"></div></div> */}
             </div>
        </div>   
     )

@@ -4,16 +4,23 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.lineSplit {
+    color: var(--light-blue);
+}
+
 .skillsTitle > h2 {
     margin-bottom: 30px;
 }
+
 .skillsTitle {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
+    gap: 0.5rem;
     text-align: center;
-    width: 90%;
 }
+
 .item1 { grid-area: item1; }
 .item2 { grid-area: item2; }
 .item3 { grid-area: item3; }
@@ -121,7 +128,6 @@
     .skillsTitle {
         font-size: 1.125em;
         margin-bottom: 35px;
-        padding-right: 25px;
     }
     .skillsIcons {
         grid-template-areas:

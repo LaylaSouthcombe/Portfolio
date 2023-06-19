@@ -29,11 +29,18 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
             setBodyClass("blurredBody")
         }
     }
+
+    const handleScrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth', // Optional: Add smooth scrolling behavior
+        });
+      };
     
     return (
         <>
             <div className="topnav">
-                <div className="topNavLogo">
+                <div className="topNavLogo" onClick={handleScrollToTop}>
                     <img src={logo} alt="" />
                 </div>
                 <ul className="navBar" id="myLinks">

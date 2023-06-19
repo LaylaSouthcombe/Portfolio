@@ -38,7 +38,6 @@ body {
   margin-top: 25px;
   margin-left: 10px;
   z-index: -1;
-  animation: line 2s;
 }
 .lineType2 {
   display: inline-block;

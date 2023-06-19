@@ -9,14 +9,11 @@
     color: var(--light-blue);
 }
 
-.skillsTitle > h2 {
-    margin-bottom: 30px;
-}
-
 .skillsTitle {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-bottom: 1.5rem;
     gap: 0.5rem;
     text-align: center;
 }

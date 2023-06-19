@@ -1,16 +1,12 @@
 import React from 'react';
-import GitHub from '../../images/icon-github.png'
+import GitHub from '../../images/icon-github-pink.png'
 import Hyperlink from '../../images/icon-hyperlink.png'
 
 const Project = ({position, content}) => {
-    let projectInfoClassName = "projectInfo "
-    projectInfoClassName += position
-    let projectImgClassName = "projectImg "
-    projectImgClassName += position
-    console.log(position)
+
     return (
-        <div className="projectDiv" key={content.id}>
-            <div className={projectInfoClassName}>
+        <div className={"projectDiv " + position} key={content.id}>
+            <div className={"projectInfo " + position}>
                 <h4 className="appType">{content.appType}</h4>
                 <h3 className="projectName">{content.projectName}</h3>
                 <div className={"projectSummary " + position}>
@@ -38,7 +34,7 @@ const Project = ({position, content}) => {
                     </div>
                 </div>
             </div>
-                <div className={projectImgClassName}>
+                <div className={"projectImg " + position}>
                     <img src={content.img} alt="" />
                 </div>
         </div>

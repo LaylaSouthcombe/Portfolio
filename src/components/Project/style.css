@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    align-items: center;
+    justify-content: flex-end;
     margin: 0 auto;
 }
 .projectInfo {
@@ -29,10 +29,12 @@
 }
 .projectSummary {
     background-color: var(--darkish-blue);
-    padding: 15px;
-    max-width: 450px;
+    padding: 1.25rem;
+    max-width: 650px;
     margin-right: 0;
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 .projectSummary.left {
     margin-left: 0;
@@ -40,6 +42,7 @@
 }
 .projectImg {
     width: 100%;
+    max-width: 650px;
     z-index: -1;
     margin-top: 10px;
 }
@@ -53,7 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 10px;
 }
 .projectTech {
     display: flex;
@@ -62,7 +64,7 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 1rem 0 1rem auto;
-    max-width: 450px;
+    max-width: 650px;
     gap: 1rem;
 }
 
@@ -72,6 +74,7 @@
 
 .projectTech > li {
     font-size: 0.85rem;
+    color: var(--light-blue);
 }
 
 .linkIcon {
@@ -84,6 +87,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    gap: 0.75rem;
 }
 .techLinkText{
     font-size: 0.95rem;
@@ -123,27 +127,30 @@
         font-size: 16px;
     }
     .linkIcon {
-        height: 40px;
+        /* height: 40px; */
         margin-right: 5px;
     }    
     .techLinkText{
         font-size: 18px;
     }
 }
+
 @media (min-width: 1024px) {
     .projectDiv {
         width: 100%;
-        /* margin-top: 160px;
-        margin-bottom: 220px; */
-    }
-    .projectDiv:last-of-type{
-        /* margin-bottom: 195px; */
     }
     .projectImg {
         width: 55%;
         position: absolute;
-        top: 0;
+        top: 1rem;
+        left: 0;
     }
+
+    .projectImg.left {
+        right: 0;
+        left: auto;
+    }
+
     .projectInfo.right {
         margin-left: auto;
     }
@@ -158,6 +165,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
         padding-right: 20px;
+        font-size: 1.25rem;
     }
     .projectInfo.left > .projectSummary{
         margin-right: auto;
@@ -165,10 +173,12 @@
         padding-left: 20px;
     }
     .linkIcon {
-        height: 50px;
+        height: 40px;
     }
     .projectTech {
-        font-size: 0.75em;
-        width: 55%;
+        width: 42.5%;
+    }
+    .projectTech > li {
+        font-size: 0.9rem;
     }
 } 

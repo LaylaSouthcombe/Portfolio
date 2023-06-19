@@ -33,10 +33,15 @@ const Skill = ({skill}) => {
             font-size: 0.9rem;
         }
     `
-
+//Add on focus for mobile users
     return (
         <>
-            <div className="skillItem" onMouseEnter={() => setSkillNameShowing(true)} onMouseLeave={() => setSkillNameShowing(false)}>
+            <div className="skillItem" 
+            onMouseEnter={() => setSkillNameShowing(true)} 
+            onMouseLeave={() => setSkillNameShowing(false)}
+            onTouchStart={() => setSkillNameShowing(true)}
+            onTouchEnd={() => setSkillNameShowing(false)}
+            >
                 <img className="icon" src={skill.icon} alt="" />
                 <SkillBottomBorder skillNameShowing={skillNameShowing} color={skill.color}>
                     {skillNameShowing ? `${skill.name}` : null}

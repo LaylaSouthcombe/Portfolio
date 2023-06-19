@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-scroll";
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.webp'
 
 const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef}) => {
     const [sideModalClassName, setSideModalClassName] = useState("sideModal")
@@ -40,20 +40,20 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     <li><Link activeClass="active" smooth spy to="about" offset={-180}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-180}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-180}><span className="number">03.</span> Projects</Link></li>
-                    <li id="topNavResumeLi"><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="topNavResume">RESUME</a></li>
+                    <li id="topNavResumeLi"><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="topNavResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
             </div>
             <div className="sidenav">
                 <div className="navLogo">
                     <img src={logo} alt="" />
                 </div>
-                <button className={"navIcon"} onClick={openCloseSideNav}>
+                <button className={"navIcon"} onClick={openCloseSideNav} aria-label="Open nav menu">
                     <i className={"fa fa-bars"}></i>
                 </button>
             </div>
             <div className={sideModalClassName}>
                 <div className="navIconContainer">
-                <button className={"navIcon navIconSideModal"} onClick={openCloseSideNav}>
+                <button className={"navIcon navIconSideModal"} onClick={openCloseSideNav} aria-label="Close nav menu">
                         <i className={"fa-solid fa-xmark"}></i>
                     </button>
                 </div>
@@ -61,7 +61,7 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     <li onClick={() => scrollEffect(aboutOnClickRef)}><span className="number">01.</span>About</li>
                     <li onClick={() => scrollEffect(skillsOnClickRef)}><span className="number">02.</span>Skills</li>
                     <li onClick={() => scrollEffect(projectsOnClickRef)}><span className="number">03.</span>Projects</li>
-                    <li><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="sideBarResume">RESUME</a></li>
+                    <li><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="sideBarResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
             </div>
         </>

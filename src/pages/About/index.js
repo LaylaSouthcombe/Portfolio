@@ -1,5 +1,5 @@
 import React from 'react'
-import headshot from '../../images/headshot.png'
+import headshot from '../../images/headshot.webp'
 import './style.css';
 
 const About = ({innerRef}) => {

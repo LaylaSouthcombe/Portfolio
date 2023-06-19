@@ -1,5 +1,5 @@
 import React from 'react'
-import memoji from '../../images/memojiSquares.png'
+import memoji from '../../images/memojiSquares.webp'
 
 const IntroWrapper = ({innerRef}) => {
 

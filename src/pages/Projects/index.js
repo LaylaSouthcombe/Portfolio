@@ -1,9 +1,9 @@
 import React from 'react'
 import { Project } from '../../components'
 
-import sooki from '../../images/sooki.png'
-import dumbfounded from '../../images/dumbfounded.png'
-import indee from '../../images/indee.png'
+import sooki from '../../images/sooki.webp'
+import dumbfounded from '../../images/dumbfounded.webp'
+import indee from '../../images/indee.webp'
 
 const Projects = ({innerRef}) => {
 

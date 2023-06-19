@@ -1,6 +1,6 @@
 import React from 'react';
-import GitHub from '../../images/icons/icon-github-pink.png'
-import Hyperlink from '../../images/icons/icon-hyperlink.png'
+import GitHub from '../../images/icons/icon-github-pink.webp'
+import Hyperlink from '../../images/icons/icon-hyperlink.webp'
 
 const Project = ({position, content}) => {
 
@@ -25,13 +25,13 @@ const Project = ({position, content}) => {
                             content.github.map( (link, i) => (
                                 <div className="projectLinks" key={i}>
                                     <p className="linkFor techLinkText">{link.linkFor}:</p>
-                                    <a href={link.link} target="_blank" rel="noreferrer" key={i}><img src={GitHub} alt="GitHub Link" className="linkIcon"/></a>                        
+                                    <a href={link.link} target="_blank" rel="noreferrer" key={i} aria-label="Link to project's GitHub repository"><img src={GitHub} alt="GitHub Link" className="linkIcon"/></a>                        
                                 </div>
                             ))
                         }
                         <div className="projectLinks">
                             <span className="deployment techLinkText">Site:</span>
-                            <a href={content.deploy} target="_blank" rel="noreferrer"><img src={Hyperlink} alt="" className="linkIcon"/></a>
+                            <a href={content.deploy} target="_blank" rel="noreferrer" aria-label="Link to project's live site"><img src={Hyperlink} alt="" className="linkIcon"/></a>
                         </div>
                     </div>
                 </div>

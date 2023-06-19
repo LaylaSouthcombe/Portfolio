@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react'
-import Hotjar from '@hotjar/browser';
 import { About, IntroWrapper, Projects, Skills } from './pages'
 import { NavBar } from './layout'
 
@@ -16,16 +15,12 @@ import './layout/NavBar/style.css'
 
 function App() {
 
-  const siteId = 3540845;
-  const hotjarVersion = 6;
-
-  Hotjar.init(siteId, hotjarVersion);
-
   const [bodyClass, setBodyClass] = useState("")
   const aboutOnClickRef = useRef(null)
   const introOnClickRef = useRef(null)
   const skillsOnClickRef = useRef(null)
   const projectsOnClickRef = useRef(null)
+  
   return (
     <>
       <div className="App" >

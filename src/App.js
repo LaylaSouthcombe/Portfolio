@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react'
+import { Hotjar } from 'react-hotjar';
 import { About, IntroWrapper, Projects, Skills } from './pages'
 import { NavBar } from './layout'
+
 import gitHubIcon from './images/icons/icon-github.webp'
 import linkedInIcon from './images/icons/icon-linkedin.webp'
 import mailIcon from './images/icons/icon-mail.webp'
@@ -19,7 +21,6 @@ function App() {
   const introOnClickRef = useRef(null)
   const skillsOnClickRef = useRef(null)
   const projectsOnClickRef = useRef(null)
-  
   return (
     <>
       <div className="App" >
@@ -44,6 +45,7 @@ function App() {
             </ul>
           </div>
         </div>
+        <Hotjar id="3540845" version="6" />
       </div>
     </>
   )

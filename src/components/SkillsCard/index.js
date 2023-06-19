@@ -8,8 +8,8 @@ const SkillsCard = ({title, skills, className}) => {
             <div className={"skillsCard " + className}>
                 <h2>{title}</h2>
                 <div className="skillsGrid">
-                  {skills.map((skill) => (
-                    <Skill skill={skill}/>
+                  {skills.map((skill, i) => (
+                    <Skill skill={skill} key={skill + i}/>
                 ))}  
                 </div>
             </div>

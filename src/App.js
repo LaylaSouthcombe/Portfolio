@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Hotjar } from 'react-hotjar';
+import Hotjar from '@hotjar/browser';
 import { About, IntroWrapper, Projects, Skills } from './pages'
 import { NavBar } from './layout'
 
@@ -15,6 +15,11 @@ import './components/Project/style.css'
 import './layout/NavBar/style.css'
 
 function App() {
+
+  const siteId = 3540845;
+  const hotjarVersion = 6;
+
+  Hotjar.init(siteId, hotjarVersion);
 
   const [bodyClass, setBodyClass] = useState("")
   const aboutOnClickRef = useRef(null)
@@ -45,7 +50,6 @@ function App() {
             </ul>
           </div>
         </div>
-        <Hotjar id="3540845" version="6" />
       </div>
     </>
   )

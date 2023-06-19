@@ -29,10 +29,6 @@ body {
   height: 3px;
   visibility: hidden;
 }
-@keyframes line {
-  0% {flex-grow: 0}
-  100% {flex-grow: 1}
-}
 .lineType1 {
   flex-grow: 1;
   margin-top: 25px;
@@ -45,7 +41,6 @@ body {
   margin-top: 30px;
   margin-right: 10px;
   z-index: -1;
-  animation: line 2s;
 }
 .lineType3 {
   display: inline-block;
@@ -53,14 +48,12 @@ body {
   margin-top: 30px;
   margin-left: 10px;
   z-index: -1;
-  animation: line 2s;
 }
 .lineType4 {
   flex-grow: 1;
   margin-top: 25px;
   margin-right: 10px;
   z-index: -1;
-  animation: line 2s;
 }
 .sideLine {
   background-color: var(--pink);

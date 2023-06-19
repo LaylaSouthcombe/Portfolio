@@ -201,7 +201,9 @@ h2 {
     margin: 12.5rem auto 8rem auto;
     grid-template-columns: 1fr 1fr;
   }
-  
+  .sectionDiv {
+    margin: 7.5rem auto;
+  }
   .introText {
     margin-top: 2rem;
   }
@@ -227,7 +229,9 @@ h2 {
   .introText > h2 {
     font-size: 1.75rem;
   }
-  
+  /* .sectionDiv {
+    margin: 7.5rem auto;
+  } */
   .introText > h1 {
     font-size: 2.5rem;
   }

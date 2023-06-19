@@ -1,12 +1,12 @@
 .projectDiv {
-    width: 70%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 60px;
-    margin-top: 30px;
+    /* margin-bottom: 60px;
+    margin-top: 30px; */
 }
 .projectInfo {
     width: 100%;
@@ -119,12 +119,12 @@
 }
 @media (min-width: 1024px) {
     .projectDiv {
-        width: 80%;
-        margin-top: 160px;
-        margin-bottom: 220px;
+        width: 100%;
+        /* margin-top: 160px;
+        margin-bottom: 220px; */
     }
     .projectDiv:last-of-type{
-        margin-bottom: 195px;
+        /* margin-bottom: 195px; */
     }
     .projectImg {
         width: 55%;

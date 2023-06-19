@@ -1,20 +1,16 @@
 #projects {
-    
 	font-weight: bold;
-    margin-top: 10vh;
 }
 
 .projectDiv {
     font-size: 1.25em;
 }
-.projectsTitle > h2 {
-    margin-bottom: 10px;
-    margin-left: 30px;
-}
+
 .projectsTitle {
     display: flex;
-    width: 90%;
+    margin-bottom: 1rem;
 }
+
 @media (min-width: 320px){
 
 }
@@ -22,17 +18,9 @@
 
 }
 @media (min-width: 768px) {
-    .projectsTitle > h2 {
-        margin-left: 80px;
-        margin-bottom: 30px;
-    }
+
 }
 @media (min-width: 1024px) {
-    .projectsTitle {
-        font-size: 1.125em;
-        margin-bottom: 35px;
-    }
-    .projectsTitle > h2 {
-        margin-left: 80px;
-    }
+
 }
+

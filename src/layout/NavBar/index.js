@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import logo from '../../images/logo.png'
 
-const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef}) => {
+const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef}) => {
     const [sideModalClassName, setSideModalClassName] = useState("sideModal")
-    const [iconImg, setIconImg] = useState("fa fa-bars")
-    const [iconClassName, setIconClassName] = useState("navIcon navIconBorder")
 
     const scrollEffect = (targetRef) => {
         const headerElement = document.querySelector("header");
         const navStyles = window.getComputedStyle(headerElement)
         const headerMargin = parseInt(navStyles.marginTop) + parseInt(navStyles.marginBottom)
+
         const y = headerElement.offsetHeight + headerMargin 
+
         targetRef.current.style.scrollMargin = y + "px"
         targetRef.current.scrollIntoView({
           behavior: 'smooth',
@@ -23,16 +23,10 @@ const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, s
     const openCloseSideNav = () => {
         if (sideModalClassName.includes("visibleModal")) {
             setSideModalClassName("sideModal hiddenModal")
-            setIconImg("fa fa-bars")
-            setIconClassName("navIcon navIconBorder")
             setBodyClass("visibleBody")
-            setzIndex("0")
         } else {
             setSideModalClassName("sideModal visibleModal")
-            setIconImg("fa-solid fa-xmark")
-            setIconClassName("navIcon")
             setBodyClass("blurredBody")
-            setzIndex("-1")
         }
     }
     
@@ -74,4 +68,4 @@ const NavBar = ({setBodyClass, setzIndex, aboutOnClickRef, projectsOnClickRef, s
     )
 }
 
-export default NavBar;
+export default NavBar

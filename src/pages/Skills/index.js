@@ -1,8 +1,7 @@
 import React from 'react'
-import './style.css';
-
 import { SkillsCard } from '../../components'
 import {apexLogo, apiLogo, expressLogo, gitLogo, gitHubLogo, graphQLLogo, javaScriptLogo, jestLogo, materialUILogo, mongoDBLogo, nextLogo, postgreSQLLogo, reactLogo, reduxLogo, rtlLogo, sassLogo, styledComponentsLogo, vueLogo} from '../../images/skills'
+import './style.css'
 
 const Skills = ({innerRef}) => {
 
@@ -33,20 +32,22 @@ const Skills = ({innerRef}) => {
         {name: "GitHub", color: "#FFFFFF", icon: gitHubLogo}
     ]
 
-    return(
-       <div className="sectionDiv" id="skills" ref={innerRef}>
-            <div className="skillsTitle">
-                <div className="lineType2 line"></div>
-                <h2><span className="number">02.</span> Technologies <br/><span className="lineSplit">I Work With</span></h2>
-                <div className="lineType3 line"></div>
-            </div> 
-            <div className="skillsColumns">
-                <SkillsCard title={"Back-end"} skills={backEndSkillsList} className="skillsCard1"/>
-                <SkillsCard title={"Front-end"} skills={frontEndSkillsList} className="skillsCard2"/>
-                <SkillsCard title={"Tools"} skills={toolsSkillsList} className="skillsCard3"/>
+    return (
+        <>
+            <div className="sectionDiv" id="skills" ref={innerRef}>
+                <div className="skillsTitle">
+                    <div className="lineType2 line"></div>
+                    <h2><span className="number">02.</span> Technologies <br/><span className="lineSplit">I Work With</span></h2>
+                    <div className="lineType3 line"></div>
+                </div>
+                <div className="skillsColumns">
+                    <SkillsCard title={"Back-end"} skills={backEndSkillsList} className="skillsCard1"/>
+                    <SkillsCard title={"Front-end"} skills={frontEndSkillsList} className="skillsCard2"/>
+                    <SkillsCard title={"Tools"} skills={toolsSkillsList} className="skillsCard3"/>
+                </div>
             </div>
-       </div>   
+        </>
     )
 }
 
-export default Skills;
+export default Skills

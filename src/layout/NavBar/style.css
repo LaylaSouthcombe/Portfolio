@@ -13,7 +13,6 @@ header {
     margin-right: auto;
     margin-left: auto;
 }
-
 .navLogo {
     height: 40px;
     margin-left: 15px;
@@ -55,7 +54,6 @@ header {
 .blurredBody {
     filter: blur(5px);
     overflow: hidden;
-    /* touch-action: none; */
     height: 100vh;
 }
 .sideModal {
@@ -84,7 +82,6 @@ header {
         transform: translate(0px, 0px);
     }
 }
-
 @keyframes modalDisappear {
     0% {
         transform: translate(0px, 0px);
@@ -94,7 +91,6 @@ header {
         transform: translateX(100%);
     }
 }
-
 .sideNavBar {
     padding-top: 15vh;
 }
@@ -123,12 +119,10 @@ header {
 .navIconSideModal {
     padding: 7.5px 11px;
 }
-
 .navIcon > i {
     font-size: 20px;
     color: var(--pink);
 }
-
 #sideBarResume {
     color: var(--pink);
     background-color: var(--dark-blue);
@@ -176,14 +170,12 @@ header {
     .sideNavBar {
         padding-top: 20vh;
     }
-
     .sideNavBar > li {
         padding: 25px;
         padding-top: 5%;
         padding-left: 20%;
         font-size: 1.5em;
     }
-
     #sideBarResume {
         padding: 15px 20px;
         font-size: 28px;
@@ -263,14 +255,12 @@ header {
     .navBar {
         display: flex;
     }
-
     .navBar > li {
         padding: 15px;
         margin-top: 55px;
         font-size: 1.15em;
         list-style-type: none;
     }
-
     #topNavResume {
         color: var(--pink);
         background-color: var(--dark-blue);
@@ -281,7 +271,6 @@ header {
         border-radius: 2.5px;
         text-decoration: none;
     }
-
     #topNavResumeLi{
        margin-top: 45px; 
        margin-right: 25px; 

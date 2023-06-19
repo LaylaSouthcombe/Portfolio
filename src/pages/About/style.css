@@ -2,7 +2,6 @@
     font-size: 1.25rem;
     font-weight: bold;
 }
-
 .aboutInfo {
     display: grid;
     grid-template-columns: 1fr;
@@ -11,12 +10,10 @@
     "textArea"
     "imageArea";
 }
-
 .aboutTitle {
     display: flex;
     margin-bottom: 2.5rem;
 }
-
 .aboutImgDiv {
     margin-top: 20px;
     z-index: -1;
@@ -24,7 +21,6 @@
     text-align: center;
     grid-area: imageArea;
 }
-
 .aboutImg {
     border-top: 6px solid var(--light-blue);
     border-left: 6px solid var(--light-blue);
@@ -32,16 +28,13 @@
     padding-top: 10px;
     width: 80%;
 }
-
 .aboutText > p {
     margin-bottom: 20px;
     font-size: 1rem;
 }
-
 .aboutText {
     grid-area: textArea;
 }
-
 @media (min-width: 768px) {
     .aboutInfo {
        grid-template-columns: 0.8fr 1.2fr;
@@ -60,13 +53,11 @@
         margin-bottom: 5rem;
     }
 }
-
 @media (min-width: 900px) {
     .aboutText > p{
         font-size: 1.1rem;
     }
 }
-
 @media (min-width: 1024px) {
     .aboutText > p{
         font-size: 1.2rem;

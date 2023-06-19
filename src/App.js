@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'
 import { About, IntroWrapper, Projects, Skills } from './pages'
 import { NavBar } from './layout'
-import gitHubIcon from './images/icon-github.png'
-import linkedInIcon from './images/icon-linkedin.png'
-import mailIcon from './images/icon-mail.png'
+import gitHubIcon from './images/icons/icon-github.png'
+import linkedInIcon from './images/icons/icon-linkedin.png'
+import mailIcon from './images/icons/icon-mail.png'
 import logo from './images/logo.png'
 
 import './App.css';
@@ -25,7 +25,6 @@ function App() {
       <header id="header">
         <NavBar setBodyClass={setBodyClass} setzIndex={setzIndex} aboutOnClickRef={aboutOnClickRef} introOnClickRef={introOnClickRef} skillsOnClickRef={skillsOnClickRef} projectsOnClickRef={projectsOnClickRef}/>
       </header>
-      <div className="sideLine"></div>
       <div className={`${bodyClass} body`}>
         <IntroWrapper innerRef={introOnClickRef}/>
         <About innerRef={aboutOnClickRef} id="about"/>
@@ -34,7 +33,7 @@ function App() {
         <div className="bottomLogo">
           <img src={logo} alt="" />
         </div>
-      </div>
+        <div className="sideLine"></div>
         <div className="bottomLine line"></div>
         <div className="bottomLinksDiv">
           <ul className="bottomLinks">
@@ -43,8 +42,9 @@ function App() {
             <li><a href="https://www.linkedin.com/in/layla-southcombe-811a77102" target="_blank" rel="noreferrer"><img src={linkedInIcon} alt="LinkedIn Icon" className="bottomLinkImg"/></a></li>
           </ul>
         </div>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;

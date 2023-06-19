@@ -66,6 +66,14 @@ body {
   animation: line 2s;
 }
 
+.lineType4 {
+  flex-grow: 1;
+  margin-top: 25px;
+  margin-right: 10px;
+  z-index: -1;
+  animation: line 2s;
+}
+
 .sideLine {
   background-color: var(--pink);
   opacity: 0.5;

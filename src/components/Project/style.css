@@ -1,21 +1,23 @@
 .projectDiv {
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     align-items: center;
     margin: 0 auto;
-    /* margin-bottom: 60px;
-    margin-top: 30px; */
 }
 .projectInfo {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .left {
     text-align: left;
+    justify-content: flex-start;
 }
 .right {
     text-align: right;
+    justify-content: flex-end;
 }
 .appType {
     font-weight: normal;
@@ -28,6 +30,13 @@
 .projectSummary {
     background-color: var(--darkish-blue);
     padding: 15px;
+    max-width: 450px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.projectSummary.left {
+    margin-left: 0;
+    margin-right: auto;
 }
 .projectImg {
     width: 100%;
@@ -48,21 +57,25 @@
 }
 .projectTech {
     display: flex;
-    justify-content: right;
+    justify-content:flex-end;
     list-style-type: none;
     flex-wrap: wrap;
     width: 100%;
-    margin-left: auto;
+    margin: 1rem 0 1rem auto;
+    max-width: 450px;
+    gap: 1rem;
 }
-.projectInfo.left > .projectTech > li {
-    padding: 10px 20px 10px 0px !important;
+
+.projectInfo.left > .projectTech {
+    justify-content: flex-start;
 }
+
 .projectTech > li {
-    padding: 10px 0px 10px 20px;
-    font-size: 12px;
+    font-size: 0.85rem;
 }
+
 .linkIcon {
-    height: 40px;
+    height: 30px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -73,7 +86,7 @@
     align-items: center;
 }
 .techLinkText{
-    font-size: 10px;
+    font-size: 0.95rem;
 }
 .projectInfo.left > .projectTech {
     justify-content: flex-start !important;

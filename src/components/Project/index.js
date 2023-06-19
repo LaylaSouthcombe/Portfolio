@@ -7,12 +7,13 @@ const Project = ({position, content}) => {
     projectInfoClassName += position
     let projectImgClassName = "projectImg "
     projectImgClassName += position
+    console.log(position)
     return (
         <div className="projectDiv" key={content.id}>
             <div className={projectInfoClassName}>
                 <h4 className="appType">{content.appType}</h4>
                 <h3 className="projectName">{content.projectName}</h3>
-                <div className="projectSummary">
+                <div className={"projectSummary " + position}>
                     <p>{content.summary}</p>
                 </div>
                 <ul className="projectTech">
@@ -32,7 +33,7 @@ const Project = ({position, content}) => {
                     ))
                     }
                     <div className="projectLinks">
-                        <span className="deployment techLinkText">App:</span>
+                        <span className="deployment techLinkText">Site:</span>
                         <a href={content.deploy} target="_blank" rel="noreferrer"><img src={Hyperlink} alt="" className="linkIcon"/></a>
                     </div>
                 </div>

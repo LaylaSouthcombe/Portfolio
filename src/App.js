@@ -15,12 +15,12 @@ import './layout/NavBar/style.css'
 
 function App() {
 
-  const [bodyClass, setBodyClass] = useState("")
+  const [bodyClass, setBodyClass] = useState("visibleBody")
   const aboutOnClickRef = useRef(null)
   const introOnClickRef = useRef(null)
   const skillsOnClickRef = useRef(null)
   const projectsOnClickRef = useRef(null)
-  
+
   return (
     <>
       <div className="App" >

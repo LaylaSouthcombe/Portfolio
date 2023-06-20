@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { About, IntroWrapper, Projects, Skills } from './pages'
 import { NavBar } from './layout'
 
@@ -15,11 +15,17 @@ import './layout/NavBar/style.css'
 
 function App() {
 
-  const [bodyClass, setBodyClass] = useState("visibleBody")
+  const [bodyClass, setBodyClass] = useState("")
   const aboutOnClickRef = useRef(null)
   const introOnClickRef = useRef(null)
   const skillsOnClickRef = useRef(null)
   const projectsOnClickRef = useRef(null)
+
+  useEffect(() => {
+    if(window.screen.width < 768){
+      setBodyClass("visibleBody")
+    }
+  }, [])
 
   return (
     <>

@@ -1,8 +1,10 @@
 # Layla Southcombe Portfolio
 
 **Hi there, I'm Layla Southcombe**
+
 **Welcome to my portfolio repository!**
-<img src="src/images/memojiSquares.webp" alt="layla southcombe memoji" width="200" style="margin: 2rem 0rem 2rem 4rem;"/>
+
+<img src="src/images/memojiSquares.webp" alt="layla southcombe memoji" width="50%" style="margin: 2rem auto 1rem 4rem; max-width: 400px"/>
 
 **You can view my portfolio in full [here](https://laylasouthcombe.netlify.app/)**
 

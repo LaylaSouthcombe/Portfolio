@@ -92,7 +92,10 @@ header {
     }
 }
 .sideNavBar {
-    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
 }
 .sideNavBar > li {
     list-style-type: none;
@@ -130,7 +133,6 @@ header {
     padding: 7.5px 10px;
     font-size: 18px;
     border: 3px solid var(--pink);
-    border-radius: 2.5px;
     text-decoration: none;
 }
 .topNavLogo:hover {
@@ -139,9 +141,6 @@ header {
 @media (min-width: 320px){
     header {
         font-size: 20px;
-    }
-    .sideNavBar {
-        padding-top: 22vh;
     }
     .sideNavBar > li {
         padding: 15px;
@@ -170,9 +169,6 @@ header {
     .navIcon > i {
         font-size: 25px;
     }
-    .sideNavBar {
-        padding-top: 20vh;
-    }
     .sideNavBar > li {
         padding: 25px;
         padding-top: 5%;
@@ -182,9 +178,6 @@ header {
     #sideBarResume {
         padding: 15px 20px;
         font-size: 28px;
-    }
-    .sideNavBar {
-        padding-top: 22vh;
     }
     .sideNavBar > li:last-child {
         margin-top: 30px;
@@ -227,9 +220,6 @@ header {
     .sideNavBar > li {
         font-size: 1.75em;
     }
-    .sideNavBar {
-        padding-top: 20vh;
-    }
     .sideNavBar > li:last-child {
         margin-top: 30px;
     }
@@ -271,7 +261,6 @@ header {
         padding: 10px 20px;
         font-size: 0.9em;
         border: 3px solid var(--pink);
-        border-radius: 2.5px;
         text-decoration: none;
     }
     #topNavResumeLi{

@@ -65,9 +65,9 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     </button>
                 </div>
                 <ul className="sideNavBar">
-                    <li onClick={() => scrollEffect(aboutOnClickRef)}><span className="number">01.</span>About</li>
-                    <li onClick={() => scrollEffect(skillsOnClickRef)}><span className="number">02.</span>Skills</li>
-                    <li onClick={() => scrollEffect(projectsOnClickRef)}><span className="number">03.</span>Projects</li>
+                    <li onClick={() => scrollEffect(aboutOnClickRef)}><span className="number">01.</span> About</li>
+                    <li onClick={() => scrollEffect(skillsOnClickRef)}><span className="number">02.</span> Skills</li>
+                    <li onClick={() => scrollEffect(projectsOnClickRef)}><span className="number">03.</span> Projects</li>
                     <li><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="sideBarResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
             </div>

@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-scroll";
 import logo from '../../images/logo.webp'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef}) => {
     const [sideModalClassName, setSideModalClassName] = useState("sideModal")
@@ -39,7 +41,11 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
     
     return (
         <>
-            <div className="topnav">
+            <motion.div 
+            initial={{ y: -100, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.9 }}
+            className="topnav">
                 <div className="topNavLogo" onClick={handleScrollToTop}>
                     <img src={logo} alt="" />
                 </div>
@@ -49,7 +55,7 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     <li><Link activeClass="active" smooth spy to="projects" offset={-180}><span className="number">03.</span> Projects</Link></li>
                     <li id="topNavResumeLi"><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="topNavResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
-            </div>
+            </motion.div>
             <div className="sidenav">
                 <div className="navLogo">
                     <img src={logo} alt="" />

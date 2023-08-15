@@ -1,4 +1,4 @@
- #about  {
+#about  {
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -13,6 +13,7 @@
 .aboutTitle {
     display: flex;
     margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
 }
 .aboutImgDiv {
     margin-top: 20px;

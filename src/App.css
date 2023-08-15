@@ -87,16 +87,6 @@ h2 {
   font-size: 1.5rem;
   color: var(--light-blue);
 }
-@media (min-width: 320px){
-  .sectionDiv h2 {
-      font-size: 1.75rem;
-  }
-}
-@media (min-width: 1024px) {
-  .sectionDiv h2 {
-      font-size: 1.85rem;
-  }
-}
 .introText > h1 {
   font-size: 1.75rem;
   color: var(--light-blue);
@@ -144,6 +134,9 @@ h2 {
   .intro {
     margin: 8rem auto 2rem auto;
   }
+  .sectionDiv h2 {
+    font-size: 1.75rem;
+  }
   .introText > h2 {
     font-size: 1.25rem;
   }
@@ -154,6 +147,11 @@ h2 {
 @media (min-width: 411px) {
   .intro {
     margin: 10rem auto 2rem auto;
+  }
+}
+@media (min-width: 500px){
+  .line{
+    visibility: visible;
   }
 }
 @media (min-width: 768px) {
@@ -176,7 +174,7 @@ h2 {
 }
 @media (min-width: 1024px) {
   .intro {
-    margin: 15rem auto 12rem auto;
+    margin: 19rem auto 15rem auto;
   }
   .introText {
     margin-top: 6rem;
@@ -187,9 +185,7 @@ h2 {
   .introText > h1 {
     font-size: 2.5rem;
   }
-}
-@media (min-width: 500px){
-  .line{
-    visibility: visible;
+  .sectionDiv h2 {
+    font-size: 1.85rem;
   }
 }

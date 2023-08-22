@@ -1,51 +1,22 @@
-#skills {
-    font-size: 1.25em;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.lineSplit {
-    color: var(--light-blue);
-}
-.skillsTitle {
+.certCarousel {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    width: 80%;
     margin: 0 auto;
-    margin-bottom: 2.5rem;
-    gap: 0.5rem;
-    text-align: center;
 }
-.skillsColumns {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+
+.carouselIndicators {
+    display: flex;
 }
-@media (min-width: 500px) {
-    .skillsColumns {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-    .skillsCard3 {
-        grid-column: span 2;
-        width: calc(50% - 0.75rem);
-        margin: 0 auto;
-    }
+
+.carouselIndicator {
+    width: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 10px;
+    margin: 5px;
 }
-@media (min-width: 768px) {
-    .skillsColumns {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-    .skillsCard3 {
-        grid-column: span 1;
-        width: 100%;
-    }
-    .skillsTitle {
-        margin-bottom: 5rem;
-    }
-}
-@media (min-width: 1024px) {
-    .skillsTitle {
-        margin-bottom: 7.5rem;
-    }
+
+.activeIndicator {
+    border: 2px solid pink;
 }

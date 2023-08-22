@@ -53,6 +53,7 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     <li><Link activeClass="active" smooth spy to="about" offset={-180}><span className="number">01.</span> About</Link></li>
                     <li><Link activeClass="active" smooth spy to="skills" offset={-180}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-180}><span className="number">03.</span> Projects</Link></li>
+                    <li><Link activeClass="active" smooth spy to="certificates" offset={-180}><span className="number">04.</span> Certificates</Link></li>
                     <li id="topNavResumeLi"><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="topNavResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
             </motion.div>

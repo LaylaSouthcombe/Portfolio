@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { About, IntroWrapper, Projects, Skills } from './pages'
+import { About, IntroWrapper, Projects, Skills, Certificates } from './pages'
 import { NavBar } from './layout'
 
 import gitHubIcon from './images/icons/icon-github.webp'
@@ -20,6 +20,7 @@ function App() {
   const introOnClickRef = useRef(null)
   const skillsOnClickRef = useRef(null)
   const projectsOnClickRef = useRef(null)
+  const certificatesOnClickRef = useRef(null)
 
   useEffect(() => {
     if(window.screen.width < 768){
@@ -38,6 +39,7 @@ function App() {
           <About innerRef={aboutOnClickRef} id="about"/>
           <Skills innerRef={skillsOnClickRef}/>
           <Projects innerRef={projectsOnClickRef}/>
+          <Certificates innerRef={certificatesOnClickRef}/>
           <div className="bottomLogo">
             <img src={logo} alt="" />
           </div>

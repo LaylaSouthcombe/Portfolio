@@ -23,15 +23,15 @@ const Certificates = ({innerRef}) => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "20px",
+        centerPadding: "10px",
         slidesToShow: windowSize >= 768 ? 2 : 1,
         speed: 500,
         dots: true
-    };
+    }
     
     window.addEventListener('resize', (e) => {
         setWindowSize(window.innerWidth)
-    });
+    })
 
     return (
         <>
@@ -41,11 +41,11 @@ const Certificates = ({innerRef}) => {
                     <h2><span className="number">04.</span> Certificates </h2>
                     <div className="lineType3 line"></div>
                 </div>
-                <div className="certCarouselWrapper">
+                <div className="certsCarouselWrapper">
                     <Slider {...settings}>
                         {certificates.map(cert => (
                             <div className="certificate">
-                                <img src={cert} />
+                                <img src={cert} alt="certificate"/>
                             </div>
                         ))}
                     </Slider>

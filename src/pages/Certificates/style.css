@@ -1,8 +1,7 @@
-.certCarousel {
-    display: flex;
-    align-items: center;
-    width: 80%;
+.certsCarouselWrapper {
+    width: 90%;
     margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 .certificate {
@@ -17,30 +16,6 @@
     opacity: 1 !important;
 }
 
-.carouselIndicators {
-    display: flex;
-    width: 30%;
-    margin: 10px auto;
-    justify-content: center;
-}
-
-.carouselIndicator {
-    width: 10px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    height: 10px;
-    margin: 5px;
-}
-
-.activeIndicator {
-    outline: 2px solid var(--pink);
-    border: 2px solid var(--pink);
-}
-
-.leftCertButton {
-    transform: scaleX(-1);
-}
-
 .certsTitle {
     display: flex;
     justify-content: space-between;
@@ -51,17 +26,64 @@
     text-align: center;
 }
 
+.slick-dots {
+    bottom: -35px;
+}
+
+.slick-dots li button:before {
+    color: var(--white);
+    opacity: 1;
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--pink);
+    opacity: 1;
+}
+
+.slick-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.slick-prev {
+    left: -35px;
+}
+
+.slick-next {
+    right: -35px;
+}
+
+.slick-next::before, .slick-prev::before {
+    color: var(--pink);
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
     .certsTitle {
         margin-bottom: 5rem;
+    }
+
+    .slick-dots {
+        bottom: -45px;
+    }
+    
+    .slick-dots li button:before {
+        font-size: 16px;
+    }
+    
+    .slick-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .slick-next::before, .slick-prev::before {
+        color: var(--pink);
+        font-size: 30px;
     }
 }
 @media (min-width: 1024px) {
     .certsTitle {
         margin-bottom: 7.5rem;
     }
-}
-
-.swiper-pagination {
-    top: 20px;
 }

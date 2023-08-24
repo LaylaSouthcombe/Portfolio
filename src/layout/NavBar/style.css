@@ -39,7 +39,7 @@ header {
     justify-content: space-between;
     width: 100%;
 }
-.sideNavBar > li > a {
+.sideNavBar > li {
     cursor: pointer
 }
 .visibleBody {

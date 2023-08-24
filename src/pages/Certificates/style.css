@@ -3,19 +3,16 @@
     margin: 0 auto;
     padding-bottom: 2rem;
 }
-
 .certificate {
     margin: 0 auto;
     text-align: center;
     opacity: 1 !important;
 }
-
 .certificate > img {
     width: 90%;
     margin: 0 auto;
     opacity: 1 !important;
 }
-
 .certsTitle {
     display: flex;
     justify-content: space-between;
@@ -25,58 +22,46 @@
     gap: 0.5rem;
     text-align: center;
 }
-
 .slick-dots {
     bottom: -35px;
 }
-
 .slick-dots li button:before {
     color: var(--white);
     opacity: 1;
     font-size: 12px;
 }
-
 .slick-dots li.slick-active button:before {
     color: var(--pink);
     opacity: 1;
 }
-
 .slick-arrow {
     width: 20px;
     height: 20px;
 }
-
 .slick-prev {
     left: -35px;
 }
-
 .slick-next {
     right: -35px;
 }
-
 .slick-next::before, .slick-prev::before {
     color: var(--pink);
     font-size: 20px;
 }
-
 @media (min-width: 768px) {
     .certsTitle {
         margin-bottom: 5rem;
     }
-
     .slick-dots {
         bottom: -45px;
     }
-    
     .slick-dots li button:before {
         font-size: 16px;
     }
-    
     .slick-arrow {
         width: 30px;
         height: 30px;
     }
-    
     .slick-next::before, .slick-prev::before {
         color: var(--pink);
         font-size: 30px;

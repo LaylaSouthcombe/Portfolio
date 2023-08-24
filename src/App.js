@@ -32,7 +32,7 @@ function App() {
     <>
       <div className="App" >
         <header id="header">
-          <NavBar setBodyClass={setBodyClass} aboutOnClickRef={aboutOnClickRef} introOnClickRef={introOnClickRef} skillsOnClickRef={skillsOnClickRef} projectsOnClickRef={projectsOnClickRef}/>
+          <NavBar setBodyClass={setBodyClass} aboutOnClickRef={aboutOnClickRef} introOnClickRef={introOnClickRef} skillsOnClickRef={skillsOnClickRef} projectsOnClickRef={projectsOnClickRef} certificatesOnClickRef={certificatesOnClickRef}/>
         </header>
         <div className={`${bodyClass} body`}>
           <IntroWrapper innerRef={introOnClickRef}/>

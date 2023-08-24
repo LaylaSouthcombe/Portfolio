@@ -4,7 +4,7 @@ import logo from '../../images/logo.webp'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef}) => {
+const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef, certificatesOnClickRef}) => {
     const [sideModalClassName, setSideModalClassName] = useState("sideModal")
 
     const scrollEffect = (targetRef) => {
@@ -75,6 +75,7 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     <li onClick={() => scrollEffect(aboutOnClickRef)}><span className="number">01.</span> About</li>
                     <li onClick={() => scrollEffect(skillsOnClickRef)}><span className="number">02.</span> Skills</li>
                     <li onClick={() => scrollEffect(projectsOnClickRef)}><span className="number">03.</span> Projects</li>
+                    <li onClick={() => scrollEffect(certificatesOnClickRef)}><span className="number">04.</span> Certificates</li>
                     <li><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="sideBarResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
             </div>

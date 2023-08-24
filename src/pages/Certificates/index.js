@@ -6,6 +6,7 @@ import htmlCert from '../../images/certificates/htmlCert.png'
 import javascriptAlgoCert from '../../images/certificates/JavascriptAlgoCert.png'
 import javascriptCert from '../../images/certificates/JavascriptCert.png'
 import responsiveWebCert from '../../images/certificates/ResponsiveWebCert.png'
+import FullStackBootcamp from '../../images/certificates/FullStackBootcamp.png'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -14,7 +15,7 @@ import './style.css'
 
 const Certificates = ({innerRef}) => {
 
-    let certificates = [ backEndCert, javascriptAlgoCert, frontEndCert, responsiveWebCert, javascriptCert, htmlCert]
+    let certificates = [ backEndCert, javascriptAlgoCert, frontEndCert, responsiveWebCert, FullStackBootcamp, javascriptCert, htmlCert]
     
     const [windowSize, setWindowSize] = useState(window.innerWidth)
 

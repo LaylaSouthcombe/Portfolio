@@ -1,33 +1,53 @@
-import React, { useState } from 'react'
-import Carousel from 'react-material-ui-carousel'
-import { Certificate } from '../../components'
+import React, { useState } from 'react';
+
 import backEndCert from '../../images/certificates/BackEndCert.png'
 import frontEndCert from '../../images/certificates/FrontEndCert.png'
 import htmlCert from '../../images/certificates/htmlCert.png'
 import javascriptAlgoCert from '../../images/certificates/JavascriptAlgoCert.png'
 import javascriptCert from '../../images/certificates/JavascriptCert.png'
 import responsiveWebCert from '../../images/certificates/ResponsiveWebCert.png'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+import Slider from "react-slick";
 import './style.css'
 
 const Certificates = ({innerRef}) => {
 
-    let certificates = [ backEndCert, frontEndCert, javascriptAlgoCert,responsiveWebCert, javascriptCert, htmlCert]
+    let certificates = [ backEndCert, javascriptAlgoCert, frontEndCert, responsiveWebCert, javascriptCert, htmlCert]
+    
+    const [windowSize, setWindowSize] = useState(window.innerWidth)
 
-    const [certIndex, setCertIndex] = useState(0)
+    const settings = {
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "20px",
+        slidesToShow: windowSize >= 768 ? 2 : 1,
+        speed: 500,
+        dots: true
+    };
+    
+    window.addEventListener('resize', (e) => {
+        setWindowSize(window.innerWidth)
+    });
 
     return (
         <>
             <div className="sectionDiv" id="certificates" ref={innerRef}>
+                <div className="certsTitle">
+                    <div className="lineType2 line"></div>
+                    <h2><span className="number">04.</span> Certificates </h2>
+                    <div className="lineType3 line"></div>
+                </div>
                 <div className="certCarouselWrapper">
-                    <div className="certCarousel">
-                        <div className="leftCertButton" onClick={() => setCertIndex(certIndex === 0 ? 0 : prev => prev -1)}>/</div>
-                        <Certificate cert={certificates[certIndex]}/>
-                        <div className="rightCertButton" onClick={() => setCertIndex(certIndex === certificates.length - 1 ? certificates.length - 1 : prev => prev +1)}>/</div>
-                    </div>
-                    <div className="carouselIndicators">
-                        {certificates.map((cert, i) => <div className={certIndex === i ? "carouselIndicator activeIndicator" : "carouselIndicator"} onClick={() => setCertIndex(i)}></div>)}
-                    </div>
+                    <Slider {...settings}>
+                        {certificates.map(cert => (
+                            <div className="certificate">
+                                <img src={cert} />
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
             </div>
         </>

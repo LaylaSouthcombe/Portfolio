@@ -5,8 +5,23 @@
     margin: 0 auto;
 }
 
+.certificate {
+    margin: 0 auto;
+    text-align: center;
+    opacity: 1 !important;
+}
+
+.certificate > img {
+    width: 90%;
+    margin: 0 auto;
+    opacity: 1 !important;
+}
+
 .carouselIndicators {
     display: flex;
+    width: 30%;
+    margin: 10px auto;
+    justify-content: center;
 }
 
 .carouselIndicator {
@@ -18,5 +33,35 @@
 }
 
 .activeIndicator {
-    border: 2px solid pink;
+    outline: 2px solid var(--pink);
+    border: 2px solid var(--pink);
+}
+
+.leftCertButton {
+    transform: scaleX(-1);
+}
+
+.certsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .certsTitle {
+        margin-bottom: 5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .certsTitle {
+        margin-bottom: 7.5rem;
+    }
+}
+
+.swiper-pagination {
+    top: 20px;
 }

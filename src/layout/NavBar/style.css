@@ -45,7 +45,6 @@ header {
 .visibleBody {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    height: 100vh;
     overflow: auto;
 }
 .visibleBody::-webkit-scrollbar{
@@ -54,7 +53,6 @@ header {
 .blurredBody {
     filter: blur(5px);
     overflow: hidden;
-    height: 100vh;
 }
 .sideModal {
     position: absolute;

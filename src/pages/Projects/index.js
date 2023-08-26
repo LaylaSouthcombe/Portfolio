@@ -1,6 +1,6 @@
 import React from 'react'
 import { Project } from '../../components'
-
+import { motion } from "framer-motion";
 import sooki from '../../images/sooki.webp'
 import dumbfounded from '../../images/dumbfounded.webp'
 import indee from '../../images/indee.webp'
@@ -16,10 +16,18 @@ const Projects = ({innerRef}) => {
     return (
         <>
             <div className="sectionDiv" id="projects" ref={innerRef}>
-                <div className="projectsTitle">
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.7 }}
+                variants={{
+                    visible: { x: 0, opacity: 1 },
+                    hidden: { x: -200, opacity: 0 }
+                }}
+                className="projectsTitle">
                     <h2><span className="number">03.</span> Projects I've Built</h2>
                     <div className="lineType1 line"></div>
-                </div> 
+                </motion.div> 
                 <Project position="right" content={projects[0]}/> 
                 <Project position="left" content={projects[1]}/> 
                 <Project position="right" content={projects[2]}/> 

@@ -1,13 +1,22 @@
-import React from 'react';
+import React from 'react'
 import GitHub from '../../images/icons/icon-github-pink.webp'
 import Hyperlink from '../../images/icons/icon-hyperlink.webp'
+import { motion } from 'framer-motion'
 
 const Project = ({position, content}) => {
 
     return (
         <>
             <div className={"projectDiv " + position} key={content.id}>
-                <div className={"projectInfo " + position}>
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.7 }}
+                variants={{
+                    visible: { x: 0, opacity: 1 },
+                    hidden: { x: -200, opacity: 0 }
+                }}
+                className={"projectInfo " + position}>
                     <h4 className="appType">{content.appType}</h4>
                     <h3 className="projectName">{content.projectName}</h3>
                     <div className={"projectSummary " + position}>
@@ -34,10 +43,18 @@ const Project = ({position, content}) => {
                             <a href={content.deploy} target="_blank" rel="noreferrer" aria-label="Link to project's live site"><img src={Hyperlink} alt="" className="linkIcon"/></a>
                         </div>
                     </div>
-                </div>
-                <div className={"projectImg " + position}>
+                </motion.div>
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.7 }}
+                variants={{
+                    visible: { x: 0, opacity: 1 },
+                    hidden: { x: 200, opacity: 0 }
+                }}
+                className={"projectImg " + position}>
                     <img src={content.img} alt="" />
-                </div>
+                </motion.div>
             </div>
         </>
     )

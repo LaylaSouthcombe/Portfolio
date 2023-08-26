@@ -1,5 +1,6 @@
 import React from 'react'
 import { SkillsCard } from '../../components'
+import { motion } from "framer-motion";
 import {apexLogo, apiLogo, expressLogo, gitLogo, gitHubLogo, graphQLLogo, javaScriptLogo, jestLogo, materialUILogo, mongoDBLogo, nextLogo, postgreSQLLogo, reactLogo, reduxLogo, rtlLogo, sassLogo, styledComponentsLogo, vueLogo} from '../../images/skills'
 import './style.css'
 
@@ -35,15 +36,38 @@ const Skills = ({innerRef}) => {
     return (
         <>
             <div className="sectionDiv" id="skills" ref={innerRef}>
-                <div className="skillsTitle">
+                <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.7 }}
+                variants={{
+                    visible: { y: 0, opacity: 1 },
+                    hidden: { y: 100, opacity: 0 }
+                }}
+                className="skillsTitle">
                     <div className="lineType2 line"></div>
                     <h2><span className="number">02.</span> Technologies <br/><span className="lineSplit">I Work With</span></h2>
                     <div className="lineType3 line"></div>
-                </div>
+                </motion.div>
                 <div className="skillsColumns">
-                    <SkillsCard title={"Back-end"} skills={backEndSkillsList} className="skillsCard1"/>
-                    <SkillsCard title={"Front-end"} skills={frontEndSkillsList} className="skillsCard2"/>
-                    <SkillsCard title={"Tools"} skills={toolsSkillsList} className="skillsCard3"/>
+                    <SkillsCard 
+                    title={"Back-end"} 
+                    skills={backEndSkillsList} 
+                    visiblePosition={{y: 0, x: 0, opacity: 1}}
+                    hiddenPosition={{y: 200, x:-200,opacity: 0}}
+                    className="skillsCard1"/>
+                    <SkillsCard 
+                    title={"Front-end"} 
+                    skills={frontEndSkillsList} 
+                    visiblePosition={{y: 0, opacity: 1}}
+                    hiddenPosition={{y: 200, opacity: 0}}
+                    className="skillsCard2"/>
+                    <SkillsCard 
+                    title={"Tools"} 
+                    skills={toolsSkillsList} 
+                    visiblePosition={{y: 0, x: 0, opacity: 1}}
+                    hiddenPosition={{y: 200, x: 200, opacity: 0}}
+                    className="skillsCard3"/>
                 </div>
             </div>
         </>

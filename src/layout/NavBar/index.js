@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import logo from '../../images/logo.webp'
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClickRef, certificatesOnClickRef}) => {
     const [sideModalClassName, setSideModalClassName] = useState("sideModal")

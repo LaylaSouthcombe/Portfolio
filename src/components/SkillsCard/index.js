@@ -1,12 +1,21 @@
 import React from 'react'
 import { Skill } from '..'
+import { motion } from "framer-motion";
 import './style.css'
 
-const SkillsCard = ({title, skills, className}) => {
+const SkillsCard = ({title, skills, className, visiblePosition, hiddenPosition}) => {
     
     return (
         <>
-            <div className={"skillsCard " + className}>
+            <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.7 }}
+            variants={{
+                visible: visiblePosition,
+                hidden: hiddenPosition
+            }}
+            className={"skillsCard " + className}>
                 <h2>{title}</h2>
                 <div className="skillsGrid">
                     {
@@ -15,7 +24,7 @@ const SkillsCard = ({title, skills, className}) => {
                         ))
                     }
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

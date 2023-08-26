@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from 'react'
+import { motion } from "framer-motion";
 import headshot from '../../images/headshot.webp'
 import './style.css';
 
@@ -15,7 +14,6 @@ const About = ({innerRef}) => {
         </>
     )
 }
-
 
 export function AboutTitle(){
 

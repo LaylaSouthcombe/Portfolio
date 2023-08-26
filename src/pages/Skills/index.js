@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SkillsCard } from '../../components'
 import { motion } from "framer-motion";
 import {apexLogo, apiLogo, expressLogo, gitLogo, gitHubLogo, graphQLLogo, javaScriptLogo, jestLogo, materialUILogo, mongoDBLogo, nextLogo, postgreSQLLogo, reactLogo, reduxLogo, rtlLogo, sassLogo, styledComponentsLogo, vueLogo} from '../../images/skills'
 import './style.css'
 
 const Skills = ({innerRef}) => {
+
+    const [windowSize, setWindowSize] = useState(window.innerWidth)
+
+    window.addEventListener('resize', (e) => {
+        setWindowSize(window.innerWidth)
+    })
 
     const backEndSkillsList = [
         {name: "JavaScript", color: "#F7DF1E", icon: javaScriptLogo},
@@ -53,20 +59,23 @@ const Skills = ({innerRef}) => {
                     <SkillsCard 
                     title={"Back-end"} 
                     skills={backEndSkillsList} 
-                    visiblePosition={{y: 0, x: 0, opacity: 1}}
-                    hiddenPosition={{y: 200, x:-200,opacity: 0}}
+                    delay={0}
+                    windowSize={windowSize}
+                    xValue={200}
                     className="skillsCard1"/>
                     <SkillsCard 
                     title={"Front-end"} 
                     skills={frontEndSkillsList} 
-                    visiblePosition={{y: 0, opacity: 1}}
-                    hiddenPosition={{y: 200, opacity: 0}}
+                    delay={windowSize >= 768 ? 0.2 : 0}
+                    windowSize={windowSize}
+                    xValue={-200}
                     className="skillsCard2"/>
                     <SkillsCard 
                     title={"Tools"} 
                     skills={toolsSkillsList} 
-                    visiblePosition={{y: 0, x: 0, opacity: 1}}
-                    hiddenPosition={{y: 200, x: 200, opacity: 0}}
+                    delay={windowSize >= 768 ? 0.4 : 0}
+                    windowSize={windowSize}
+                    xValue={200}
                     className="skillsCard3"/>
                 </div>
             </div>

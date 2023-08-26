@@ -40,10 +40,17 @@ const Certificates = ({innerRef}) => {
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 0.7 }}
-                variants={{
-                    visible: { y: 0, opacity: 1 },
-                    hidden: { y: 200, opacity: 0 }
-                }}
+                variants={windowSize < 768 ? 
+                    {
+                        visible: { x: 0, y: 0, opacity: 1 },
+                        hidden: { x: 200, y: 0, opacity: 0 }
+                    }
+                    :
+                    {
+                        visible: { x: 0, y: 0, opacity: 1 },
+                        hidden: { x: 0, y: 200, opacity: 0 }
+                    }
+                }
                 className="certsTitle">
                     <div className="lineType2 line"></div>
                     <h2><span className="number">04.</span> Certificates </h2>
@@ -53,10 +60,17 @@ const Certificates = ({innerRef}) => {
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 0.7 }}
-                variants={{
-                    visible: { y: 0, opacity: 1 },
-                    hidden: { y: 200, opacity: 0 }
-                }}
+                variants={windowSize < 768 ? 
+                    {
+                        visible: { x: 0, y: 0, opacity: 1 },
+                        hidden: { x: 200, y: 0, opacity: 0 }
+                    }
+                    :
+                    {
+                        visible: { x: 0, y: 0, opacity: 1 },
+                        hidden: { x: 0, y: 200, opacity: 0 }
+                    }
+                }
                 className="certsCarouselWrapper">
                     <Slider {...settings}>
                         {certificates.map(cert => (

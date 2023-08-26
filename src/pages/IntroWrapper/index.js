@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import memoji from '../../images/memojiSquares.webp'
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const IntroWrapper = ({innerRef}) => {
 
@@ -9,18 +8,26 @@ const IntroWrapper = ({innerRef}) => {
     <>
       <div className="intro wrapper" id="intro" ref={innerRef}>
         <motion.div
-        initial={{ y: 100, opacity: 0 }} 
-        animate={{ y: 0, opacity: 1 }} 
-        transition={{ duration: 0.9 }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.7 }}
+        variants={{
+          visible: { y: 0, opacity: 1 },
+          hidden: { y: 100, opacity: 0 }
+        }}
         className="introText">
           <h2>Hi there, I'm</h2>
           <h1>Layla Southcombe</h1>
           <h2>Full-Stack Developer</h2>
         </motion.div>
-        <motion.div 
-        initial={{ x: 100, opacity: 0 }} 
-        animate={{ x: 0, opacity: 1 }} 
-        transition={{ duration: 0.9 }}
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.7 }}
+        variants={{
+          visible: { x: 0, opacity: 1 },
+          hidden: { x: 100, opacity: 0 }
+        }}
         className="memoji">
           <img id="memoji" src={memoji} alt="Layla Southcombe Memoji" />
         </motion.div>

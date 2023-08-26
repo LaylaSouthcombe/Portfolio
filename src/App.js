@@ -26,6 +26,42 @@ function App() {
     if(window.screen.width < 768){
       setBodyClass("visibleBody")
     }
+
+    let startX = 0
+    let startY = 0
+
+    const handleTouchStart = (event) => {
+      startX = event.touches[0].clientX
+      startY = event.touches[0].clientY
+    };
+
+    const handleTouchMove = (event) => {
+      const deltaX = Math.abs(event.touches[0].clientX - startX)
+      const deltaY = Math.abs(event.touches[0].clientY - startY)
+
+      if (deltaX > deltaY) {
+        event.preventDefault()
+      }
+    }
+
+    const handleWheel = (event) => {
+      const deltaX = Math.abs(event.deltaX)
+      const deltaY = Math.abs(event.deltaY)
+
+      if (deltaX > deltaY) {
+        event.preventDefault()
+      }
+    }
+
+    window.addEventListener('touchstart', handleTouchStart, { passive: true })
+    window.addEventListener('touchmove', handleTouchMove, { passive: false })
+    window.addEventListener('wheel', handleWheel, { passive: false })
+
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart)
+      window.removeEventListener('touchmove', handleTouchMove)
+      window.removeEventListener('wheel', handleWheel)
+    }
   }, [])
 
   return (

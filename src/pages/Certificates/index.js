@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { motion } from 'framer-motion';
 import backEndCert from '../../images/certificates/BackEndCert.png'
 import frontEndCert from '../../images/certificates/FrontEndCert.png'
 import htmlCert from '../../images/certificates/htmlCert.png'
@@ -36,12 +36,28 @@ const Certificates = ({innerRef}) => {
     return (
         <>
             <div className="sectionDiv" id="certificates" ref={innerRef}>
-                <div className="certsTitle">
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.7 }}
+                variants={{
+                    visible: { y: 0, opacity: 1 },
+                    hidden: { y: 200, opacity: 0 }
+                }}
+                className="certsTitle">
                     <div className="lineType2 line"></div>
                     <h2><span className="number">04.</span> Certificates </h2>
                     <div className="lineType3 line"></div>
-                </div>
-                <div className="certsCarouselWrapper">
+                </motion.div>
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.7 }}
+                variants={{
+                    visible: { y: 0, opacity: 1 },
+                    hidden: { y: 200, opacity: 0 }
+                }}
+                className="certsCarouselWrapper">
                     <Slider {...settings}>
                         {certificates.map(cert => (
                             <div className="certificate">
@@ -49,7 +65,7 @@ const Certificates = ({innerRef}) => {
                             </div>
                         ))}
                     </Slider>
-                </div>
+                </motion.div>
             </div>
         </>
     )

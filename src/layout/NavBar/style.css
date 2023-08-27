@@ -39,20 +39,15 @@ header {
     justify-content: space-between;
     width: 100%;
 }
-.sideNavBar > li {
-    cursor: pointer
-}
 .visibleBody {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow: auto;
 }
 .visibleBody::-webkit-scrollbar{
     display: none;
 }
 .blurredBody {
     filter: blur(5px);
-    overflow: hidden;
 }
 .sideModal {
     position: absolute;
@@ -61,6 +56,7 @@ header {
     width: 70%;
     z-index: 9999;
     display: none;
+    border-left: 2px solid rgba(233, 30, 99, 0.5);
 }
 .visibleModal{
     animation: modalAppear 400ms ease-in-out forwards;
@@ -93,13 +89,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80%;
+    height: 70%;
 }
 .sideNavBar > li {
     list-style-type: none;
     padding: 15px;
     padding-left: 15%;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    cursor: pointer;
 }
 .me {
     margin-left: 50px;
@@ -147,7 +144,7 @@ header {
     }
     #sideBarResume {
         padding: 12.5px 15px;
-        font-size: 24px;
+        font-size: 20px;
     }
     .sideNavBar > li:last-child {
         margin-top: 20px;
@@ -172,11 +169,10 @@ header {
         padding: 25px;
         padding-top: 5%;
         padding-left: 20%;
-        font-size: 1.5em;
     }
     #sideBarResume {
         padding: 15px 20px;
-        font-size: 28px;
+        font-size: 22px;
     }
     .sideNavBar > li:last-child {
         margin-top: 30px;
@@ -221,6 +217,9 @@ header {
     }
     .sideNavBar > li:last-child {
         margin-top: 30px;
+    }
+    .sideNavBar {
+        height: 70%;
     }
 }
 @media (min-width: 960px) {

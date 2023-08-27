@@ -61,14 +61,14 @@ const Skills = ({innerRef}) => {
                     skills={backEndSkillsList} 
                     delay={0}
                     windowSize={windowSize}
-                    xValue={200}
+                    xValue={-200}
                     className="skillsCard1"/>
                     <SkillsCard 
                     title={"Front-end"} 
                     skills={frontEndSkillsList} 
                     delay={windowSize >= 768 ? 0.2 : 0}
                     windowSize={windowSize}
-                    xValue={-200}
+                    xValue={200}
                     className="skillsCard2"/>
                     <SkillsCard 
                     title={"Tools"} 

@@ -15,13 +15,16 @@ import './style.css'
 
 const Certificates = ({innerRef}) => {
 
-    let certificates = [ backEndCert, javascriptAlgoCert, frontEndCert, responsiveWebCert, FullStackBootcamp, javascriptCert, htmlCert]
-    
     const [windowSize, setWindowSize] = useState(window.innerWidth)
-
+    
     window.addEventListener('resize', (e) => {
         setWindowSize(window.innerWidth)
     })
+
+    let certificates = windowSize >= 768 ? 
+    [ javascriptAlgoCert, frontEndCert, responsiveWebCert, FullStackBootcamp, javascriptCert, htmlCert, backEndCert]
+        :
+    [ backEndCert, javascriptAlgoCert, frontEndCert, responsiveWebCert, FullStackBootcamp, javascriptCert, htmlCert]
 
     const settings = {
         className: "center",

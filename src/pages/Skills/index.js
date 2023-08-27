@@ -46,10 +46,17 @@ const Skills = ({innerRef}) => {
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 0.7 }}
-                variants={{
-                    visible: { y: 0, opacity: 1 },
-                    hidden: { y: 100, opacity: 0 }
-                }}
+                variants={windowSize >= 768 ?
+                    {
+                        visible: { y: 0, x: 0, opacity: 1 },
+                        hidden: { y: 100, x: 0, opacity: 0 }
+                    }
+                    :
+                    {
+                        visible: { y: 0, x: 0, opacity: 1 },
+                        hidden: { y: 0, x: 100, opacity: 0 }
+                    }
+                }
                 className="skillsTitle">
                     <div className="lineType2 line"></div>
                     <h2><span className="number">02.</span> Technologies <br/><span className="lineSplit">I Work With</span></h2>
@@ -75,7 +82,7 @@ const Skills = ({innerRef}) => {
                     skills={toolsSkillsList} 
                     delay={windowSize >= 768 ? 0.4 : 0}
                     windowSize={windowSize}
-                    xValue={200}
+                    xValue={-200}
                     className="skillsCard3"/>
                 </div>
             </div>

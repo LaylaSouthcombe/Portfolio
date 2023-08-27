@@ -19,6 +19,10 @@ const Certificates = ({innerRef}) => {
     
     const [windowSize, setWindowSize] = useState(window.innerWidth)
 
+    window.addEventListener('resize', (e) => {
+        setWindowSize(window.innerWidth)
+    })
+
     const settings = {
         className: "center",
         centerMode: true,
@@ -29,10 +33,6 @@ const Certificates = ({innerRef}) => {
         dots: true
     }
     
-    window.addEventListener('resize', (e) => {
-        setWindowSize(window.innerWidth)
-    })
-
     return (
         <>
             <div className="sectionDiv" id="certificates" ref={innerRef}>
@@ -40,15 +40,15 @@ const Certificates = ({innerRef}) => {
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 0.7 }}
-                variants={windowSize < 768 ? 
+                variants={windowSize >= 768 ? 
                     {
                         visible: { x: 0, y: 0, opacity: 1 },
-                        hidden: { x: 200, y: 0, opacity: 0 }
+                        hidden: { x: 0, y: 200, opacity: 0 }
                     }
                     :
                     {
                         visible: { x: 0, y: 0, opacity: 1 },
-                        hidden: { x: 0, y: 200, opacity: 0 }
+                        hidden: { x: 200, y: 0, opacity: 0 }
                     }
                 }
                 className="certsTitle">
@@ -60,15 +60,15 @@ const Certificates = ({innerRef}) => {
                 initial="hidden"
                 whileInView="visible"
                 transition={{ duration: 0.7 }}
-                variants={windowSize < 768 ? 
+                variants={windowSize >= 768 ? 
                     {
                         visible: { x: 0, y: 0, opacity: 1 },
-                        hidden: { x: 200, y: 0, opacity: 0 }
+                        hidden: { x: 0, y: 200, opacity: 0 }
                     }
                     :
                     {
                         visible: { x: 0, y: 0, opacity: 1 },
-                        hidden: { x: 0, y: 200, opacity: 0 }
+                        hidden: { x: 200, y: 0, opacity: 0 }
                     }
                 }
                 className="certsCarouselWrapper">

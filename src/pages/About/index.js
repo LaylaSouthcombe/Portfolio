@@ -35,7 +35,7 @@ export function AboutTitle(){
     )
 }
 
-export function AboutInfo(){
+export function AboutInfo({viewport}){
 
     return (
         <>

@@ -5,24 +5,23 @@ import './style.css'
 
 const SkillsCard = ({title, skills, className, delay, windowSize, xValue}) => {
 
-    const variants = windowSize >= 768 ? 
-        {
-            visible: {y: 0, opacity: 1},
-            hidden: {y: 200, opacity: 0}
-        }
-            :
-        {
-            visible: {x: 0, opacity: 1},
-            hidden: {x: xValue, opacity: 0}
-        }
-
     return (
         <>
             <motion.div
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.7, delay: delay }}
-            variants={variants}
+            variants={windowSize >= 768 ? 
+                {
+                    visible: {y: 0, x: 0, opacity: 1},
+                    hidden: {y: 200, x: 0, opacity: 0}
+                }
+                    :
+                {
+                    visible: {x: 0, y: 0, opacity: 1},
+                    hidden: {x: xValue, y: 0, opacity: 0}
+                }
+            }
             className={"skillsCard " + className}>
                 <h2>{title}</h2>
                 <div className="skillsGrid">

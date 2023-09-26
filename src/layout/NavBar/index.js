@@ -53,7 +53,7 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     <li><Link activeClass="active" smooth spy to="skills" offset={-180}><span className="number">02.</span> Skills</Link></li>
                     <li><Link activeClass="active" smooth spy to="projects" offset={-180}><span className="number">03.</span> Projects</Link></li>
                     <li><Link activeClass="active" smooth spy to="certificates" offset={-180}><span className="number">04.</span> Certificates</Link></li>
-                    <li id="topNavResumeLi"><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="topNavResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
+                    <li id="topNavResumeLi"><a href="https://docdro.id/c2jJmN8" target="_blank" rel="noreferrer" id="topNavResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
             </motion.div>
             <div className="sidenav">
@@ -75,7 +75,7 @@ const NavBar = ({setBodyClass, aboutOnClickRef, projectsOnClickRef, skillsOnClic
                     <li onClick={() => scrollEffect(skillsOnClickRef)}><span className="number">02.</span> Skills</li>
                     <li onClick={() => scrollEffect(projectsOnClickRef)}><span className="number">03.</span> Projects</li>
                     <li onClick={() => scrollEffect(certificatesOnClickRef)}><span className="number">04.</span> Certificates</li>
-                    <li><a href="https://docdro.id/7tZcCZL" target="_blank" rel="noreferrer" id="sideBarResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
+                    <li><a href="https://docdro.id/c2jJmN8" target="_blank" rel="noreferrer" id="sideBarResume" aria-label="Link to download Layla Southcombe's CV">RESUME</a></li>
                 </ul>
             </div>
         </>

@@ -8,7 +8,7 @@
 
 **You can view my portfolio in full [here](https://laylasouthcombe.netlify.app/)**
 
-**And see my CV [here](https://docdro.id/7tZcCZL)**
+**And see my CV [here](https://docdro.id/c2jJmN8)**
 
 This portfolio showcases my skills, experience, and the projects I have built. It's a glimpse into my journey as a developer and provides insights into my capabilities and accomplishments. 
 
@@ -27,6 +27,6 @@ One of the most exciting parts of my journey as a developer has been the opportu
 If you're interested in more detailed information about my professional background and experience, make sure to check out my resume. It's available as a PDF, providing a comprehensive overview of my skills, education, and work history.
 
 ### Get in Touch
-I'm always open to new opportunities, collaborations, and conversations. If you have any questions, ideas, or just want to say hello, feel free to reach out. You can find my contact information within the portfolio or connect with me on [LinkedIn](https://www.linkedin.com/in/layla-southcombe-811a77102).
+I'm always open to new opportunities, collaborations, and conversations. If you have any questions, ideas, or just want to say hello, feel free to reach out. You can find my contact information within the portfolio or connect with me on [LinkedIn](https://www.linkedin.com/in/layla-southcombe-dev/).
 
 Thank you for visiting my portfolio repository. Enjoy exploring my work and getting to know me better. I look forward to connecting with you!

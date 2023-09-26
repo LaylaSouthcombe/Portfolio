@@ -48,7 +48,7 @@ function App() {
           <div className="bottomLinksDiv">
             <ul className="bottomLinks">
               <li><a href="https://github.com/LaylaSouthcombe" target="_blank" rel="noreferrer" aria-label="Link to Layla Southcombe' GitHub profile"><img src={gitHubIcon} alt="GitHub Icon" className="bottomLinkImg"/></a></li>
-              <li><a href="https://www.linkedin.com/in/layla-southcombe-811a77102" target="_blank" rel="noreferrer" aria-label="Link to Layla Southcombe's LinkedIn profile"><img src={linkedInIcon} alt="LinkedIn Icon" className="bottomLinkImg"/></a></li>
+              <li><a href="https://www.linkedin.com/in/layla-southcombe-dev/" target="_blank" rel="noreferrer" aria-label="Link to Layla Southcombe's LinkedIn profile"><img src={linkedInIcon} alt="LinkedIn Icon" className="bottomLinkImg"/></a></li>
               <li><a href="mailto:laylasouthcombe789@outlook.com" aria-label="Layla Sotuhcombe's email address"><img src={mailIcon} alt="email Icon" className="bottomLinkImg" id="mailIcon"/></a></li>
             </ul>
           </div>

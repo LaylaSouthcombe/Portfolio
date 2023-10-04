@@ -76,8 +76,8 @@ const Certificates = ({innerRef}) => {
                 }
                 className="certsCarouselWrapper">
                     <Slider {...settings}>
-                        {certificates.map(cert => (
-                            <div className="certificate">
+                        {certificates.map((cert, i) => (
+                            <div className="certificate" key={"cert" + i}>
                                 <img src={cert} alt="certificate"/>
                             </div>
                         ))}

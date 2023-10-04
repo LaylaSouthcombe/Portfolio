@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { About, IntroWrapper, Projects, Skills, Certificates } from './pages'
 import { NavBar } from './layout'
+import Hotjar from '@hotjar/browser'
 
 import gitHubIcon from './images/icons/icon-github.webp'
 import linkedInIcon from './images/icons/icon-linkedin.webp'
@@ -22,7 +23,11 @@ function App() {
   const projectsOnClickRef = useRef(null)
   const certificatesOnClickRef = useRef(null)
 
+  const siteId = 3680202
+  const hotjarVersion = 6
+
   useEffect(() => {
+    Hotjar.init(siteId, hotjarVersion)
     if(window.screen.width < 768){
       setBodyClass("visibleBody")
     }
